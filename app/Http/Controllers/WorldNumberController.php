@@ -214,10 +214,10 @@ class WorldNumberController extends Controller
         }
 
 
-        $ckn = Verification::where('user_id', Auth::id())->where('status', 1) ?? null;
-        if ($ckn->count() == 1) {
-            return redirect('world')->with('error', "Complete or End Pending Order");
-        }
+//        $ckn = Verification::where('user_id', Auth::id())->where('status', 1) ?? null;
+//        if ($ckn->count() == 1) {
+//            return redirect('world')->with('error', "Complete or End Pending Order");
+//        }
 
 
 
