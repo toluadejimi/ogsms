@@ -1,0 +1,1467 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3cdf45ff-cf72-4fd5-8d04-690270964b0e" name="Changes" comment="pushhhhhh">
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/plugins/add-to-cart-direct-checkout-for-woocommerce/public/css/pi-dcw-public.css?ver=2.1.72.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/plugins/add-to-cart-direct-checkout-for-woocommerce/public/js/pi-dcw-public.js?ver=2.1.72" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/css/frontend-lite-rtl.min.css?ver=3.11.4.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/css/frontend-lite.min.css?ver=3.11.4.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/js/elements-handlers.min.js?ver=3.11.4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/js/frontend.min.js?ver=3.11.4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/js/webpack-pro.runtime.min.js?ver=3.11.4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/lib/smartmenus/jquery.smartmenus.min.js?ver=1.0.1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/lib/sticky/jquery.sticky.min.js?ver=3.11.4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/css/frontend-lite-rtl.min.css?ver=3.14.1.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/css/frontend-lite.min.css?ver=3.14.1.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/css/widget-icon-list.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.14.1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.14.1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.14.1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/lib/animations/animations.min.css?ver=3.14.1.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css?ver=5.20.0.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.eot?5.20.0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.svg?5.20.0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.ttf?5.20.0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.woff2?5.20.0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.woff?5.20.0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/lib/font-awesome/css/brands.min.css?ver=5.15.3.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/lib/font-awesome/css/fontawesome.min.css?ver=5.15.3.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/lib/font-awesome/css/solid.min.css?ver=5.15.3.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/lib/font-awesome/webfonts/fa-brands-400.eot?" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/lib/font-awesome/webfonts/fa-solid-900.eot?" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/lib/swiper/v8/css/swiper.min.css?ver=8.4.5.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min.js?ver=4.0.2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/plugins/essential-addons-for-elementor-lite/assets/front-end/css/view/general.min.css?ver=5.8.11.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/plugins/essential-addons-for-elementor-lite/assets/front-end/js/view/general.min.js?ver=5.8.11" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/plugins/give-fee-recovery/assets/css/give-fee-recovery-frontend.min.css?ver=2.1.1.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/plugins/give-fee-recovery/assets/js/give-fee-recovery-public.min.js?ver=2.1.1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/plugins/give/assets/dist/css/give-donation-summary.css?ver=2.33.2.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/plugins/give/assets/dist/css/give.css?ver=2.33.2.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/plugins/give/assets/dist/fonts/icomoon.eot?kdnr3d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/plugins/give/assets/dist/fonts/icomoon.svg?kdnr3d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/plugins/give/assets/dist/fonts/icomoon.woff?kdnr3d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/plugins/give/assets/dist/images/amex.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/plugins/give/assets/dist/images/dankort.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/plugins/give/assets/dist/images/diners-club.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/plugins/give/assets/dist/images/discover.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/plugins/give/assets/dist/images/jcb.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/plugins/give/assets/dist/images/maestro.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/plugins/give/assets/dist/images/mastercard.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/plugins/give/assets/dist/images/tick.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/plugins/give/assets/dist/images/unionpay.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/plugins/give/assets/dist/images/visa.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/plugins/give/assets/dist/js/give-donation-summary.js?ver=2.33.2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/plugins/give/assets/dist/js/give.js?ver=1c38f856714bc980" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/plugins/jeg-elementor-kit/assets/css/elements/main.css?ver=2.6.1.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/plugins/jeg-elementor-kit/assets/fonts/jkiticon/jkiticon.css?ver=2.6.1.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/plugins/jeg-elementor-kit/assets/fonts/jkiticon/jkiticon.eot?bv8d8l" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/plugins/jeg-elementor-kit/assets/fonts/jkiticon/jkiticon.svg?bv8d8l" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/plugins/jeg-elementor-kit/assets/fonts/jkiticon/jkiticon.ttf?bv8d8l" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/plugins/jeg-elementor-kit/assets/fonts/jkiticon/jkiticon.woff2?bv8d8l" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/plugins/jeg-elementor-kit/assets/fonts/jkiticon/jkiticon.woff?bv8d8l" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/plugins/jeg-elementor-kit/assets/img/letter-x.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/plugins/jeg-elementor-kit/assets/js/elements/accordion.js?ver=2.6.1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/plugins/jeg-elementor-kit/assets/js/elements/sticky-element.js?ver=2.6.1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/plugins/jeg-elementor-kit/lib/jeg-framework/assets/css/jeg-dynamic-styles.css?ver=1.2.9.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/plugins/paypal button remove/css/webnayon-my-styles.css?ver=6.4.4.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/plugins/translatepress-multilingual/assets/css/trp-floater-language-switcher.css?ver=2.6.6.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/plugins/translatepress-multilingual/assets/css/trp-language-switcher.css?ver=2.6.6.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/plugins/translatepress-multilingual/assets/images/arrow-down-3101.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/plugins/translatepress-multilingual/assets/images/flags/ar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/plugins/translatepress-multilingual/assets/images/flags/de_DE.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/plugins/translatepress-multilingual/assets/images/flags/en_US.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/plugins/translatepress-multilingual/assets/images/flags/ru_RU.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/plugins/translatepress-multilingual/assets/images/flags/zh_CN.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/plugins/translatepress-multilingual/assets/js/trp-frontend-compatibility.js?ver=2.6.6" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/plugins/translatepress-multilingual/assets/js/trp-translate-dom-changes.js?ver=2.6.6" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/plugins/woocommerce/assets/css/photoswipe/default-skin/default-skin.min.css?ver=8.1.1.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/plugins/woocommerce/assets/css/photoswipe/default-skin/default-skin.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/plugins/woocommerce/assets/css/photoswipe/default-skin/default-skin.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/plugins/woocommerce/assets/css/photoswipe/default-skin/preloader.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/plugins/woocommerce/assets/css/photoswipe/photoswipe.min.css?ver=8.1.1.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/plugins/woocommerce/assets/fonts/WooCommerce.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/plugins/woocommerce/assets/fonts/WooCommerce.eot?" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/plugins/woocommerce/assets/fonts/WooCommerce.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/plugins/woocommerce/assets/fonts/WooCommerce.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/plugins/woocommerce/assets/fonts/WooCommerce.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/plugins/woocommerce/assets/fonts/star.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/plugins/woocommerce/assets/fonts/star.eot?" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/plugins/woocommerce/assets/fonts/star.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/plugins/woocommerce/assets/fonts/star.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/plugins/woocommerce/assets/fonts/star.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/plugins/woocommerce/assets/images/icons/credit-cards/amex.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/plugins/woocommerce/assets/images/icons/credit-cards/diners.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/plugins/woocommerce/assets/images/icons/credit-cards/discover.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/plugins/woocommerce/assets/images/icons/credit-cards/jcb.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/plugins/woocommerce/assets/images/icons/credit-cards/laser.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/plugins/woocommerce/assets/images/icons/credit-cards/maestro.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/plugins/woocommerce/assets/images/icons/credit-cards/mastercard.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/plugins/woocommerce/assets/images/icons/credit-cards/visa.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/plugins/woocommerce/assets/images/icons/loader.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/plugins/woocommerce/assets/js/flexslider/jquery.flexslider.min.js?ver=2.7.2-wc.8.1.1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart-variation.min.js?ver=8.1.1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.min.js?ver=8.1.1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/plugins/woocommerce/assets/js/frontend/single-product.min.js?ver=8.1.1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js?ver=8.1.1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js?ver=2.7.0-wc.8.1.1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min.js?ver=2.1.4-wc.8.1.1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/plugins/woocommerce/assets/js/photoswipe/photoswipe-ui-default.min.js?ver=4.1.1-wc.8.1.1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/plugins/woocommerce/assets/js/photoswipe/photoswipe.min.js?ver=4.1.1-wc.8.1.1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/plugins/woocommerce/assets/js/zoom/jquery.zoom.min.js?ver=1.7.21-wc.8.1.1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/wc-all-blocks-style-rtl.css?ver=10.9.3.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/wc-all-blocks-style.css?ver=10.9.3.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/wc-blocks-vendors-style.css?ver=10.9.3.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/plugins/wpforms-lite/assets/js/integrations/elementor/frontend.min.js?ver=1.8.2.1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/themes/astra/assets/css/minified/compatibility/woocommerce/woocommerce-grid.min-rtl.css?ver=4.1.5.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/themes/astra/assets/css/minified/compatibility/woocommerce/woocommerce-grid.min.css?ver=4.1.5.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/themes/astra/assets/css/minified/compatibility/woocommerce/woocommerce-layout-grid.min-rtl.css?ver=4.1.5.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/themes/astra/assets/css/minified/compatibility/woocommerce/woocommerce-layout-grid.min.css?ver=4.1.5.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/themes/astra/assets/css/minified/compatibility/woocommerce/woocommerce-smallscreen-grid.min-rtl.css?ver=4.1.5.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/themes/astra/assets/css/minified/compatibility/woocommerce/woocommerce-smallscreen-grid.min.css?ver=4.1.5.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/themes/astra/assets/css/minified/main.min-rtl.css?ver=4.1.5.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/themes/astra/assets/css/minified/main.min.css?ver=4.1.5.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/themes/astra/assets/js/minified/frontend.min.js?ver=4.1.5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2023/06/1-100x100.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2023/06/1-150x150.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2023/06/1-300x300.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2023/06/1-rent-virtual-phone-number-for-services-activations-217x300.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2023/06/1-rent-virtual-phone-number-for-services-activations.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2023/06/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2023/06/2-100x100.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2023/06/2-150x150.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2023/06/2-300x300.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2023/06/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2023/06/3-100x100.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2023/06/3-150x150.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2023/06/3-300x300.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2023/06/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2023/06/alert.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2023/06/austria-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2023/06/banner-1-1-300x233.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2023/06/banner-1-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2023/06/banner.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2023/06/banner2-up.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2023/06/banner6-100x100.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2023/06/banner6-300x296.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2023/06/banner6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2023/06/compliance-64.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2023/06/cropped-apple-touch-icon-180x180.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2023/06/cropped-apple-touch-icon-192x192.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2023/06/cropped-apple-touch-icon-32x32.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2023/06/f1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2023/06/f10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2023/06/f11.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2023/06/f12.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2023/06/f13.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2023/06/f14.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2023/06/f15.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2023/06/f16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2023/06/f2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2023/06/f3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2023/06/f4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2023/06/f5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2023/06/f6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2023/06/f7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2023/06/f8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2023/06/f9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2023/06/hero-img-1024x420.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2023/06/hero-img-300x123.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2023/06/hero-img-600x246.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2023/06/hero-img-768x315.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2023/06/hero-img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2023/06/ic_contacto_stack-300x165.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2023/06/ic_contacto_stack.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2023/06/mail-group-300x200.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2023/06/mail-group.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2023/06/privacy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2023/06/routing.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2023/06/security-con.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2023/06/smart.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2023/06/support-new.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2023/09/11.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2023/09/3be31f48-logo-6.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2023/09/4573412-100x100.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2023/09/4573412-1024x1024.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2023/09/4573412-150x150.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2023/09/4573412-1536x1536.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2023/09/4573412-300x300.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2023/09/4573412-600x600.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2023/09/4573412-768x768.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2023/09/4573412.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2023/09/Flag_of_Croatia.svg-1024x512.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2023/09/Flag_of_Croatia.svg-300x150.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2023/09/Flag_of_Croatia.svg-600x300.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2023/09/Flag_of_Croatia.svg-768x384.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2023/09/Flag_of_Croatia.svg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2023/09/adspower-proxies-100x100.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2023/09/adspower-proxies-150x150.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2023/09/adspower-proxies-300x300.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2023/09/adspower-proxies.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2023/09/at-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2023/09/gologin-proxies-100x100.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2023/09/gologin-proxies-150x150.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2023/09/gologin-proxies-300x300.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2023/09/gologin-proxies.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2023/09/icon3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2023/09/integration-100x100.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2023/09/integration-150x150.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2023/09/integration-300x300.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2023/09/integration.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2023/09/lith.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2023/09/multilogin-proxies-100x100.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2023/09/multilogin-proxies-150x150.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2023/09/multilogin-proxies-300x300.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2023/09/multilogin-proxies.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2023/09/netherlands-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2023/09/pngwing.com_-100x100.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2023/09/pngwing.com_-150x150.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2023/09/pngwing.com_-300x300.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2023/09/pngwing.com_.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2023/09/repair-service-100x100.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2023/09/repair-service-150x150.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2023/09/repair-service-300x300.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2023/09/repair-service-60x60.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2023/09/repair-service-90x90.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2023/09/repair-service.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2023/09/sales-100x100.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2023/09/sales-150x150.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2023/09/sales-300x300.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2023/09/sales-60x60.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2023/09/sales-90x90.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2023/09/sales.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2023/09/sessionbox-proxies-100x100.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2023/09/sessionbox-proxies-150x150.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2023/09/sessionbox-proxies-300x300.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2023/09/sessionbox-proxies.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2023/09/uk.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2023/09/xlogin-proxies-100x100.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2023/09/xlogin-proxies-150x150.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2023/09/xlogin-proxies-300x300.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2023/09/xlogin-proxies.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2023/10/Difference-between-whatsapp-and-telegram-feature-100x100.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2023/10/Difference-between-whatsapp-and-telegram-feature-150x150.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2023/10/Difference-between-whatsapp-and-telegram-feature-60x60.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2023/10/Difference-between-whatsapp-and-telegram-feature-90x90.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2023/10/Difference-between-whatsapp-and-telegram-feature.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2023/10/How-to-create-Paypal-Account-without-Phone-Number-feature-100x100.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2023/10/How-to-create-Paypal-Account-without-Phone-Number-feature-150x150.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2023/10/How-to-create-Paypal-Account-without-Phone-Number-feature-60x60.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2023/10/How-to-create-Paypal-Account-without-Phone-Number-feature-90x90.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2023/10/How-to-create-Paypal-Account-without-Phone-Number-feature.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2023/10/How-to-create-a-Wise-bank-account-without-phone-number-feature-100x100.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2023/10/How-to-create-a-Wise-bank-account-without-phone-number-feature-150x150.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2023/10/How-to-create-a-Wise-bank-account-without-phone-number-feature-60x60.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2023/10/How-to-create-a-Wise-bank-account-without-phone-number-feature-90x90.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2023/10/How-to-create-a-Wise-bank-account-without-phone-number-feature.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2023/10/How-to-create-telegram-without-phone-number-Feature-100x100.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2023/10/How-to-create-telegram-without-phone-number-Feature-150x150.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2023/10/How-to-create-telegram-without-phone-number-Feature-60x60.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2023/10/How-to-create-telegram-without-phone-number-Feature-90x90.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2023/10/How-to-create-telegram-without-phone-number-Feature.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2023/10/how-to-create-Whatsapp-account-without-Phone-Number-feature-100x100.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2023/10/how-to-create-Whatsapp-account-without-Phone-Number-feature-150x150.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2023/10/how-to-create-Whatsapp-account-without-Phone-Number-feature-60x60.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2023/10/how-to-create-Whatsapp-account-without-Phone-Number-feature-90x90.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2023/10/how-to-create-Whatsapp-account-without-Phone-Number-feature.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2023/10/how-to-create-tinder-account-without-Phone-Number-feature-100x100.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2023/10/how-to-create-tinder-account-without-Phone-Number-feature-150x150.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2023/10/how-to-create-tinder-account-without-Phone-Number-feature-60x60.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2023/10/how-to-create-tinder-account-without-Phone-Number-feature-90x90.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2023/10/how-to-create-tinder-account-without-Phone-Number-feature.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/elementor/css/global.css?ver=1701324968.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/elementor/css/post-1737.css?ver=1707680554.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/elementor/css/post-364.css?ver=1701324968.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/elementor/css/post-366.css?ver=1701324968.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/elementor/css/post-7.css?ver=1701324966.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/elementor/css/post-8.css?ver=1702488992.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-content/uploads/elementor/css/post-949.css?ver=1701338873.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-includes/css/dist/block-library/style-rtl.min.css?ver=6.4.4.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-includes/css/dist/block-library/style.min.css?ver=6.4.4.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-includes/js/dist/hooks.min.js?ver=c6aec9a8d4e5a5d543a1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-includes/js/dist/i18n.min.js?ver=7701b0c3857f914212ef" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver=0.14.0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-includes/js/dist/vendor/wp-polyfill-inert.min.js?ver=3.1.2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-includes/js/imagesloaded.min.js?ver=5.0.0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-includes/js/jquery/ui/core.min.js?ver=1.13.2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-includes/js/underscore.min.js?ver=1.13.4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-includes/js/wp-util.min.js?ver=6.4.4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-json/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-json/oembed/1.0/embed?url=https:%2F%2Frentsms.online%2F" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-json/oembed/1.0/embed?url=https:%2F%2Frentsms.online%2F&amp;format=xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-json/oembed/1.0/embed?url=https:%2F%2Frentsms.online%2F4g-mobile-data%2F" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-json/oembed/1.0/embed?url=https:%2F%2Frentsms.online%2F4g-mobile-data%2F&amp;format=xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-json/oembed/1.0/embed?url=https:%2F%2Frentsms.online%2Fblog%2F" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-json/oembed/1.0/embed?url=https:%2F%2Frentsms.online%2Fblog%2F&amp;format=xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-json/oembed/1.0/embed?url=https:%2F%2Frentsms.online%2Fprivacy-policy%2F" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-json/oembed/1.0/embed?url=https:%2F%2Frentsms.online%2Fprivacy-policy%2F&amp;format=xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-json/oembed/1.0/embed?url=https:%2F%2Frentsms.online%2Fterms-conditions%2F" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-json/oembed/1.0/embed?url=https:%2F%2Frentsms.online%2Fterms-conditions%2F&amp;format=xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-json/wp/v2/pages/1737" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-json/wp/v2/pages/662" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-json/wp/v2/pages/666" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-json/wp/v2/pages/8" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets2/wp-json/wp/v2/pages/949" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/2024/04/17/hello-world/feed/index.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/2024/04/17/hello-world/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/css/admin-rtl.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/css/admin-rtl.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/css/admin.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/css/admin.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/css/app-rtl.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/css/app-rtl.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/css/app.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/css/app.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/css/editor-rtl.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/css/editor-rtl.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/css/editor.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/css/editor.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/css/frontend-lite-rtl.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/css/frontend-lite-rtl.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/css/frontend-lite.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/css/frontend-lite.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/css/frontend-msie.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/css/frontend-msie.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/css/frontend-rtl.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/css/frontend-rtl.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/css/frontend.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/css/frontend.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/css/loop-grid-cta.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/css/loop-grid-cta.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/css/modules/code-highlight.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/css/modules/code-highlight.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/css/modules/custom-code-rtl.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/css/modules/custom-code-rtl.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/css/modules/custom-code.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/css/modules/custom-code.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/css/modules/forms/submissions/admin-rtl.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/css/modules/forms/submissions/admin-rtl.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/css/modules/forms/submissions/admin.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/css/modules/forms/submissions/admin.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/css/modules/notes/frontend.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/css/modules/notes/frontend.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/css/preview-rtl.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/css/preview-rtl.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/css/preview.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/css/preview.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/css/templates/frontend-lite-rtl.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/css/templates/frontend-lite-rtl.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/css/templates/frontend-lite.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/css/templates/frontend-lite.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/css/templates/frontend-rtl.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/css/templates/frontend-rtl.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/css/templates/frontend.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/css/templates/frontend.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/css/templates/widget-call-to-action-rtl.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/css/templates/widget-call-to-action.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/css/templates/widget-flip-box-rtl.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/css/templates/widget-flip-box.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/css/templates/widget-mega-menu-rtl.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/css/templates/widget-mega-menu.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/css/templates/widget-nav-menu-rtl.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/css/templates/widget-nav-menu.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/css/templates/widget-slides-rtl.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/css/templates/widget-slides.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/css/templates/widget-video-playlist-rtl.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/css/templates/widget-video-playlist.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/css/widget-animated-headline-rtl.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/css/widget-animated-headline.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/css/widget-animated-headline.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/css/widget-blockquote-rtl.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/css/widget-blockquote.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/css/widget-call-to-action-rtl.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/css/widget-call-to-action.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/css/widget-carousel-rtl.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/css/widget-carousel.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/css/widget-countdown-rtl.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/css/widget-countdown.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/css/widget-flip-box-rtl.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/css/widget-flip-box.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/css/widget-forms-rtl.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/css/widget-forms.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/css/widget-gallery-rtl.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/css/widget-gallery.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/css/widget-global-widget-rtl.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/css/widget-global-widget.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/css/widget-hotspot-rtl.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/css/widget-hotspot.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/css/widget-loop-builder-rtl.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/css/widget-loop-builder.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/css/widget-lottie-rtl.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/css/widget-lottie.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/css/widget-mega-menu-rtl.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/css/widget-mega-menu.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/css/widget-motion-fx-rtl.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/css/widget-motion-fx.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/css/widget-nav-menu-rtl.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/css/widget-nav-menu.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/css/widget-nav-menu.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/css/widget-notes-rtl.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/css/widget-notes.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/css/widget-payments-rtl.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/css/widget-payments.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/css/widget-popup-rtl.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/css/widget-popup.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/css/widget-posts-rtl.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/css/widget-posts.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/css/widget-posts.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/css/widget-pricing-rtl.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/css/widget-pricing.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/css/widget-progress-tracker-rtl.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/css/widget-progress-tracker.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/css/widget-share-buttons-rtl.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/css/widget-share-buttons.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/css/widget-slides-rtl.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/css/widget-slides.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/css/widget-social-rtl.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/css/widget-social.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/css/widget-sticky-rtl.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/css/widget-sticky.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/css/widget-table-of-contents-rtl.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/css/widget-table-of-contents.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/css/widget-theme-builder-rtl.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/css/widget-theme-builder.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/css/widget-theme-elements-rtl.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/css/widget-theme-elements.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/css/widget-video-playlist-rtl.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/css/widget-video-playlist.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/css/widget-woocommerce-rtl.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/css/widget-woocommerce.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/css/woocommerce-notices.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/css/woocommerce-notices.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/data/responsive-widgets.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/images/logo-placeholder.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/js/admin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/js/admin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/js/animated-headline.a72e91b4455c4435ee9c.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/js/animated-headline.ffb4bb4ce1b16b11446d.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/js/app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/js/app.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/js/archive-posts.1de00dabb89a39359d7a.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/js/archive-posts.c139dd16b2224fcc8171.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/js/b83b4e72565adbc65b6e.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/js/carousel.9b02b45d7826c1c48f33.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/js/carousel.f3d380987af9f2d7b22d.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/js/code-highlight.28a979661569ddbbf60d.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/js/code-highlight.bd9b459b2670f6512f56.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/js/countdown.14ae9e6521e5309f2b20.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/js/countdown.b0ef6392ec4ff09ca2f2.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/js/custom-code.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/js/custom-code.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/js/e1314d8e113e32e00c20.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/js/editor.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/js/editor.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/js/elements-handlers.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/js/elements-handlers.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/js/form-submission-admin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/js/form-submission-admin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/js/form.72b77b99d67b130634d2.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/js/form.f57ca47ad68276d319aa.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/js/frontend.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/js/frontend.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/js/gallery.1573e391054ea0977a1f.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/js/gallery.8ca9a354ce039d1ba641.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/js/hotspot.6ab1751404c381bfe390.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/js/hotspot.a8e9728500bb65f7d480.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/js/jszip.vendor.99a5b769619f50a6cb60.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/js/jszip.vendor.99a5b769619f50a6cb60.bundle.min.js.LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/js/jszip.vendor.a3c65615c1de5560962d.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/js/load-more.2c4819ffa05d8e7e19a3.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/js/load-more.c9f6aac03af905f4e206.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/js/loop-carousel.64df59427f9aa5192019.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/js/loop-carousel.ca3af34f494108c4dcd8.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/js/loop.56bafc053eb8d9ec040d.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/js/loop.ee42cd13e555f07796a1.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/js/lottie.147bf20db94f86cc4295.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/js/lottie.e9e13c1085c8ebcf9e08.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/js/media-carousel.3c8f4fa31022b9a3b8af.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/js/media-carousel.aca2224ef13e6f999011.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/js/mega-menu-editor.d71e4c6339dd6957b02c.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/js/mega-menu-editor.df12ed5ed5e2a972f28b.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/js/mega-menu-stretch-content.5ec1f2f20bb5b5aacce1.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/js/mega-menu-stretch-content.dd7b10c896a88f739622.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/js/mega-menu.2235f3049d229a3d8ad3.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/js/mega-menu.62a19130f37a7b264bf7.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/js/nav-menu.9438664d01c471861c20.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/js/nav-menu.bb5cce0a50480cdf695d.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/js/notes/173.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/js/notes/173.min.js.LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/js/notes/notes-app-initiator.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/js/notes/notes-app-initiator.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/js/notes/notes-app-initiator.min.js.LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/js/notes/notes-app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/js/notes/notes-app.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/js/notes/notes.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/js/notes/notes.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/js/notes/notes.min.js.LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/js/notes/vendors-node_modules_radix-ui_react-alert-dialog_dist_index_module_js-node_modules_radix-ui_r-c71607.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/js/page-transitions-editor.69f365c96dc0120de70b.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/js/page-transitions-editor.930bfd9119ee62d5ccd6.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/js/page-transitions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/js/page-transitions.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/js/paypal-button.0b0a646654a59ebd13a8.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/js/paypal-button.3d0d5af7df85963df32c.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/js/popup.397c2882052136db7ee0.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/js/popup.483b906ddaa1af17ff14.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/js/portfolio.042905bde20a1afccada.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/js/portfolio.47c0bf4b3576c66f1b1a.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/js/posts.72468c8555693b196f98.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/js/posts.e33113a212454e383747.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/js/preloaded-elements-handlers.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/js/preloaded-elements-handlers.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/js/preview.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/js/preview.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/js/product-add-to-cart.023d7d31fbf96c3dbdfc.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/js/product-add-to-cart.39fbaae6c856c483b4b4.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/js/progress-tracker.3424c0ac2b2c8da47033.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/js/progress-tracker.e19e2547639d7d9dac17.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/js/qunit-tests.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/js/qunit-tests.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/js/screenshot.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/js/screenshot.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/js/search-form.0ef02f9fd5e7db2ea91b.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/js/search-form.357fb2d20c2058fac04e.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/js/share-buttons.0bdd88c45462dfb2b073.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/js/share-buttons.a43f0e61533a54c4cf9f.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/js/slides.ed047abad2c95958dc83.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/js/slides.fb6b9afd278bb9c5e75b.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/js/social.2d2e44e8608690943f29.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/js/social.68fec39648b9a03c6275.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/js/stripe-button.6525e1debdc6788d7c5b.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/js/stripe-button.d283ce83621092402874.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/js/table-of-contents.a695231ee79a390b7620.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/js/table-of-contents.efa4ec72fb5fbf81390d.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/js/video-playlist.298cdf58d6ff89be4257.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/js/video-playlist.46d8facd8ae5db005088.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/js/webpack-pro.runtime.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/js/webpack-pro.runtime.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/js/woocommerce-cart.07b1efa10b4a0c3db9f6.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/js/woocommerce-cart.fc30c6cb753d4098eff5.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/js/woocommerce-checkout-page.b18af78282979b6f74e4.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/js/woocommerce-checkout-page.bf88689aec2ee294a5e8.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/js/woocommerce-menu-cart.cecfa624e2d23a156519.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/js/woocommerce-menu-cart.faa7b80e9ba9e5072070.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/js/woocommerce-my-account.355b00c58fb73e92a0bb.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/js/woocommerce-my-account.3ee10d01e625dad87f73.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/js/woocommerce-notices.d803ba1deaf96eb007fc.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/js/woocommerce-notices.da27b22c491f7cbe9158.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/js/woocommerce-purchase-summary.40bd4441fdc065587324.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/js/woocommerce-purchase-summary.46445ab1120a8c28c05c.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/lib/dom-to-image/js/dom-to-image.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/lib/dom-to-image/js/dom-to-image.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/lib/font-awesome-pro/brands.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/lib/font-awesome-pro/duotone.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/lib/font-awesome-pro/light.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/lib/font-awesome-pro/regular.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/lib/font-awesome-pro/solid.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/lib/html2canvas/js/html2canvas.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/lib/html2canvas/js/html2canvas.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/lib/instant-page/instant-page.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/lib/instant-page/instant-page.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/lib/lottie/lottie.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/lib/lottie/lottie.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/lib/smartmenus/jquery.smartmenus.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/lib/smartmenus/jquery.smartmenus.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/lib/sticky/jquery.sticky.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor-pro/assets/lib/sticky/jquery.sticky.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/css/frontend-lite.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/data/responsive-widgets.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/images/ajax-loader.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/images/announcement.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/images/app/onboarding/Blank_Canvas.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/images/app/onboarding/Blank_Preview.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/images/app/onboarding/Illustration_Account.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/images/app/onboarding/Illustration_Hello.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/images/app/onboarding/Illustration_Setup.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/images/app/onboarding/Library.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/images/app/site-editor/archive.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/images/app/site-editor/error-404.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/images/app/site-editor/footer.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/images/app/site-editor/header.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/images/app/site-editor/product.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/images/app/site-editor/products.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/images/app/site-editor/search-results.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/images/app/site-editor/single-page.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/images/app/site-editor/single-post.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/images/blur.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/images/containers-announcement.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/images/contrast.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/images/eyedropper.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/images/go-pro-wp-dashboard.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/images/go-pro.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/images/information.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/images/library-connect/left-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/images/library-connect/left-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/images/library-connect/right-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/images/library-connect/right-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/images/logo-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/images/logo-panel.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/images/logo-platform.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/images/no-search-results.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/images/placeholder.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/1268ff89b5a9b9f27951.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/12db92f8c908b4ba4726.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/1bef795bdeaafc779b19.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/36284da182ff260e76c2.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/36284da182ff260e76c2.bundle.min.js.LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/4132bbeaf89a933935a8.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/62aed6374b1561fb5fd8.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/6dc72ebebb42e6117899.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/6ed74dd3befaff90b65c.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/7fada1a61d72da6d46ab.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/82916c9aba5712bca47c.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/93082dd705a5dfe42c67.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/96124ada3ba05750eec1.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/98506bec715bd31c4134.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/9901e5ed764a3348e6e0.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/accordion.8799675460c73eb48972.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/accordion.d0e98fa492444fcce9f9.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/adadcfdaada40ff3919c.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/admin-feedback.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/admin-feedback.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/admin-modules.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/admin-modules.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/admin-modules.min.js.LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/admin-top-bar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/admin-top-bar.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/admin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/admin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/admin.min.js.LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/ai-admin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/ai-admin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/ai-admin.min.js.LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/ai.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/ai.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/ai.min.js.LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/alert.5c23f364fd0f1ece78ac.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/alert.cbc2a0fee74ee3ed0419.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/announcements-app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/announcements-app.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/announcements-app.min.js.LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/app-loader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/app-loader.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/app-packages.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/app-packages.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/app-packages.min.js.LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/app.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/app.min.js.LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/be69c0d71c69e96d6a96.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/beta-tester.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/beta-tester.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/common-modules.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/common-modules.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/common.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/common.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/common.min.js.LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/container-converter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/container-converter.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/container.3e03f0b480c65f79dee6.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/container.cb52cddbcc9b8752f112.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/counter.02cef29c589e742d4c8c.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/counter.6e06639071a3da2a8059.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/dev-tools.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/dev-tools.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/editor-document.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/editor-document.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/editor-environment-v2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/editor-environment-v2.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/editor-loader-v1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/editor-loader-v1.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/editor-loader-v2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/editor-loader-v2.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/editor-modules.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/editor-modules.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/editor-modules.min.js.LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/editor.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/editor.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/editor.min.js.LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/elementor-admin-bar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/elementor-admin-bar.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/f44354f947a948ef36c9.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/frontend-modules.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/frontend-modules.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/frontend.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/frontend.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/gutenberg.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/gutenberg.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/image-carousel.4455c6362492d9067512.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/image-carousel.8007d415cd5f258d2d69.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/import-export-admin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/import-export-admin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/kit-elements-defaults-editor.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/kit-elements-defaults-editor.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/kit-elements-defaults-editor.min.js.LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/kit-library.122bb1346ccb087862ae.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/kit-library.3dff2fd14c0324c37675.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/lightbox.3489c2bc8f62c7ee72ed.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/lightbox.5a98d2e96d9d643cdb70.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/nested-accordion.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/nested-accordion.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/nested-accordion.min.js.LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/nested-elements.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/nested-elements.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/nested-tabs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/nested-tabs.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/nested-tabs.min.js.LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/new-template.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/new-template.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/notes.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/notes.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/onboarding.2da315965610a6ac2448.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/onboarding.6aace3f2fdf9ebb9bde5.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/packages/editor-app-bar.asset.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/packages/editor-app-bar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/packages/editor-app-bar.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/packages/editor-app-bar.strings.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/packages/editor-documents.asset.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/packages/editor-documents.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/packages/editor-documents.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/packages/editor-documents.strings.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/packages/editor-responsive.asset.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/packages/editor-responsive.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/packages/editor-responsive.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/packages/editor-responsive.strings.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/packages/editor-site-navigation.asset.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/packages/editor-site-navigation.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/packages/editor-site-navigation.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/packages/editor-site-navigation.strings.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/packages/editor-v1-adapters.asset.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/packages/editor-v1-adapters.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/packages/editor-v1-adapters.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/packages/editor-v1-adapters.strings.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/packages/editor.asset.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/packages/editor.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/packages/editor.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/packages/editor.strings.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/packages/env.asset.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/packages/env.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/packages/env.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/packages/env.strings.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/packages/icons.asset.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/packages/icons.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/packages/icons.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/packages/icons.strings.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/packages/loader.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/packages/locations.asset.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/packages/locations.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/packages/locations.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/packages/locations.strings.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/packages/store.asset.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/packages/store.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/packages/store.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/packages/store.min.js.LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/packages/store.strings.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/packages/ui.asset.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/packages/ui.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/packages/ui.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/packages/ui.min.js.LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/packages/ui.strings.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/preloaded-modules.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/preloaded-modules.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/progress.ca55d33bb06cee4e6f02.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/progress.ddc47ad5120f8813e430.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/responsive-bar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/responsive-bar.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/styleguide-app-initiator.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/styleguide-app-initiator.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/styleguide-app-initiator.min.js.LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/styleguide.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/styleguide.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/tabs.c2af5be7f9cb3cdcf3d5.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/tabs.dc22ac11bf840003dd7f.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/text-editor.2c35aafbe5bf0e127950.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/text-editor.904ef93cc88acb021fdd.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/text-path.b50b3e74488a4e302613.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/text-path.e17f48a91199337badc8.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/toggle.29e5a34bb6e51dab4600.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/toggle.31881477c45ff5cf9d4d.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/video.82d55b692da440a65954.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/video.d86bfd0676264945e968.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/web-cli.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/web-cli.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/web-cli.min.js.LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/webpack.runtime.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/wp-audio.4368a4a260548f3c083a.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/js/wp-audio.75f0ced143febb8cd31a.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/lib/animate.css/animate-config.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/lib/animate.css/animate.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/lib/animate.css/animate.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/lib/animations/animations.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/lib/backbone/backbone.marionette.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/lib/backbone/backbone.marionette.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/lib/backbone/backbone.radio.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/lib/backbone/backbone.radio.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/lib/color-thief/color-thief.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/lib/dialog/dialog.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/lib/dialog/dialog.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/lib/e-gallery/css/e-gallery.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/lib/e-gallery/css/e-gallery.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/lib/e-gallery/js/e-gallery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/lib/e-gallery/js/e-gallery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/lib/e-select2/css/e-select2.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/lib/e-select2/css/e-select2.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/lib/e-select2/js/e-select2.full.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/lib/e-select2/js/e-select2.full.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/lib/eicons/eicons.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/lib/flatpickr/flatpickr.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/lib/flatpickr/flatpickr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/lib/flatpickr/flatpickr.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/lib/flatpickr/flatpickr.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/lib/font-awesome/css/all.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/lib/font-awesome/css/all.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/lib/font-awesome/css/brands.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/lib/font-awesome/css/brands.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/lib/font-awesome/css/font-awesome.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/lib/font-awesome/css/font-awesome.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/lib/font-awesome/css/fontawesome.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/lib/font-awesome/css/fontawesome.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/lib/font-awesome/css/regular.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/lib/font-awesome/css/regular.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/lib/font-awesome/css/solid.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/lib/font-awesome/css/solid.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/lib/font-awesome/css/svg-with-js.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/lib/font-awesome/css/svg-with-js.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/lib/font-awesome/css/v4-shims.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/lib/font-awesome/css/v4-shims.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/lib/font-awesome/fonts/FontAwesome.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/lib/font-awesome/fonts/fontawesome-webfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/lib/font-awesome/fonts/fontawesome-webfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/lib/font-awesome/fonts/fontawesome-webfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/lib/font-awesome/fonts/fontawesome-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/lib/font-awesome/fonts/fontawesome-webfont.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/lib/font-awesome/js/brands.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/lib/font-awesome/js/regular.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/lib/font-awesome/js/solid.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/lib/font-awesome/js/v4-shims.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/lib/font-awesome/js/v4-shims.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/lib/font-awesome/json/brands.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/lib/font-awesome/json/regular.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/lib/font-awesome/json/solid.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/lib/font-awesome/migration/mapping.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/lib/font-awesome/webfonts/fa-brands-400.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/lib/font-awesome/webfonts/fa-brands-400.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/lib/font-awesome/webfonts/fa-regular-400.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/lib/font-awesome/webfonts/fa-regular-400.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/lib/font-awesome/webfonts/fa-regular-400.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/lib/font-awesome/webfonts/fa-regular-400.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/lib/font-awesome/webfonts/fa-regular-400.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/lib/font-awesome/webfonts/fa-solid-900.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/lib/font-awesome/webfonts/fa-solid-900.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/lib/hover/hover.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/lib/hover/hover.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/lib/imagesloaded/imagesloaded.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/lib/imagesloaded/imagesloaded.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/lib/inline-editor/js/inline-editor.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/lib/inline-editor/js/inline-editor.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/lib/jquery-easing/jquery-easing.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/lib/jquery-easing/jquery-easing.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/lib/jquery-hover-intent/jquery-hover-intent.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/lib/jquery-hover-intent/jquery-hover-intent.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/lib/jquery-numerator/jquery-numerator.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/lib/jquery-numerator/jquery-numerator.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/lib/nouislider/nouislider.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/lib/nouislider/nouislider.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/lib/nprogress/nprogress.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/lib/nprogress/nprogress.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/lib/perfect-scrollbar/js/perfect-scrollbar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/lib/perfect-scrollbar/js/perfect-scrollbar.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/lib/pickr/pickr.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/lib/pickr/themes/monolith.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/lib/share-link/share-link.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/lib/share-link/share-link.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/lib/swiper/css/swiper.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/lib/swiper/css/swiper.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/lib/swiper/swiper.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/lib/swiper/swiper.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/lib/swiper/v8/css/swiper.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/lib/swiper/v8/css/swiper.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/lib/swiper/v8/swiper.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/lib/swiper/v8/swiper.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/lib/tipsy/tipsy.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/lib/tipsy/tipsy.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/lib/waypoints/waypoints-for-editor.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/lib/waypoints/waypoints.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/mask-shapes/blob.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/mask-shapes/circle.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/mask-shapes/flower.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/mask-shapes/hexagon.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/mask-shapes/sketch.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/mask-shapes/triangle.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/shapes/arrow-negative.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/shapes/arrow.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/shapes/book-negative.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/shapes/book.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/shapes/clouds-negative.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/shapes/clouds.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/shapes/curve-asymmetrical-negative.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/shapes/curve-asymmetrical.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/shapes/curve-negative.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/shapes/curve.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/shapes/drops-negative.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/shapes/drops.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/shapes/mountains.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/shapes/opacity-fan.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/shapes/opacity-tilt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/shapes/pyramids-negative.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/shapes/pyramids.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/shapes/split-negative.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/shapes/split.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/shapes/tilt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/shapes/triangle-asymmetrical-negative.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/shapes/triangle-asymmetrical.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/shapes/triangle-negative.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/shapes/triangle.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/shapes/wave-brush.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/shapes/waves-negative.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/shapes/waves-pattern.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/shapes/waves.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/shapes/zigzag.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/svg-paths/arc.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/svg-paths/circle.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/svg-paths/line.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/svg-paths/oval.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/svg-paths/spiral.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/elementor/assets/svg-paths/wave.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/plugins/simply-static/src/integrations/simply-cdn/assets/ssh-form-webhook.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/themes/astra/assets/css/minified/main.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/themes/astra/assets/js/minified/frontend.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2024/05/Footer-196x300.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2024/05/Footer.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2024/05/Link-Our-Logo-Ace-300x51.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2024/05/Link-Our-Logo-Ace.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2024/05/Main-291x1024.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2024/05/Main-437x1536.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2024/05/Main-582x2048.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2024/05/Main-768x2702.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2024/05/Main-85x300.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2024/05/Main.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2024/05/Section-175x300.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2024/05/Section.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2024/05/Section2-182x300.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2024/05/Section2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2024/05/Section3-238x300.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2024/05/Section3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2024/05/section4-186x300.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2024/05/section4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2024/05/section5-100x300.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2024/05/section5-340x1024.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/uploads/2024/05/section5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/uploads/elementor/css/global.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/uploads/elementor/css/post-134.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/uploads/elementor/css/post-229.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-content/uploads/elementor/css/post-7.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-includes/css/dist/block-library/style.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-includes/js/comment-reply.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-includes/js/dist/hooks.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-includes/js/dist/i18n.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-includes/js/dist/vendor/regenerator-runtime.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-includes/js/dist/vendor/wp-polyfill-inert.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-includes/js/dist/vendor/wp-polyfill.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-includes/js/jquery/jquery-migrate.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-includes/js/jquery/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets2/wp-includes/js/jquery/ui/core.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;toluadejimi&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="7ba8cd46-51f5-4631-9aee-70e7ca7709ca" />
+        <option name="url" value="https://github.com/toluadejimi/verifyasap.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="PackageJsonUpdateNotifier">
+    <dismissed value="$PROJECT_DIR$/package.json" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="/usr/local/Cellar/php/8.3.2/bin/php">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/markbaker/complex" />
+      <path value="$PROJECT_DIR$/vendor/voku/portable-ascii" />
+      <path value="$PROJECT_DIR$/vendor/myclabs/deep-copy" />
+      <path value="$PROJECT_DIR$/vendor/markbaker/matrix" />
+      <path value="$PROJECT_DIR$/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/vendor/spatie/backtrace" />
+      <path value="$PROJECT_DIR$/vendor/vlucas/phpdotenv" />
+      <path value="$PROJECT_DIR$/vendor/spatie/ignition" />
+      <path value="$PROJECT_DIR$/vendor/spatie/laravel-ignition" />
+      <path value="$PROJECT_DIR$/vendor/spatie/flare-client-php" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/vendor/symfony/deprecation-contracts" />
+      <path value="$PROJECT_DIR$/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/vendor/symfony/routing" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php83" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-grapheme" />
+      <path value="$PROJECT_DIR$/vendor/symfony/css-selector" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-normalizer" />
+      <path value="$PROJECT_DIR$/vendor/nunomaduro/termwind" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php80" />
+      <path value="$PROJECT_DIR$/vendor/symfony/mailer" />
+      <path value="$PROJECT_DIR$/vendor/nunomaduro/collision" />
+      <path value="$PROJECT_DIR$/vendor/symfony/mime" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php" />
+      <path value="$PROJECT_DIR$/vendor/phar-io/version" />
+      <path value="$PROJECT_DIR$/vendor/symfony/error-handler" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php72" />
+      <path value="$PROJECT_DIR$/vendor/phpoffice/phpspreadsheet" />
+      <path value="$PROJECT_DIR$/vendor/phar-io/manifest" />
+      <path value="$PROJECT_DIR$/vendor/symfony/event-dispatcher-contracts" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-idn" />
+      <path value="$PROJECT_DIR$/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/vendor/symfony/event-dispatcher" />
+      <path value="$PROJECT_DIR$/vendor/symfony/var-dumper" />
+      <path value="$PROJECT_DIR$/vendor/symfony/http-foundation" />
+      <path value="$PROJECT_DIR$/vendor/symfony/uid" />
+      <path value="$PROJECT_DIR$/vendor/symfony/http-kernel" />
+      <path value="$PROJECT_DIR$/vendor/ezyang/htmlpurifier" />
+      <path value="$PROJECT_DIR$/vendor/symfony/translation-contracts" />
+      <path value="$PROJECT_DIR$/vendor/symfony/service-contracts" />
+      <path value="$PROJECT_DIR$/vendor/symfony/string" />
+      <path value="$PROJECT_DIR$/vendor/symfony/yaml" />
+      <path value="$PROJECT_DIR$/vendor/symfony/translation" />
+      <path value="$PROJECT_DIR$/vendor/symfony/process" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-uuid" />
+      <path value="$PROJECT_DIR$/vendor/tijsverkoyen/css-to-inline-styles" />
+      <path value="$PROJECT_DIR$/vendor/dflydev/dot-access-data" />
+      <path value="$PROJECT_DIR$/vendor/dragonmantank/cron-expression" />
+      <path value="$PROJECT_DIR$/vendor/theseer/tokenizer" />
+      <path value="$PROJECT_DIR$/vendor/egulias/email-validator" />
+      <path value="$PROJECT_DIR$/vendor/graham-campbell/result-type" />
+      <path value="$PROJECT_DIR$/vendor/ramsey/collection" />
+      <path value="$PROJECT_DIR$/vendor/ramsey/uuid" />
+      <path value="$PROJECT_DIR$/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/vendor/psr/simple-cache" />
+      <path value="$PROJECT_DIR$/vendor/psr/clock" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-factory" />
+      <path value="$PROJECT_DIR$/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-client" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-timer" />
+      <path value="$PROJECT_DIR$/vendor/psr/event-dispatcher" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-file-iterator" />
+      <path value="$PROJECT_DIR$/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-invoker" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-text-template" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/phpunit" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-code-coverage" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/vendor/maatwebsite/excel" />
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/webmozart/assert" />
+      <path value="$PROJECT_DIR$/vendor/maennchen/zipstream-php" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/uri-template" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/guzzle" />
+      <path value="$PROJECT_DIR$/vendor/phpoption/phpoption" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/promises" />
+      <path value="$PROJECT_DIR$/vendor/nesbot/carbon" />
+      <path value="$PROJECT_DIR$/vendor/ralouphie/getallheaders" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/type" />
+      <path value="$PROJECT_DIR$/vendor/laravel/prompts" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/diff" />
+      <path value="$PROJECT_DIR$/vendor/laravel/sail" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/lines-of-code" />
+      <path value="$PROJECT_DIR$/vendor/filp/whoops" />
+      <path value="$PROJECT_DIR$/vendor/laravel/sanctum" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/code-unit" />
+      <path value="$PROJECT_DIR$/vendor/laravel/serializable-closure" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/object-enumerator" />
+      <path value="$PROJECT_DIR$/vendor/brick/math" />
+      <path value="$PROJECT_DIR$/vendor/laravel/tinker" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/comparator" />
+      <path value="$PROJECT_DIR$/vendor/laravel/framework" />
+      <path value="$PROJECT_DIR$/vendor/laravel/pint" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/exporter" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/cli-parser" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/version" />
+      <path value="$PROJECT_DIR$/vendor/fakerphp/faker" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/complexity" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/recursion-context" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/environment" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/global-state" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/code-unit-reverse-lookup" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/object-reflector" />
+      <path value="$PROJECT_DIR$/vendor/league/config" />
+      <path value="$PROJECT_DIR$/vendor/league/mime-type-detection" />
+      <path value="$PROJECT_DIR$/vendor/mockery/mockery" />
+      <path value="$PROJECT_DIR$/vendor/psy/psysh" />
+      <path value="$PROJECT_DIR$/vendor/league/commonmark" />
+      <path value="$PROJECT_DIR$/vendor/league/event" />
+      <path value="$PROJECT_DIR$/vendor/league/flysystem" />
+      <path value="$PROJECT_DIR$/vendor/league/flysystem-local" />
+      <path value="$PROJECT_DIR$/vendor/fruitcake/php-cors" />
+      <path value="$PROJECT_DIR$/vendor/nette/schema" />
+      <path value="$PROJECT_DIR$/vendor/nette/utils" />
+      <path value="$PROJECT_DIR$/vendor/irazasyed/telegram-bot-sdk" />
+    </include_path>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="2cvDdBWI2Qn6lRLaN8VHxcpXZYG" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "/Applications/XAMPP/xamppfiles/htdocs/project/ogsms",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources/views" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/assets2/wp-content/themes/astra/assets/css" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner configuration_file="$PROJECT_DIR$/phpunit.xml" scope="XML" use_alternative_configuration_file="true" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-php-predefined-ba97393d7c68-6f8e3395a2b4-com.jetbrains.php.sharedIndexes-PS-233.14475.35" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3cdf45ff-cf72-4fd5-8d04-690270964b0e" name="Changes" comment="" />
+      <created>1708983243784</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1708983243784</updated>
+      <workItem from="1708983245496" duration="1518000" />
+      <workItem from="1711546812214" duration="1259000" />
+      <workItem from="1711728025245" duration="596000" />
+      <workItem from="1713218168624" duration="924000" />
+      <workItem from="1713220189128" duration="17402000" />
+      <workItem from="1714059618576" duration="1447000" />
+      <workItem from="1714383116192" duration="544000" />
+      <workItem from="1714458581292" duration="599000" />
+      <workItem from="1714921176333" duration="4628000" />
+      <workItem from="1715256490012" duration="23184000" />
+      <workItem from="1715418558957" duration="3165000" />
+      <workItem from="1715499637349" duration="1195000" />
+      <workItem from="1716360260854" duration="15581000" />
+      <workItem from="1716573634350" duration="14714000" />
+      <workItem from="1716691379510" duration="9211000" />
+    </task>
+    <task id="LOCAL-00001" summary="Out of stock number updated">
+      <option name="closed" value="true" />
+      <created>1708984197291</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1708984197291</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Out of stock number updated">
+      <option name="closed" value="true" />
+      <created>1708984661385</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1708984661385</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Out of stock number updated">
+      <option name="closed" value="true" />
+      <created>1708984778336</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1708984778336</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Out of stock number updated">
+      <option name="closed" value="true" />
+      <created>1713218818623</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1713218818624</updated>
+    </task>
+    <task id="LOCAL-00005" summary="pushhhhhh">
+      <option name="closed" value="true" />
+      <created>1715419688903</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1715419688903</updated>
+    </task>
+    <task id="LOCAL-00006" summary="pushhhhhh">
+      <option name="closed" value="true" />
+      <created>1715419833978</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1715419833978</updated>
+    </task>
+    <task id="LOCAL-00007" summary="pushhhhhh">
+      <option name="closed" value="true" />
+      <created>1715420180051</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1715420180051</updated>
+    </task>
+    <task id="LOCAL-00008" summary="pushhhhhh">
+      <option name="closed" value="true" />
+      <created>1715421543462</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1715421543463</updated>
+    </task>
+    <task id="LOCAL-00009" summary="pushhhhhh">
+      <option name="closed" value="true" />
+      <created>1715422197664</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1715422197664</updated>
+    </task>
+    <task id="LOCAL-00010" summary="pushhhhhh">
+      <option name="closed" value="true" />
+      <created>1716600564766</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1716600564766</updated>
+    </task>
+    <task id="LOCAL-00011" summary="pushhhhhh">
+      <option name="closed" value="true" />
+      <created>1716604452548</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1716604452548</updated>
+    </task>
+    <task id="LOCAL-00012" summary="pushhhhhh">
+      <option name="closed" value="true" />
+      <created>1716604723853</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1716604723853</updated>
+    </task>
+    <task id="LOCAL-00013" summary="pushhhhhh">
+      <option name="closed" value="true" />
+      <created>1716605301863</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1716605301863</updated>
+    </task>
+    <task id="LOCAL-00014" summary="pushhhhhh">
+      <option name="closed" value="true" />
+      <created>1716605559474</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1716605559474</updated>
+    </task>
+    <task id="LOCAL-00015" summary="pushhhhhh">
+      <option name="closed" value="true" />
+      <created>1716606023524</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1716606023524</updated>
+    </task>
+    <task id="LOCAL-00016" summary="pushhhhhh">
+      <option name="closed" value="true" />
+      <created>1716607697801</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1716607697801</updated>
+    </task>
+    <task id="LOCAL-00017" summary="pushhhhhh">
+      <option name="closed" value="true" />
+      <created>1716608889238</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1716608889238</updated>
+    </task>
+    <task id="LOCAL-00018" summary="pushhhhhh">
+      <option name="closed" value="true" />
+      <created>1716609410455</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1716609410455</updated>
+    </task>
+    <task id="LOCAL-00019" summary="pushhhhhh">
+      <option name="closed" value="true" />
+      <created>1716611309703</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1716611309703</updated>
+    </task>
+    <task id="LOCAL-00020" summary="pushhhhhh">
+      <option name="closed" value="true" />
+      <created>1716669758733</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1716669758733</updated>
+    </task>
+    <task id="LOCAL-00021" summary="pushhhhhh">
+      <option name="closed" value="true" />
+      <created>1716670040388</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1716670040388</updated>
+    </task>
+    <task id="LOCAL-00022" summary="pushhhhhh">
+      <option name="closed" value="true" />
+      <created>1716670135219</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1716670135219</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Out of stock number updated" />
+    <MESSAGE value="pushhhhhh" />
+    <option name="LAST_COMMIT_MESSAGE" value="pushhhhhh" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/resources/views/home.blade.php</url>
+          <line>263</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/resources/views/orders.blade.php</url>
+          <line>130</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/resources/views/layout/main.blade.php</url>
+          <line>26</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php-line-method">
+          <url>file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php</url>
+          <line>70</line>
+          <properties>
+            <option name="className" value="\App\Http\Controllers\HomeController" />
+            <option name="methodName" value="order_now" />
+          </properties>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php-line-method">
+          <url>file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php</url>
+          <line>328</line>
+          <properties>
+            <option name="className" value="\App\Http\Controllers\HomeController" />
+            <option name="methodName" value="fund_wallet" />
+          </properties>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php-line-method">
+          <url>file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php</url>
+          <line>839</line>
+          <properties>
+            <option name="className" value="\App\Http\Controllers\HomeController" />
+            <option name="methodName" value="reset_password" />
+          </properties>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php-line-method">
+          <url>file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php</url>
+          <line>1142</line>
+          <properties>
+            <option name="className" value="\App\Http\Controllers\HomeController" />
+            <option name="methodName" value="webhook" />
+          </properties>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php-line-method">
+          <url>file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php</url>
+          <line>1190</line>
+          <properties>
+            <option name="className" value="\App\Http\Controllers\HomeController" />
+            <option name="methodName" value="about_us" />
+          </properties>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php-line-method">
+          <url>file://$PROJECT_DIR$/app/Http/Controllers/WorldNumberController.php</url>
+          <line>192</line>
+          <properties>
+            <option name="className" value="\App\Http\Controllers\WorldNumberController" />
+            <option name="methodName" value="webhook" />
+          </properties>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
