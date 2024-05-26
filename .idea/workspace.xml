@@ -1144,7 +1144,7 @@
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "main",
     "last_opened_file_path": "/Applications/XAMPP/xamppfiles/htdocs/project/ogsms",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -1197,7 +1197,7 @@
       <workItem from="1715499637349" duration="1195000" />
       <workItem from="1716360260854" duration="15581000" />
       <workItem from="1716573634350" duration="14714000" />
-      <workItem from="1716691379510" duration="9211000" />
+      <workItem from="1716691379510" duration="10556000" />
     </task>
     <task id="LOCAL-00001" summary="Out of stock number updated">
       <option name="closed" value="true" />
