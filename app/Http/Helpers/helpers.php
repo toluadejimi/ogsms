@@ -558,7 +558,6 @@ function cancel_world_order($orderID){
     }
 
 
-
     if($status == 0){
         return 0;
     }
