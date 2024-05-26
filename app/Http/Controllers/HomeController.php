@@ -1244,10 +1244,10 @@ class HomeController extends Controller
 
         if ($order->status == 1 && $order->type == 2 ) {
 
-
-
             $orderID = $order->order_id;
             $can_order = cancel_world_order($orderID);
+
+            dd($can_order);
 
             if ($can_order == 0) {
                 return back()->with('error', "Please wait and try again later");
