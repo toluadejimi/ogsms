@@ -267,6 +267,14 @@
                                                             <span class="badge badge-pill badge-warning">Pending</span>
 
                                                         </td>
+                                                            <td>
+                                                                <a style="font-size: 10px; border:0px; background:red; color: white"
+                                                                      class="me-2 col btn btn-warning btn-sm btn-block"
+                                                                      href="admin-cancle-sms?id={{ $data->id }}" role="button"><i class="">
+                                                                        Delete Order
+                                                                </a>
+                                                                </i>
+                                                            </td>
                                                         @endif
 
 

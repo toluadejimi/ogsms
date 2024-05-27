@@ -254,12 +254,12 @@ class WorldNumberController extends Controller
 
 
 
-        User::where('id', Auth::id())->decrement('wallet', $request->price);
 
         $country = $request->country;
         $service = $request->service;
         $price = $request->price;
 
+        User::where('id', Auth::id())->decrement('wallet', $request->price);
 
         $order = create_world_order($country, $service, $price);
 

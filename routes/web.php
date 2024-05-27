@@ -89,6 +89,7 @@ Route::group(['middleware' => ['auth', 'user', 'session.timeout']], function () 
 
     Route::any('delete-order',  [HomeController::class,'delete_order']);
     Route::any('delete-w-order',  [HomeController::class,'delete_w_order']);
+    Route::any('admin-cancle-sms',  [HomeController::class,'admin_cancle_sms']);
 
 
 
