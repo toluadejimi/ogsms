@@ -141,6 +141,12 @@
                                         NGN {{ number_format($price, 2) }}</h6>
 
 
+
+
+                                    <h5 class="text-center my-2">Stock</h5>
+                                    <h6 class="text-center text-muted my-2 mb-4">
+                                        {{ number_format($stock, 2)}}</h6>
+
                                     <h5 class="text-center text-muted my-2">Success rate: <span
                                             style="font-size: 30px; color: rgb(63,63,63);"> @if ($rate < 10)
                                                 {{ $rate }}%
@@ -171,7 +177,7 @@
                                     @if (Auth::user()->wallet < $price)
                                         <a href="fund-wallet" class="btn btn-secondary text-white btn-lg">Fund
                                             Wallet</a>
-                                    @else
+                                    @elseif($stock > 0 && Auth::user()->wallet > $price)
                                         <form action="order_now" method="POST">
                                             @csrf
 
@@ -196,6 +202,10 @@
 
 
                                         </form>
+                                    @else
+
+                                        <a href="/home" class="btn btn-danger text-white btn-lg">Number not available</a>
+
                                     @endif
 
 

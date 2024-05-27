@@ -72,6 +72,41 @@ class WorldNumberController extends Controller
     public function check_av(Request $request)
     {
 
+
+
+        $key = env('WKEY');
+        $curl = curl_init();
+
+        $databody = array(
+            "country" => $request->country,
+            "service" => $request->service,
+            'key' => $key,
+
+
+        );
+        curl_setopt_array($curl, array(
+            CURLOPT_URL => 'https://api.smspool.net/sms/stock',
+            CURLOPT_RETURNTRANSFER => true,
+            CURLOPT_ENCODING => '',
+            CURLOPT_MAXREDIRS => 10,
+            CURLOPT_TIMEOUT => 0,
+            CURLOPT_FOLLOWLOCATION => true,
+            CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+            CURLOPT_CUSTOMREQUEST => 'POST',
+            CURLOPT_POSTFIELDS => $databody,
+        ));
+
+        $var = curl_exec($curl);
+
+        curl_close($curl);
+        $var = json_decode($var);
+
+        $data['stock'] = $var->amount ?? null;
+
+
+
+
+
         $key = env('WKEY');
 
 
@@ -81,8 +116,6 @@ class WorldNumberController extends Controller
             "service" => $request->service,
             "pool" => '',
         );
-
-
 
         $body = json_encode($databody);
 
@@ -104,7 +137,6 @@ class WorldNumberController extends Controller
 
         $var = curl_exec($curl);
         curl_close($curl);
-
         $var = json_decode($var);
 
 
@@ -121,9 +153,6 @@ class WorldNumberController extends Controller
         }else{
             $price = $high_price;
         }
-
-
-
 
 
 
