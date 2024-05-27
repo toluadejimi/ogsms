@@ -143,7 +143,7 @@
 
 
 
-                                    <h5 class="text-center my-2">Stock</h5>
+                                    <h5 class="text-center my-2">Available Numbers</h5>
                                     <h6 class="text-center text-muted my-2 mb-4">
                                         {{ number_format($stock, 2)}}</h6>
 
