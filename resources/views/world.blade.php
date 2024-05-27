@@ -174,7 +174,7 @@
                                     <h6></h6>
 
 
-                                    @if (Auth::user()->wallet < $price)
+                                    @if (Auth::user()->wallet < $price && $stock > 0)
                                         <a href="fund-wallet" class="btn btn-secondary text-white btn-lg">Fund
                                             Wallet</a>
                                     @elseif($stock > 0 && Auth::user()->wallet > $price)
