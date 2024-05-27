@@ -73,8 +73,14 @@
 
                     <li class="nav-item px-1">
                         <a class="nav-link"
-                           href="#" >Support</a >
+                           href="https://api.whatsapp.com/send?phone=2349047123389" >Support</a >
                     </li>
+
+                    <li class="nav-item px-1">
+                        <a class="nav-link"
+                           href="https://ogbetterboost.com/" > 🚀 Boost social account</a >
+                    </li>
+
 
 
                     <li class="nav-item px-1">
