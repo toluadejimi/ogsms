@@ -85,13 +85,11 @@
 
                                     <a style="font-size: 10px; border:0px; background:red"
                                        class="me-2 col btn btn-warning btn-sm btn-block"
-                                       href="cancle-sms?id={{ $sms_order->id }}" role="button"><i class=""> Delete
-                                            Order</a></i>
+                                       href="cancle-sms?id={{ $sms_order->id }}" role="button"><i class="">Delete
+                                            Order </a></i>
 
-                                    {{-- <a style="font-size: 10px" class="col text-white btn btn-success btn-sm btn-block"
-                                        href="check-sms?id={{ $sms_order->id}}" role="button"><i
-                                            class="bi bi-arrow-clockwise"> Recheck
-                                            Order</a></i> --}}
+                                     <a style="font-size: 10px" class="col text-white btn btn-success btn-sm btn-block"
+                                        href="/home" role="button"><i class="bi bi-arrow-clockwise"> New order</a></i>
 
                                 </div>
 
