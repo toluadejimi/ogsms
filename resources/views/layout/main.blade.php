@@ -81,6 +81,14 @@
                            href="https://ogbetterboost.com/" > 🚀 Boost social account</a >
                     </li>
 
+                    <li class="nav-item px-1">
+                        <a class="nav-link"
+                           href="https://myoglog.com/" > 🛍️ Buy Account</a >
+                    </li>
+
+
+
+
 
 
                     <li class="nav-item px-1">
