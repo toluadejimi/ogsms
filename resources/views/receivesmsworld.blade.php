@@ -100,14 +100,13 @@
                         <div class="row d-flex justify-content-center my-2">
 
                             <a style="font-size: 10px; border:0px;"
-                               class="me-2 col btn btn-primary btn-sm btn-block"
+                               class="me-2 col btn btn-danger btn-lg w-100"
                                href="cancle-sms?id={{ $sms_order->id }}" role="button"><i class=""> Delete
                                     Order</a></i>
 
-                            {{-- <a style="font-size: 10px" class="col text-white btn btn-success btn-sm btn-block"
-                                href="check-sms?id={{ $sms_order->id}}" role="button"><i
-                                    class="bi bi-arrow-clockwise"> Recheck
-                                    Order</a></i> --}}
+                             <a style="font-size: 10px" class="col text-white btn btn-success btn-lg w-100"
+                                href="/home" role="button"><i
+                                    class="bi bi-arrow-clockwise"> Create New order</a></i>
 
                         </div>
 
