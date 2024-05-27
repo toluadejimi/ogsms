@@ -60,6 +60,10 @@ class WorldNumberController extends Controller
         $data['orders'] = Verification::where('user_id', Auth::id())->get();
 
 
+
+
+
+
         return view('world', $data);
     }
 
