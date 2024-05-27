@@ -1219,6 +1219,8 @@ class HomeController extends Controller
 
 
             if ($can_order == 1) {
+
+                dd("hello1");
                 $amount = number_format($order->cost, 2);
                 User::where('id', Auth::id())->increment('wallet', $order->cost);
                 Verification::where('id', $request->id)->delete();
@@ -1227,6 +1229,7 @@ class HomeController extends Controller
 
 
             if ($can_order == 3) {
+                dd("hello2");
                 $amount = number_format($order->cost, 2);
                 User::where('id', Auth::id())->increment('wallet', $order->cost);
                 Verification::where('id', $request->id)->delete();
