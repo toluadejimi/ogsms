@@ -114,7 +114,7 @@
                             class="btn btn btn-buy"
                             target="_blank"
                             href="fund-wallet"><i class="ti ti-wallet"></i
-                            >{{number_format(Auth::user()->wallet, 2)}} </a>
+                            >NGN {{number_format(Auth::user()->wallet, 2)}} </a>
                     </li>
                 </ul>
             </div>
