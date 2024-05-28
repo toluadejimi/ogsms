@@ -49,24 +49,27 @@
                             @endif
 
 
-                            <div class="card-header d-flex justify-content-center mb-3">
-                                <h5 class="">All Countries Verification</h5>
-                            </div>
-
                             <div class="card">
                                 <div class="card-body">
+                                    <div class="row">
 
-                                    <label> 🌎 Country </label>
-                                    <div class="input-group">
-                                        {{ $sms_order->country }}
+                                        <div class="col">
+                                            <label> 🌎 Country </label>
+                                            <div class="input-group">
+                                                {{ $sms_order->country }}
+                                            </div>
+                                        </div>
+
+                                        <div class="col">
+                                            <label>  Service </label>
+                                            <div class="input-group">
+                                                {{ $sms_order->service }}
+                                            </div>
+                                        </div>
+
                                     </div>
 
-                                    <hr>
 
-                                    <label> Service </label>
-                                    <div class="input-group">
-                                        {{ $sms_order->service }}
-                                    </div>
 
 
                                 </div>
