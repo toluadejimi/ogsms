@@ -7,7 +7,7 @@
                 <div class="col-md-8 col-xl-6">
                     <h4 class="mb-3 text-danger">Hi {{ Auth::user()->username }} 👋</h4>
                     <p class="mb-2">
-                       Wait for your sms code
+                        Wait for your sms code
                     </p>
 
                 </div>
@@ -42,41 +42,56 @@
                             </div>
                         @endif
 
+                        <div class="row">
+
+                            <div class="col-lg-12 col-sm-12">
+                                <div class="card border-0 rounded-20 shadow-lg p-3  bg-white rounded">
+                                    <div class="card-body">
+                                        <label>📞 Number </label>
+                                        <div class="input-group">
+                                            <input type="text" id="copyTarget" class="form-control"
+                                                   value="{{ $sms_order->phone }}">
+                                            <span id="copyButton" class="input-group-addon btn" title="Click to copy">
+                                    <i class="fa fa-clipboard" aria-hidden="true"></i>
+                                </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="col-lg-12 col-sm-12">
+                                <div class="card border-0 rounded-20 shadow-lg p-3  bg-white rounded">
+                                    <div class="card-body">
+
+                                        <label class="my-1">💬 Code from SMS </label>
+                                        <div class="input-group">
+                                            <input type="text" readonly id="response-input" class="form-control">
+                                            <span id="copyButton2" class="input-group-addon btn" title="Click to copy">
+                                    <i class="fa fa-clipboard" aria-hidden="true"></i>
+                                </span>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
 
                         <div class="card">
 
 
                             <div class="card-body">
-                                <label>📞 Number </label>
-                                <div class="input-group">
-                                    <input type="text" id="copyTarget" class="form-control"
-                                           value="{{ $sms_order->phone }}">
-                                    <span id="copyButton" class="input-group-addon btn" title="Click to copy">
-                                    <i class="fa fa-clipboard" aria-hidden="true"></i>
-                                </span>
-                                </div>
 
-
-                                <label class="my-1">💬 Code from SMS </label>
-                                <div class="input-group">
-                                    <input type="text" readonly id="response-input" class="form-control">
-                                    <span id="copyButton2" class="input-group-addon btn" title="Click to copy">
-                                    <i class="fa fa-clipboard" aria-hidden="true"></i>
-                                </span>
-                                </div>
-
-
-                                {{-- <div id="timer">Countdown Timer: <span id="countdown"></span></div>
-                                <div id="progress-bar">
-                                    <div id="progress"></div>
-                                </div> --}}
-
-
-                                <div class="progress my-2">
+                                <div class="progress-bar bg-info my-2">
                                     <div id="progress-bar">
                                         <div id="progress"></div>
                                     </div>
                                 </div>
+
+
+
                                 <div class="text-small text-center text-danger" id="timer">Order expires in: <span
                                         id="countdown"></span></div>
 
@@ -88,8 +103,8 @@
                                        href="cancle-sms?id={{ $sms_order->id }}" role="button"><i class="">Delete
                                             Order </a></i>
 
-                                     <a style="font-size: 10px" class="col text-white btn btn-success btn-sm btn-block"
-                                        href="/home" role="button"><i class="bi bi-arrow-clockwise"> New order</a></i>
+                                    <a style="font-size: 10px" class="col text-white btn btn-success btn-sm btn-block"
+                                       href="/home" role="button"><i class="bi bi-arrow-clockwise"> New order</a></i>
 
                                 </div>
 

@@ -19,8 +19,12 @@
             <div class="row d-flex justify-content-center p-3">
 
 
+                <div class="text-small text-center text-danger my-4" id="timer">Order expires in: <span
+                        id="countdown"></span></div>
+
+
                 <div class="col-lg-12 col-sm-12">
-                    <div class="card border-0 rounded-20">
+                    <div class="card border-0 rounded-20 shadow-lg p-3  bg-white rounded">
 
                         <div class="card-body">
 
@@ -74,7 +78,7 @@
 
 
                 <div class="col-lg-12 col-sm-12 ">
-                    <div class="card border-0 rounded-20">
+                    <div class="card border-0 rounded-20 shadow-lg p-3  bg-white rounded">
 
                         <div class="card-body">
 
@@ -92,7 +96,7 @@
                 </div>
 
                 <div class="col-lg-12 col-sm-12">
-                    <div class="card border-0 rounded-20">
+                    <div class="card border-0 rounded-20 shadow-lg p-3  bg-white rounded">
                         <div class="card-body">
 
                             <label class="my-2">💬 Code from SMS </label>
@@ -109,29 +113,28 @@
                 </div>
 
 
+                <div class="col-lg-12 col-sm-12">
+                    <div class="card border-0 rounded-20 shadow-lg p-3  bg-white rounded">
+                        <div class="card-body">
 
+                            <div class="row d-flex justify-content-center my-2">
 
-                <div class="text-small text-center text-danger my-4" id="timer">Order expires in: <span
-                        id="countdown"></span></div>
+                                <a style="font-size: 10px; border:0px;"
+                                   class="me-2 col btn btn-danger btn-sm w-100"
+                                   href="cancle-sms?id={{ $sms_order->id }}" role="button"><i class=""> Delete
+                                        Order</a></i>
 
+                                <a style="font-size: 10px" class="col text-white btn btn-success btn-sm w-100"
+                                   href="/home" role="button"><i
+                                        class="bi bi-arrow-clockwise"> New order</a></i>
 
-                <div class="row d-flex justify-content-center my-2">
-
-                    <a style="font-size: 10px; border:0px;"
-                       class="me-2 col btn btn-danger btn-sm w-100"
-                       href="cancle-sms?id={{ $sms_order->id }}" role="button"><i class=""> Delete
-                            Order</a></i>
-
-                    <a style="font-size: 10px" class="col text-white btn btn-success btn-sm w-100"
-                       href="/home" role="button"><i
-                            class="bi bi-arrow-clockwise"> New order</a></i>
-
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
 
             </div>
-
-        </div>
 
         </div>
 

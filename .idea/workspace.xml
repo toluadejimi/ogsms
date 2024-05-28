@@ -6,10 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="3cdf45ff-cf72-4fd5-8d04-690270964b0e" name="Changes" comment="pushhhhhh">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/WorldNumberController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/WorldNumberController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/receivesms.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/receivesms.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/receivesmsworld.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/receivesmsworld.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/world.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/world.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -236,15 +234,7 @@
       <workItem from="1716360260854" duration="15581000" />
       <workItem from="1716573634350" duration="14714000" />
       <workItem from="1716691379510" duration="10556000" />
-      <workItem from="1716751435757" duration="19646000" />
-    </task>
-    <task id="LOCAL-00001" summary="Out of stock number updated">
-      <option name="closed" value="true" />
-      <created>1708984197291</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1708984197291</updated>
+      <workItem from="1716751435757" duration="20387000" />
     </task>
     <task id="LOCAL-00002" summary="Out of stock number updated">
       <option name="closed" value="true" />
@@ -630,7 +620,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716855481333</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="pushhhhhh">
+      <option name="closed" value="true" />
+      <created>1716860180495</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1716860180497</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
