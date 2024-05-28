@@ -47,14 +47,16 @@ class HomeController extends Controller
         $data['services'] = get_services();
         $data['get_rate'] = Setting::where('id', 1)->first()->rate;
         $data['margin'] = Setting::where('id', 1)->first()->margin;
-
         $data['verification'] = Verification::where('user_id', Auth::id())->paginate('10');
-
-
         $data['order'] = 0;
-
-
-
+        $countries = get_world_countries();
+        $wservices = get_world_services();
+        $verification = Verification::where('user_id', Auth::id())->get();
+        $data['wservices'] = $wservices;
+        $data['countries'] = $countries;
+        $data['pend'] = 0;
+        $data['product'] = null;
+        $data['orders'] = Verification::where('user_id', Auth::id())->get();
 
         return view('home', $data);
     }
@@ -104,7 +106,7 @@ class HomeController extends Controller
                 return view('receivesms', $data);
 
             }
-            return redirect('home');
+            return redirect('us');
         }
 
         if ($order == 0) {
@@ -118,7 +120,7 @@ class HomeController extends Controller
             send_notification($message);
 
 
-            return redirect('home')->with('error', 'Error occurred, Please try again');
+            return redirect('us')->with('error', 'Error occurred, Please try again');
         }
 
         if ($order == 0) {
@@ -127,7 +129,7 @@ class HomeController extends Controller
             send_notification($message);
 
 
-            return redirect('home')->with('error', 'Error occurred, Please try again');
+            return redirect('us')->with('error', 'Error occurred, Please try again');
         }
 
         if ($order == 1) {
@@ -179,11 +181,11 @@ class HomeController extends Controller
 
 
         if ($order == null) {
-            return redirect('home')->with('error', 'Order not found');
+            return redirect('us')->with('error', 'Order not found');
         }
 
         if ($order->status == 2) {
-            return redirect('home')->with('message', "Order Completed");
+            return redirect('us')->with('message', "Order Completed");
         }
 
         if ($order->status == 1 && $order->type == 1) {
@@ -296,11 +298,11 @@ class HomeController extends Controller
 
 
         if ($order == null) {
-            return redirect('home')->with('error', 'Order not found');
+            return redirect('us')->with('error', 'Order not found');
         }
 
         if ($order->status == 2) {
-            return redirect('home')->with('message', "Order Completed");
+            return redirect('us')->with('message', "Order Completed");
         }
 
         if ($order->status == 1 && $order->type == 1) {
@@ -315,7 +317,7 @@ class HomeController extends Controller
                     $amount = number_format($order->cost, 2);
                     User::where('id', Auth::id())->increment('wallet', $order->cost);
                     Verification::where('id', $request->id)->delete();
-                    return redirect('home')->with('message', "Order has been cancled, NGN$amount has been refunded");
+                    return redirect('us')->with('message', "Order has been cancled, NGN$amount has been refunded");
 
 
                 }
@@ -325,7 +327,7 @@ class HomeController extends Controller
 
 
             if ($can_order == 0) {
-                return redirect('home')->with('error', "Order has been removed");
+                return redirect('us')->with('error', "Order has been removed");
             }
 
 
@@ -333,19 +335,19 @@ class HomeController extends Controller
                 $amount = number_format($order->cost, 2);
                 User::where('id', Auth::id())->increment('wallet', $order->cost);
                 Verification::where('id', $request->id)->delete();
-                return redirect('home')->with('message', "Order has been canceled, NGN$amount has been refunded");
+                return redirect('us')->with('message', "Order has been canceled, NGN$amount has been refunded");
             }
 
 
             if ($can_order == 3) {
                 $order = Verification::where('id', $request->id)->first() ?? null;
                 if ($order->status != 1 || $order == null) {
-                    return redirect('home')->with('error', "Please try again later");
+                    return redirect('us')->with('error', "Please try again later");
                 }
                 $amount = number_format($order->cost, 2);
                 User::where('id', Auth::id())->increment('wallet', $order->cost);
                 Verification::where('id', $request->id)->delete();
-                return redirect('home')->with('message', "Order has been canceled, NGN$amount has been refunded");
+                return redirect('us')->with('message', "Order has been canceled, NGN$amount has been refunded");
             }
         }
 
@@ -365,7 +367,7 @@ class HomeController extends Controller
                     $amount = number_format($order->cost, 2);
                     User::where('id', Auth::id())->increment('wallet', $order->cost);
                     Verification::where('id', $request->id)->delete();
-                    return redirect('world')->with('message', "Order has been canceled, NGN$amount has been refunded");
+                    return redirect('us')->with('message', "Order has been canceled, NGN$amount has been refunded");
 
 
                 }
@@ -383,19 +385,19 @@ class HomeController extends Controller
                 $amount = number_format($order->cost, 2);
                 User::where('id', Auth::id())->increment('wallet', $order->cost);
                 Verification::where('id', $request->id)->delete();
-                return redirect('world')->with('message', "Order has been canceled, NGN$amount has been refunded");
+                return redirect('us')->with('message', "Order has been canceled, NGN$amount has been refunded");
             }
 
 
             if ($can_order == 3) {
                 $order = Verification::where('id', $request->id)->first() ?? null;
                 if ($order->status != 1 || $order == null) {
-                    return redirect('world')->with('error', "Please try again later");
+                    return redirect('us')->with('error', "Please try again later");
                 }
                 $amount = number_format($order->cost, 2);
                 User::where('id', Auth::id())->increment('wallet', $order->cost);
                 Verification::where('id', $request->id)->delete();
-                return redirect('world')->with('message', "Order has been canceled, NGN$amount has been refunded");
+                return redirect('us')->with('message', "Order has been canceled, NGN$amount has been refunded");
             }
         }
     }

@@ -2,18 +2,16 @@
 @section('content')
 
     <section id="technologies mt-4 my-5">
-        <div class="container title my-5">
-            <div class="row justify-content-center text-center wow fadeInUp" data-wow-delay="0.2s">
-                <div class="col-md-8 col-xl-6">
-                    <h4 class="mb-3 text-danger">Welcome {{ Auth::user()->username }}</h4>
-                    <p class="mb-0">
-                        Experience the OGSMSPOOL advantage today and unlock seamless,<br/> reliable SMS verifications
-                        for all your needs
-                    </p>
-                </div>
+        <div class="row justify-content-center text-center wow fadeInUp" data-wow-delay="0.2s">
+            <div class="col-md-8 col-xl-6">
+                <h4 class="mb-3 text-danger">Hi {{ Auth::user()->username }} 👋</h4>
+                <p class="mb-2">
+                    Wait for your sms code
+                </p>
+
+
             </div>
         </div>
-
 
         <div class="container technology-block">
 

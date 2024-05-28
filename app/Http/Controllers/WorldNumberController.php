@@ -166,19 +166,22 @@ class WorldNumberController extends Controller
             $count_id = Country::where('country_id', $request->country)->first()->short_name ?? null;
 
             $ngnprice = ($price * $get_rate) + $margin;
+            $data['get_rate'] = Setting::where('id', 1)->first()->rate;
+            $data['margin'] = Setting::where('id', 1)->first()->margin;
 
 
             $data['count_id'] = $count_id;
             $data['serv'] = $request->service;
-            $data['verification'] = $verification;
             $countries = get_world_countries();
-            $services = get_world_services();
-            $data['services'] = $services;
+            $wservices = get_world_services();
+            $data['wservices'] = $wservices;
             $data['countries'] = $countries;
             $data['rate'] = $rate;
             $data['price'] = $ngnprice;
             $data['product'] = 1;
             $data['orders'] = Verification::where('user_id', Auth::id())->get();
+            $data['services'] = get_services();
+
 
 
             $data['country'] =
@@ -192,8 +195,14 @@ class WorldNumberController extends Controller
                 $data['pend'] = 0;
             }
 
+            $wservices = get_world_services();
+            $verification = Verification::where('user_id', Auth::id())->get();
+            $data['wservices'] = $wservices;
 
-            return view('world', $data);
+            $data['verification'] = Verification::where('user_id', Auth::id())->paginate('10');
+
+
+            return view('home', $data);
         }
     }
 
@@ -328,11 +337,11 @@ class WorldNumberController extends Controller
         $order = Verification::where('id', $request->id)->first() ?? null;
 
         if ($order == null) {
-            return redirect('home')->with('error', 'Order not found');
+            return redirect('us')->with('error', 'Order not found');
         }
 
         if ($order->status == 2) {
-            return redirect('home')->with('message', "Order Completed");
+            return redirect('us')->with('message', "Order Completed");
         }
 
         if ($order->status == 1) {
@@ -349,7 +358,7 @@ class WorldNumberController extends Controller
                 $amount = number_format($order->cost, 2);
                 User::where('id', Auth::id())->increment('wallet', $order->cost);
                 Verification::where('id', $request->id)->delete();
-                return redirect('home')->with('message', "Order has been cancled, NGN$amount has been refunded");
+                return redirect('us')->with('message', "Order has been cancled, NGN$amount has been refunded");
             }
 
 
@@ -357,13 +366,13 @@ class WorldNumberController extends Controller
 
                 $order = Verification::where('id', $request->id)->first() ?? null;
                 if ($order->status != 1 || $order == null) {
-                    return redirect('home')->with('error', "Please try again later");
+                    return redirect('us')->with('error', "Please try again later");
                 }
 
                 $amount = number_format($order->cost, 2);
                 User::where('id', Auth::id())->increment('wallet', $order->cost);
                 Verification::where('id', $request->id)->delete();
-                return redirect('home')->with('message', "Order has been cancled, NGN$amount has been refunded");
+                return redirect('us')->with('message', "Order has been cancled, NGN$amount has been refunded");
             }
         }
     }

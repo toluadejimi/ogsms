@@ -56,7 +56,7 @@
 
                     <li class="nav-item px-1">
                         <a class="nav-link"
-                           href="home">Home
+                           href="us">Home
                         </a>
                     </li>
 
