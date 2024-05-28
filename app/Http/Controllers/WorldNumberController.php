@@ -16,14 +16,14 @@ class WorldNumberController extends Controller
     {
 
         $countries = get_world_countries();
-        $services = get_world_services();
+        $wservices = get_world_services();
 
         $verification = Verification::where('user_id', Auth::id())->get();
         $verifications = Verification::where('user_id', Auth::id())->where('status', 1)->get();
 
 
 
-        $data['services'] = $services;
+        $data['wservices'] = $wservices;
         $data['countries'] = $countries;
         $data['verification'] = $verification;
 
@@ -202,7 +202,7 @@ class WorldNumberController extends Controller
             $data['verification'] = Verification::where('user_id', Auth::id())->paginate('10');
 
 
-            return view('home', $data);
+            return view('world', $data);
         }
     }
 

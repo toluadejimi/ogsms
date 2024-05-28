@@ -5,10 +5,9 @@
         <div class="container title my-5">
             <div class="row justify-content-center text-center wow fadeInUp" data-wow-delay="0.2s">
                 <div class="col-md-8 col-xl-6">
-                    <h4 class="mb-3 text-danger">Welcome {{ Auth::user()->username }} 👋</h4>
+                    <h4 class="mb-3 text-danger">Hi {{ Auth::user()->username }} 👋</h4>
                     <p class="mb-0">
-                        Experience the OGSMSPOOL advantage today and unlock seamless,<br/> reliable SMS verifications
-                        for all your needs
+                       All countries verification
                     </p>
                 </div>
             </div>
@@ -42,25 +41,6 @@
                             @endif
 
 
-                            <div class="d-flex justify-content-center my-3">
-
-                                <div class="btn-group" role="group" aria-label="Third group">
-                                    <a style="font-size: 12px; background: rgb(63,63,63); color: white"
-                                       href="/us" class="btn  w-200 mt-1">
-                                        🇺🇸 USA NUMBERS
-                                    </a>
-
-                                    <a style="font-size: 12px; box-shadow: deeppink" href="/home"
-                                       class="btn btn-dark w-200 mt-1">
-                                        🌎 ALL COUNTRIES
-
-                                    </a>
-
-
-                                </div>
-
-                            </div>
-
 
                             <form action="check-av" method="POST">
                                 @csrf
@@ -68,15 +48,6 @@
                                 <div class="row">
 
                                     <div class="col-xl-10 col-md-10 col-sm-12 p-3">
-
-                                        <p class="d-flex justify-content-center">You are on all 🌎 countries Panel</p>
-
-
-                                        <p class="mb-3 text-muted d-flex justify-content-center"> Choose country and
-                                            service
-                                        </p>
-
-                                        <hr>
 
 
                                         <label for="country" class="mb-2  mt-3 text-muted">🌎 Select
@@ -99,7 +70,7 @@
                                             <select class="form-control w-100" id="select_page2" name="service">
 
                                                 <option value=""> Choose Service</option>
-                                                @foreach ($services as $data)
+                                                @foreach ($wservices as $data)
                                                     <option value="{{ $data->ID }}">{{ $data->name }}
                                                     </option>
                                                 @endforeach

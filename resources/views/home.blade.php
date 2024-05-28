@@ -16,13 +16,227 @@
                         data-bs-target="#offcanvasRight"
                         aria-controls="offcanvasRight"
                     >
-                        🇺🇸 VERIFY USA NUMBER
+                        🇺🇸 VERIFY US NUMBERS
                     </button>
 
 
-                    <button class="btn btn-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop" aria-controls="offcanvasWithBackdrop">
-                        🇺🇸 VERIFY OTHER COUNTRIES NUMBER
-                    </button>
+                    <a class="btn btn-dark" href="/world">
+                        🌎 VERIFY OTHER COUNTRIES NUMBER
+                    </a>
+
+
+                    <div class="col-12 my-5">
+                        @auth
+                            <div class="col-12">
+                                <div class="card">
+                                    <div class="card-body">
+
+                                        <div class="">
+
+                                            <div class="p-2 col-lg-12">
+                                                <strong>
+                                                    <h4 class="d-flex justify-content-center">Verifications</h4>
+                                                </strong>
+                                            </div>
+
+                                            <div>
+
+
+                                                <div class="table-responsive ">
+                                                    <table class="table">
+                                                        <thead>
+                                                        <tr>
+                                                            <th>ID</th>
+                                                            <th>Service</th>
+                                                            <th>Phone No</th>
+                                                            <th>Code</th>
+                                                            <th>Price</th>
+                                                            <th>Status</th>
+                                                            <th>Date</th>
+
+
+                                                        </tr>
+                                                        </thead>
+                                                        <tbody>
+
+
+                                                        @forelse($verification as $data)
+                                                            <tr>
+                                                                <td style="font-size: 12px;">{{ $data->id }}</td>
+                                                                <td style="font-size: 12px;">{{ $data->service }}</td>
+                                                                <td style="font-size: 12px; color: green"><a
+                                                                        href="receive-sms?phone={{ $data->id }}">{{ $data->phone }} </a>
+                                                                </td>
+                                                                <td style="font-size: 12px;">{{ $data->sms }}</td>
+                                                                <td style="font-size: 12px;">
+                                                                    ₦{{ number_format($data->cost, 2) }}</td>
+                                                                <td>
+                                                                    @if ($data->status == 1)
+                                                                        <span
+                                                                            style="background: orange; border:0px; font-size: 10px"
+                                                                            class="btn btn-warning btn-sm">Pending</span>
+                                                                        <a href="cancle-sms?id={{  $data->id }}&delete=1"
+                                                                           style="background: rgb(168, 0, 14); border:0px; font-size: 10px"
+                                                                           class="btn btn-warning btn-sm">Delete</span>
+
+                                                                            @else
+                                                                                <span style="font-size: 10px;"
+                                                                                      class="text-white btn btn-success btn-sm">Completed</span>
+                                                                    @endif
+
+                                                                </td>
+                                                                <td style="font-size: 12px;">{{ $data->created_at }}</td>
+                                                            </tr>
+
+                                                        @empty
+
+                                                            <h6>No verification found</h6>
+                                                        @endforelse
+
+                                                        </tbody>
+
+                                                        {{ $verification->links() }}
+
+                                                    </table>
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+
+
+                                    </div>
+                                </div><!-- [ sample-page ] end -->
+
+                                @endauth
+                            </div>
+
+
+                            <div class="row">
+                                <div class="col-md-6 col-xl-6 col-sm-12">
+                                    <div class="card">
+                                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+
+                                            <div class="offcanvas-body">
+
+
+
+                                                <div class="">
+
+                                                    <div class="p-2 col-lg-6">
+                                                        <input type="text" id="searchInput" class="form-control"
+                                                               placeholder="Search for a service..." onkeyup="filterServices()">
+                                                    </div>
+
+
+                                                    <div class="row my-3 p-1 text-white"
+                                                         style="background: #dedede; border-radius: 10px; font-size: 10px; border-radius: 12px">
+                                                        <div class="col-5">
+                                                            <h5 class="mt-2">Services</h5>
+                                                        </div>
+                                                        <div class="col">
+                                                            <h5 class="mt-2">Price</h5>
+                                                        </div>
+                                                    </div>
+
+
+                                                </div>
+
+
+                                                <div style="height:700px; width:100%; overflow-y: scroll;" class="p-2">
+
+
+                                                    @foreach ($services as $key => $value)
+                                                        <div class="row service-row">
+                                                            @foreach ($value as $innerKey => $innerValue)
+                                                                <div style="font-size: 11px" class="col-5 service-name">
+                                                                    🇺🇸 {{ $innerValue->name }}
+                                                                </div>
+
+                                                                <div style="font-size: 11px" class="col">
+                                                                    @php $cost = $get_rate * $innerValue->cost + $margin  @endphp
+                                                                    <strong>N{{ number_format($cost, 2) }}</strong>
+                                                                </div>
+
+                                                                <div style="font-size: 11px" class="col">
+
+                                                                </div>
+
+
+                                                                <div class="col mr-3">
+                                                                    @auth
+                                                                        <a class="myButton" onclick="hideButton(this)"
+                                                                           href="/order-now?service={{ $key }}&price={{ $cost }}&cost={{ $innerValue->cost }}&name={{ $innerValue->name }}">
+                                                                            <i class="fa fa-shopping-bag"></i>
+                                                                        </a>
+                                                                    @else
+
+                                                                        <a class=""
+                                                                           href="/login">
+                                                                            <i class="fa fa-lock text-dark"> Login</i>
+                                                                        </a>
+                                                                    @endauth
+
+
+                                                                    <script>
+                                                                        function hideButton(link) {
+                                                                            // Hide the clicked link
+                                                                            link.style.display = 'none';
+
+                                                                            setTimeout(function () {
+                                                                                link.style.display = 'inline'; // or 'block' depending on your layout
+                                                                            }, 5000); // 5 seconds
+                                                                        }
+                                                                    </script>
+
+
+                                                                </div>
+
+
+                                                                <hr style="border-color: #cccccc" class=" my-2">
+                                                            @endforeach
+                                                        </div>
+                                                    @endforeach
+
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+                    </div>
+
+                    <div
+                        class="offcanvas offcanvas-bottom"
+                        tabindex="-1"
+                        id="offcanvasBottom"
+                        aria-labelledby="offcanvasBottomLabel"
+                    >
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasBottomLabel">
+                                Offcanvas bottom
+                            </h5>
+                            <button
+                                type="button"
+                                class="btn-close text-reset"
+                                data-bs-dismiss="offcanvas"
+                                aria-label="Close"
+                            ></button>
+                        </div>
+                        <div class="offcanvas-body py-0">
+
+
+
+                        </div>
+
+                    </div>
 
 
                     @if ($product != null)
@@ -145,6 +359,7 @@
 
 
 
+
                 </div>
             </div>
         </div>
@@ -165,76 +380,6 @@
                 </div>
 
 
-                <form action="check-av" method="POST">
-                    @csrf
-
-                    <div class="row">
-
-
-
-                        @if ($errors->any())
-                            <div class="alert alert-danger">
-                                <ul>
-                                    @foreach ($errors->all() as $error)
-                                        <li>{{ $error }}</li>
-                                    @endforeach
-                                </ul>
-                            </div>
-                        @endif
-                        @if (session()->has('message'))
-                            <div class="alert alert-success">
-                                {{ session()->get('message') }}
-                            </div>
-                        @endif
-                        @if (session()->has('error'))
-                            <div class="alert alert-danger">
-                                {{ session()->get('error') }}
-                            </div>
-                        @endif
-
-
-                        <div class="col-xl-10 col-md-10 col-sm-12 p-3">
-
-
-                            <label for="country" class="mb-2  mt-3 text-muted">🌎 Select
-                                Country</label>
-                            <div>
-                                <select style="border-color:rgb(0, 11, 136); padding: 10px" class="w-100"
-                                        id="dropdownMenu" class="dropdown-content" name="country">
-                                    <option style="background: black" value=""> Select Country</option>
-                                    @foreach ($countries as $data)
-                                        <option value="{{ $data->ID }}">{{ $data->name }}
-                                        </option>
-                                    @endforeach
-                                </select>
-                            </div>
-
-
-                            <label for="country" class="mt-3 text-muted mb-2">💬 Select
-                                Services</label>
-                            <div>
-                                <select class="form-control w-100" id="select_page2" name="service">
-
-                                    <option value=""> Choose Service</option>
-                                    @foreach ($wservices as $data)
-                                        <option value="{{ $data->ID }}">{{ $data->name }}
-                                        </option>
-                                    @endforeach
-
-                                </select>
-                            </div>
-
-
-                            <button style="border: 0px; background: rgb(63,63,63); color: white;"
-                                    type="submit"
-                                    class="btn btn btn-lg w-100 mt-3 border-0">Check
-                                availability
-                            </button>
-
-
-                        </div>
-                    </div>
-                </form>
 
 
 
@@ -250,193 +395,7 @@
 
         <div class="container technology-block">
 
-            <div class="col-12">
-                @auth
-                    <div class="col-12">
-                        <div class="card">
-                            <div class="card-body">
 
-                                <div class="">
-
-                                    <div class="p-2 col-lg-6">
-                                        <strong>
-                                            <h4>Verifications</h4>
-                                        </strong>
-                                    </div>
-
-                                    <div>
-
-
-                                        <div class="table-responsive ">
-                                            <table class="table">
-                                                <thead>
-                                                <tr>
-                                                    <th>ID</th>
-                                                    <th>Service</th>
-                                                    <th>Phone No</th>
-                                                    <th>Code</th>
-                                                    <th>Price</th>
-                                                    <th>Status</th>
-                                                    <th>Date</th>
-
-
-                                                </tr>
-                                                </thead>
-                                                <tbody>
-
-
-                                                @forelse($verification as $data)
-                                                    <tr>
-                                                        <td style="font-size: 12px;">{{ $data->id }}</td>
-                                                        <td style="font-size: 12px;">{{ $data->service }}</td>
-                                                        <td style="font-size: 12px; color: green"><a
-                                                                href="receive-sms?phone={{ $data->id }}">{{ $data->phone }} </a>
-                                                        </td>
-                                                        <td style="font-size: 12px;">{{ $data->sms }}</td>
-                                                        <td style="font-size: 12px;">
-                                                            ₦{{ number_format($data->cost, 2) }}</td>
-                                                        <td>
-                                                            @if ($data->status == 1)
-                                                                <span
-                                                                    style="background: orange; border:0px; font-size: 10px"
-                                                                    class="btn btn-warning btn-sm">Pending</span>
-                                                                <a href="cancle-sms?id={{  $data->id }}&delete=1"
-                                                                   style="background: rgb(168, 0, 14); border:0px; font-size: 10px"
-                                                                   class="btn btn-warning btn-sm">Delete</span>
-
-                                                                    @else
-                                                                        <span style="font-size: 10px;"
-                                                                              class="text-white btn btn-success btn-sm">Completed</span>
-                                                            @endif
-
-                                                        </td>
-                                                        <td style="font-size: 12px;">{{ $data->created_at }}</td>
-                                                    </tr>
-
-                                                @empty
-
-                                                    <h6>No verification found</h6>
-                                                @endforelse
-
-                                                </tbody>
-
-                                                {{ $verification->links() }}
-
-                                            </table>
-                                        </div>
-                                    </div>
-
-
-                                </div>
-
-
-                            </div>
-                        </div><!-- [ sample-page ] end -->
-
-                        @endauth
-            </div>
-
-
-            <div class="row">
-                <div class="col-md-6 col-xl-6 col-sm-12">
-                    <div class="card">
-                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-
-                            <div class="offcanvas-body">
-
-
-
-                                <div class="">
-
-                                    <div class="p-2 col-lg-6">
-                                        <input type="text" id="searchInput" class="form-control"
-                                               placeholder="Search for a service..." onkeyup="filterServices()">
-                                    </div>
-
-
-                                    <div class="row my-3 p-1 text-white"
-                                         style="background: #dedede; border-radius: 10px; font-size: 10px; border-radius: 12px">
-                                        <div class="col-5">
-                                            <h5 class="mt-2">Services</h5>
-                                        </div>
-                                        <div class="col">
-                                            <h5 class="mt-2">Price</h5>
-                                        </div>
-                                    </div>
-
-
-                                </div>
-
-
-                                <div style="height:700px; width:100%; overflow-y: scroll;" class="p-2">
-
-
-                                    @foreach ($services as $key => $value)
-                                        <div class="row service-row">
-                                            @foreach ($value as $innerKey => $innerValue)
-                                                <div style="font-size: 11px" class="col-5 service-name">
-                                                    🇺🇸 {{ $innerValue->name }}
-                                                </div>
-
-                                                <div style="font-size: 11px" class="col">
-                                                    @php $cost = $get_rate * $innerValue->cost + $margin  @endphp
-                                                    <strong>N{{ number_format($cost, 2) }}</strong>
-                                                </div>
-
-                                                <div style="font-size: 11px" class="col">
-
-                                                </div>
-
-
-                                                <div class="col mr-3">
-                                                    @auth
-                                                        <a class="myButton" onclick="hideButton(this)"
-                                                           href="/order-now?service={{ $key }}&price={{ $cost }}&cost={{ $innerValue->cost }}&name={{ $innerValue->name }}">
-                                                            <i class="fa fa-shopping-bag"></i>
-                                                        </a>
-                                                    @else
-
-                                                        <a class=""
-                                                           href="/login">
-                                                            <i class="fa fa-lock text-dark"> Login</i>
-                                                        </a>
-                                                    @endauth
-
-
-                                                    <script>
-                                                        function hideButton(link) {
-                                                            // Hide the clicked link
-                                                            link.style.display = 'none';
-
-                                                            setTimeout(function () {
-                                                                link.style.display = 'inline'; // or 'block' depending on your layout
-                                                            }, 5000); // 5 seconds
-                                                        }
-                                                    </script>
-
-
-                                                </div>
-
-
-                                                <hr style="border-color: #cccccc" class=" my-2">
-                                            @endforeach
-                                        </div>
-                                    @endforeach
-
-
-                                </div>
-
-                            </div>
-                        </div>
-
-
-
-                    </div>
-                </div>
-            </div>
-
-
-            </div>
         </div>
 
     </section>

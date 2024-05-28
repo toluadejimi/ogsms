@@ -6,11 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="3cdf45ff-cf72-4fd5-8d04-690270964b0e" name="Changes" comment="pushhhhhh">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/WorldNumberController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/WorldNumberController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layout/main.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout/main.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/receivesms.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/receivesms.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/receivesmsworld.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/receivesmsworld.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/world.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/world.blade.php" afterDir="false" />
     </list>
@@ -239,7 +236,7 @@
       <workItem from="1716360260854" duration="15581000" />
       <workItem from="1716573634350" duration="14714000" />
       <workItem from="1716691379510" duration="10556000" />
-      <workItem from="1716751435757" duration="16370000" />
+      <workItem from="1716751435757" duration="19646000" />
     </task>
     <task id="LOCAL-00001" summary="Out of stock number updated">
       <option name="closed" value="true" />
@@ -625,7 +622,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716824060033</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="pushhhhhh">
+      <option name="closed" value="true" />
+      <created>1716855481333</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1716855481333</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -644,7 +649,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/resources/views/home.blade.php</url>
-          <line>498</line>
+          <line>457</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">

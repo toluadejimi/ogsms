@@ -16,109 +16,126 @@
         <div class="container technology-block">
 
 
-            <div class="col-lg-12 col-sm-12 d-flex justify-content-center">
-                <div class="card border-0 mb-5 rounded-20">
-
-                    <div class="card-body">
-
-                        @if ($errors->any())
-                            <div class="alert alert-danger">
-                                <ul>
-                                    @foreach ($errors->all() as $error)
-                                        <li>{{ $error }}</li>
-                                    @endforeach
-                                </ul>
-                            </div>
-                        @endif
-                        @if (session()->has('message'))
-                            <div class="alert alert-success">
-                                {{ session()->get('message') }}
-                            </div>
-                        @endif
-                        @if (session()->has('error'))
-                            <div class="alert alert-danger">
-                                {{ session()->get('error') }}
-                            </div>
-                        @endif
+            <div class="row d-flex justify-content-center p-3">
 
 
+                <div class="col-lg-12 col-sm-12">
+                    <div class="card border-0 rounded-20">
 
-                        <div class="card-header d-flex justify-content-center mb-3">
-                            <h5 class="">All Countries Verification</h5>
-                        </div>
+                        <div class="card-body">
+
+                            @if ($errors->any())
+                                <div class="alert alert-danger">
+                                    <ul>
+                                        @foreach ($errors->all() as $error)
+                                            <li>{{ $error }}</li>
+                                        @endforeach
+                                    </ul>
+                                </div>
+                            @endif
+                            @if (session()->has('message'))
+                                <div class="alert alert-success">
+                                    {{ session()->get('message') }}
+                                </div>
+                            @endif
+                            @if (session()->has('error'))
+                                <div class="alert alert-danger">
+                                    {{ session()->get('error') }}
+                                </div>
+                            @endif
 
 
-                        <label> 🌎 Country </label>
-                        <div class="input-group">
-                            {{ $sms_order->country }}
-                        </div>
-
-                            <hr>
-
-                            <label>  Service </label>
-                            <div class="input-group">
-                                {{ $sms_order->service }}
+                            <div class="card-header d-flex justify-content-center mb-3">
+                                <h5 class="">All Countries Verification</h5>
                             </div>
 
-                            <hr>
+                            <div class="card">
+                                <div class="card-body">
+
+                                    <label> 🌎 Country </label>
+                                    <div class="input-group">
+                                        {{ $sms_order->country }}
+                                    </div>
+
+                                    <hr>
+
+                                    <label> Service </label>
+                                    <div class="input-group">
+                                        {{ $sms_order->service }}
+                                    </div>
 
 
-                        <label class="my-2">📞 Number </label>
-                        <div class="input-group">
-                            <input type="text" id="copyTarget" class="form-control"
-                                   value="{{ $sms_order->phone }}">
-                            <span id="copyButton" class="input-group-addon btn" title="Click to copy">
-                                    <i class="fa fa-clipboard" aria-hidden="true"></i>
-                                </span>
+                                </div>
+
+                            </div>
                         </div>
-
-                            <hr>
-
-
-                        <label class="my-2">💬 Code from SMS </label>
-                        <div class="input-group">
-                            <input type="text" readonly id="response-input" class="form-control">
-                            <span id="copyButton2" class="input-group-addon btn" title="Click to copy">
-                                    <i class="fa fa-clipboard" aria-hidden="true"></i>
-                                </span>
-                        </div>
-
-
-                        {{--                                <div class="progress my-3">--}}
-                        {{--                                    <div id="progress-bar">--}}
-                        {{--                                        <div id="progress"></div>--}}
-                        {{--                                    </div>--}}
-                        {{--                                </div>--}}
-
-
-                        <div class="text-small text-center text-danger my-4" id="timer">Order expires in: <span
-                                id="countdown"></span></div>
-
-
-                        <div class="row d-flex justify-content-center my-2">
-
-                            <a style="font-size: 10px; border:0px;"
-                               class="me-2 col btn btn-danger btn-sm w-100"
-                               href="cancle-sms?id={{ $sms_order->id }}" role="button"><i class=""> Delete
-                                    Order</a></i>
-
-                             <a style="font-size: 10px" class="col text-white btn btn-success btn-sm w-100"
-                                href="/home" role="button"><i
-                                    class="bi bi-arrow-clockwise"> New order</a></i>
-
-                        </div>
-
-
-
-
-
-
                     </div>
+                </div>
 
+
+                <div class="col-lg-12 col-sm-12 ">
+                    <div class="card border-0 rounded-20">
+
+                        <div class="card-body">
+
+                            <label class="my-2">📞 Number </label>
+                            <div class="input-group">
+                                <input type="text" id="copyTarget" class="form-control"
+                                       value="{{ $sms_order->phone }}">
+                                <span id="copyButton" class="input-group-addon btn" title="Click to copy">
+                                    <i class="fa fa-clipboard" aria-hidden="true"></i>
+                                </span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-12 col-sm-12">
+                    <div class="card border-0 rounded-20">
+                        <div class="card-body">
+
+                            <label class="my-2">💬 Code from SMS </label>
+                            <div class="input-group">
+                                <input type="text" readonly id="response-input" class="form-control">
+                                <span id="copyButton2" class="input-group-addon btn" title="Click to copy">
+                                    <i class="fa fa-clipboard" aria-hidden="true"></i>
+                                </span>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="text-small text-center text-danger my-4" id="timer">Order expires in: <span
+                        id="countdown"></span></div>
+
+
+                <div class="row d-flex justify-content-center my-2">
+
+                    <a style="font-size: 10px; border:0px;"
+                       class="me-2 col btn btn-danger btn-sm w-100"
+                       href="cancle-sms?id={{ $sms_order->id }}" role="button"><i class=""> Delete
+                            Order</a></i>
+
+                    <a style="font-size: 10px" class="col text-white btn btn-success btn-sm w-100"
+                       href="/home" role="button"><i
+                            class="bi bi-arrow-clockwise"> New order</a></i>
 
                 </div>
+
+
             </div>
+
         </div>
+
+        </div>
+
+
     </section>
 
     <script src="/livewire/livewire.js?id=90730a3b0e7144480175" data-turbo-eval="false" data-turbolinks-eval="false">
