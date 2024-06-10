@@ -141,6 +141,7 @@ class WorldNumberController extends Controller
 
 
 
+
         $get_s_price = $var->price ?? null;
         $high_price = $var->high_price ?? null;
         $rate = $var->success_rate ?? null;
@@ -148,11 +149,15 @@ class WorldNumberController extends Controller
 
 
 
-        if($high_price > 4){
+        if($high_price == null){
+            $price = $get_s_price;
+        }elseif($high_price > 4){
             $price = $high_price * 1.3;
         }else{
             $price = $high_price;
         }
+
+
 
 
 
