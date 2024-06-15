@@ -972,7 +972,7 @@ class HomeController extends Controller
             ]);
 
             $data = array(
-                'fromsender' => 'noreply@verifyasap.com', 'OGSMSPOOL',
+                'fromsender' => 'noreply@ogsmspool.com', 'OGSMSPOOL',
                 'subject' => "Reset Password",
                 'toreceiver' => $email,
                 'url' => $url,

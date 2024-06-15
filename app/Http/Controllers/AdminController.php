@@ -145,7 +145,7 @@ class AdminController extends Controller
     public function index_user(request $request)
 	{
 
-        $role = User::where('id', Auth::id())->first()->role_id ?? null;
+        $role = User::latest()->where('id', Auth::id())->first()->role_id ?? null;
         if($role != 5){
 
             Auth::logout();
@@ -301,7 +301,7 @@ class AdminController extends Controller
 
        $message = $email . "| Manual Payment  Approved |  NGN " . number_format($request->amount) . " | on LOG MARKETPLACE";
        send_notification2($message);
-       
+
 
 
 
