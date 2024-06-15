@@ -31,7 +31,7 @@ class HomeController extends Controller
         $data['get_rate'] = Setting::where('id', 1)->first()->rate;
         $data['margin'] = Setting::where('id', 1)->first()->margin;
 
-        $data['verification'] = Verification::where('user_id', Auth::id())->paginate('10');
+        $data['verification'] = Verification::latest()->where('user_id', Auth::id())->paginate('10');
 
 
         $data['order'] = 0;
@@ -47,16 +47,16 @@ class HomeController extends Controller
         $data['services'] = get_services();
         $data['get_rate'] = Setting::where('id', 1)->first()->rate;
         $data['margin'] = Setting::where('id', 1)->first()->margin;
-        $data['verification'] = Verification::where('user_id', Auth::id())->paginate('10');
+        $data['verification'] = Verification::latest()->where('user_id', Auth::id())->paginate('10');
         $data['order'] = 0;
         $countries = get_world_countries();
         $wservices = get_world_services();
-        $verification = Verification::where('user_id', Auth::id())->get();
+        $verification = Verification::latest()->where('user_id', Auth::id())->get();
         $data['wservices'] = $wservices;
         $data['countries'] = $countries;
         $data['pend'] = 0;
         $data['product'] = null;
-        $data['orders'] = Verification::where('user_id', Auth::id())->get();
+        $data['orders'] = Verification::latest()->where('user_id', Auth::id())->get();
 
         return view('home', $data);
     }
@@ -140,7 +140,7 @@ class HomeController extends Controller
             $data['sms_order'] = Verification::where('user_id', Auth::id())->where('status' , 1)->first();
             $data['order'] = 1;
 
-            $data['verification'] = Verification::where('user_id', Auth::id())->paginate(10);
+            $data['verification'] = Verification::latest()->where('user_id', Auth::id())->paginate(10);
 
             return view('receivesms', $data);
         }
@@ -162,7 +162,7 @@ class HomeController extends Controller
         $data['sms_order'] = Verification::where('user_id', Auth::id())->where('id' , $request->phone)->first();
         $data['order'] = 1;
 
-        $data['verification'] = Verification::where('user_id', Auth::id())->paginate(10);
+        $data['verification'] = Verification::latest()->where('user_id', Auth::id())->paginate(10);
 
         return view('receivesms', $data);
 
