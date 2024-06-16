@@ -411,7 +411,7 @@
 
                                                     @elseif($data->status == 3)
                                                     <td>
-                                                        <span class="badge badge-pill badge-danger">Cancled</span>
+                                                        <span class="badge badge-pill badge-danger">Canceled</span>
                                                     </td>
 
                                                     @else
@@ -461,6 +461,8 @@
                                                         <th class="border-0">Status</th>
                                                         <th class="border-0">Date</th>
                                                         <th class="border-0">Time</th>
+                                                        <th class="border-0">Action</th>
+
                                                     </tr>
                                                 </thead>
                                                 <tbody>
@@ -483,6 +485,13 @@
                                                         <td>
                                                             <span class="badge badge-pill badge-warning">Pending</span>
 
+                                                        </td>
+                                                        @endif
+
+                                                        @if($data->status != 2)
+                                                        <td>
+                                                            <a href="delete-order?id={{$data->id}}"
+                                                               class="btn btn-sm btn-dark text-small">Delete</a>
                                                         </td>
                                                         @endif
 
