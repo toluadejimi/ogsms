@@ -451,29 +451,29 @@
 
 <div class="float-sm">
     <div class="fl-fl float-fb">
-        <i class="fab fa-facebook-f s-fab"></i>
-        <a href="" target="_blank"> Like us!</a>
+        <i class="fa fa-whatsapp my-float"></i>
+        <a href="https://api.whatsapp.com/send?phone=2349047123389" target="_blank">Whatsapp</a>
     </div>
     <div class="fl-fl float-tw">
-        <i class="fab fa-twitter s-fab"></i>
-        <a href="" target="_blank">Follow us!</a>
+        <i class="fab fa-telegram-plane"></i>
+        <a href="https://t.me/ogsmspool" target="_blank">Telegram</a>
     </div>
-    <div class="fl-fl float-gp">
-        <i class="fab fa-google-plus-g s-fab"></i>
-        <a href="" target="_blank">Recommend us!</a>
-    </div>
-    <div class="fl-fl float-rs">
-        <i class="fas fa-rss s-fab"></i>
-        <a href="" target="_blank">Follow via RSS</a>
-    </div>
-    <div class="fl-fl float-ig">
-        <i class="fab fa-instagram s-fab"></i>
-        <a href="" target="_blank">Follow us!</a>
-    </div>
-    <div class="fl-fl float-pn">
-        <i class="fab fa-pinterest-p s-fab"></i>
-        <a href="" target="_blank">Follow us!</a>
-    </div>
+{{--    <div class="fl-fl float-gp">--}}
+{{--        <i class="fab fa-google-plus-g s-fab"></i>--}}
+{{--        <a href="" target="_blank">Recommend us!</a>--}}
+{{--    </div>--}}
+{{--    <div class="fl-fl float-rs">--}}
+{{--        <i class="fas fa-rss s-fab"></i>--}}
+{{--        <a href="" target="_blank">Follow via RSS</a>--}}
+{{--    </div>--}}
+{{--    <div class="fl-fl float-ig">--}}
+{{--        <i class="fab fa-instagram s-fab"></i>--}}
+{{--        <a href="" target="_blank">Follow us!</a>--}}
+{{--    </div>--}}
+{{--    <div class="fl-fl float-pn">--}}
+{{--        <i class="fab fa-pinterest-p s-fab"></i>--}}
+{{--        <a href="" target="_blank">Follow us!</a>--}}
+{{--    </div>--}}
 </div>
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
