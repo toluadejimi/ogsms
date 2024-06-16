@@ -91,6 +91,10 @@ Route::group(['middleware' => ['auth', 'user', 'session.timeout']], function () 
     Route::any('delete-w-order',  [HomeController::class,'delete_w_order']);
     Route::any('admin-cancle-sms',  [HomeController::class,'admin_cancle_sms']);
 
+    Route::any('delete-order-admin',  [HomeController::class,'delete_order_admin']);
+
+
+
 
 
 
@@ -194,6 +198,7 @@ Route::get('users',  [AdminController::class,'index_user']);
 Route::get('view-user',  [AdminController::class,'view_user']);
 Route::any('update-user',  [AdminController::class,'update_user']);
 Route::any('remove-user',  [AdminController::class,'remove_user']);
+
 
 
 

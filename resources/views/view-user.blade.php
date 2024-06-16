@@ -496,7 +496,7 @@
 
                                                         @if($data->status != 2)
                                                             <td>
-                                                                <a href="delete-order?id={{$data->id}}"
+                                                                <a href="delete-order-admin?id={{$data->id}}"
                                                                    class="btn btn-sm btn-dark text-small">Delete</a>
                                                             </td>
                                                         @endif
