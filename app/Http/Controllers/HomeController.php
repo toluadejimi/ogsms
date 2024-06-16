@@ -213,7 +213,7 @@ class HomeController extends Controller
                 $amount = number_format($order->cost, 2);
                 User::where('id', $user_id)->increment('wallet', $order->cost);
                 Verification::where('id', $request->id)->delete();
-                return back()->with('error', "Order has been removed");
+                return back()->with('error', "Order has been removed, NGN$order->cost has been refunded");
             }
 
 
