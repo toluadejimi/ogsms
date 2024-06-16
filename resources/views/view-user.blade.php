@@ -472,9 +472,9 @@
 
                                                     <tr>
 
-                                                        <td>{{ $data->phone }} </td>
+                                                        <td>{{ $data->order_id }} </td>
                                                         <td>{{ $data->service }} </td>
-                                                         <td>{{ $data->order_id }} </td>
+                                                        <td>{{ $data->phone }} </td>
                                                          <td>{{ $data->full_sms }} </td>
                                                         <td>{{ $data->cost }} </td>
                                                         @if($data->status == 2)
@@ -488,18 +488,18 @@
                                                         </td>
                                                         @endif
 
-                                                        @if($data->status != 2)
-                                                        <td>
-                                                            <a href="delete-order?id={{$data->id}}"
-                                                               class="btn btn-sm btn-dark text-small">Delete</a>
-                                                        </td>
-                                                        @endif
+
 
 
                                                         <td>{{ date('d/m/y', strtotime($data->created_at)) }} </td>
                                                         <td>{{ date('h:i', strtotime($data->created_at)) }} </td>
 
-
+                                                        @if($data->status != 2)
+                                                            <td>
+                                                                <a href="delete-order?id={{$data->id}}"
+                                                                   class="btn btn-sm btn-dark text-small">Delete</a>
+                                                            </td>
+                                                        @endif
 
 
                                                     </tr>
