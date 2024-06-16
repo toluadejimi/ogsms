@@ -1346,79 +1346,12 @@ class HomeController extends Controller
 
     public function delete_order_admin(request $request)
     {
-        $order = Verification::where('id', $request->id)->first() ?? null;
-
-        if ($order->status == 1 && $order->type == 2 ) {
-
-            $orderID = $order->order_id;
-            $can_order = cancel_world_order($orderID);
 
 
+        Verification::where('id', $request->id)->delete();
 
-            if ($can_order == 0) {
-                Verification::where('id', $request->id)->delete();
-                return back()->with('error', "Removed Successfully");
-            }
+        return back()->with('message', "Order has been successfully deleted");
 
-
-            if ($can_order == 1) {
-                $amount = number_format($order->cost, 2);
-                User::where('id', Auth::id())->increment('wallet', $order->cost);
-                Verification::where('id', $request->id)->delete();
-                return back()->with('message', "Order has been cancled, NGN$amount has been refunded");
-            }
-
-
-            if ($can_order == 3) {
-
-                $amount = number_format($order->cost, 2);
-                User::where('id', Auth::id())->increment('wallet', $order->cost);
-                Verification::where('id', $request->id)->delete();
-                return back()->with('message', "Order has been cancled, NGN$amount has been refunded");
-            }
-        }
-
-        if($order->status == 1 && $order->type == 1){
-
-            $order = Verification::where('id', $request->id)->first() ?? null;
-
-
-            if ($order == null) {
-                return redirect('home')->with('error', 'Order not found');
-            }
-
-            if ($order->status == 2) {
-                Verification::where('id', $request->id)->delete();
-                return back()->with('message', "Order has been successfully deleted");
-            }
-
-            if ($order->status == 1) {
-
-                $orderID = $order->order_id;
-                $can_order = cancel_order($orderID);
-
-                if ($can_order == 0) {
-                    return back()->with('error', "Please wait and try again later");
-                }
-
-
-                if ($can_order == 1) {
-                    $amount = number_format($order->cost, 2);
-                    User::where('id', Auth::id())->increment('wallet', $order->cost);
-                    Verification::where('id', $request->id)->delete();
-                    return back()->with('message', "Order has been cancled, NGN$amount has been refunded");
-                }
-
-
-                if ($can_order == 3) {
-                    $amount = number_format($order->cost, 2);
-                    User::where('id', Auth::id())->increment('wallet', $order->cost);
-                    Verification::where('id', $request->id)->delete();
-                    return back()->with('message', "Order has been cancled, NGN$amount has been refunded");
-                }
-            }
-
-        }
 
 
 
