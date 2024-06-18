@@ -636,3 +636,84 @@ function check_world_sms($orderID){
     dd($var);
 }
 
+
+function ck_av($country, $service)
+{
+    $key = env('WKEY');
+    $curl = curl_init();
+
+    $databody = array(
+        "country" => $country,
+        "service" => $service,
+        'key' => $key,
+    );
+    curl_setopt_array($curl, array(
+        CURLOPT_URL => 'https://api.smspool.net/sms/stock',
+        CURLOPT_RETURNTRANSFER => true,
+        CURLOPT_ENCODING => '',
+        CURLOPT_MAXREDIRS => 10,
+        CURLOPT_TIMEOUT => 0,
+        CURLOPT_FOLLOWLOCATION => true,
+        CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+        CURLOPT_CUSTOMREQUEST => 'POST',
+        CURLOPT_POSTFIELDS => $databody,
+    ));
+
+    $var = curl_exec($curl);
+
+    curl_close($curl);
+    $var = json_decode($var);
+
+    return $var->amount;
+
+}
+
+function world_price($country, $service)
+{
+
+    $key = env('WKEY');
+    $databody = array(
+        "key" => $key,
+        "country" => $country,
+        "service" => $service,
+        "pool" => '',
+    );
+
+    $body = json_encode($databody);
+
+    $curl = curl_init();
+    curl_setopt_array($curl, array(
+        CURLOPT_URL => 'https://api.smspool.net/request/price',
+        CURLOPT_RETURNTRANSFER => true,
+        CURLOPT_ENCODING => '',
+        CURLOPT_MAXREDIRS => 10,
+        CURLOPT_TIMEOUT => 0,
+        CURLOPT_FOLLOWLOCATION => true,
+        CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+        CURLOPT_CUSTOMREQUEST => 'POST',
+        CURLOPT_POSTFIELDS => $databody,
+        CURLOPT_HTTPHEADER => array(
+            'Authorization: Bearer {{apikey}}'
+        ),
+    ));
+
+    $var = curl_exec($curl);
+    curl_close($curl);
+    $var = json_decode($var);
+
+    $get_s_price = $var->price ?? null;
+    $high_price = $var->high_price ?? null;
+
+    if($high_price == null){
+        $price = $get_s_price;
+    }elseif($high_price > 4){
+        $price = $high_price * 1.3;
+    }else{
+        $price = $high_price;
+    }
+
+
+    return $price;
+
+}
+
