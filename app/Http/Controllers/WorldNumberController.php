@@ -26,8 +26,7 @@ class WorldNumberController extends Controller
         $countries = get_world_countries();
         $wservices = get_world_services();
 
-        $verification = Verification::where('user_id', Auth::id())->get();
-        $verifications = Verification::where('user_id', Auth::id())->where('status', 1)->get();
+        $verification = Verification::latest()->where('user_id', Auth::id())->get();
 
 
 
@@ -46,7 +45,7 @@ class WorldNumberController extends Controller
 
         $data['product'] = null;
 
-        $data['orders'] = Verification::where('user_id', Auth::id())->get();
+        $data['orders'] = Verification::latest()->where('user_id', Auth::id())->get();
 
 
         return view('world', $data);
@@ -175,7 +174,7 @@ class WorldNumberController extends Controller
             $data['rate'] = $rate;
             $data['price'] = $ngnprice;
             $data['product'] = 1;
-            $data['orders'] = Verification::where('user_id', Auth::id())->get();
+            $data['orders'] = Verification::latest()->where('user_id', Auth::id())->get();
             $data['services'] = get_services();
 
 
@@ -186,7 +185,7 @@ class WorldNumberController extends Controller
 
             $data['number_order'] = null;
 
-            $verifications = Verification::where('user_id', Auth::id())->where('status', 1)->get();
+            $verifications = Verification::latest()->where('user_id', Auth::id())->where('status', 1)->get();
             if ($verifications->count() > 1) {
                 $data['pend'] = 1;
             } else {
@@ -197,7 +196,7 @@ class WorldNumberController extends Controller
             $verification = Verification::where('user_id', Auth::id())->get();
             $data['wservices'] = $wservices;
 
-            $data['verification'] = Verification::where('user_id', Auth::id())->paginate('10');
+            $data['verification'] = Verification::latest()->where('user_id', Auth::id())->paginate('10');
 
 
             return view('world', $data);
