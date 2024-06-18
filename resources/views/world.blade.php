@@ -30,7 +30,7 @@
 
 
                         <button type="submit" style="background: rgba(194,194,194,0.59); padding: 8px; border-radius: 15px; color: black" class="border-0" >
-                            <svg width="80" height="60" viewBox="0 0 123 63" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg width="50" height="40" viewBox="0 0 123 63" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <ellipse cx="90.5" cy="31.5" rx="32.5" ry="31.5" fill="white"/>
                                 <ellipse cx="32.5" cy="31.5" rx="32.5" ry="31.5" fill="white"/>
                                 <g clip-path="url(#clip0_311_437)">
