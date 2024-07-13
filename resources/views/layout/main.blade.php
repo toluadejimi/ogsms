@@ -159,9 +159,6 @@
             <span class="title">
                 You need support?
             </span>
-            <button>
-                <i class="fa fa-times" aria-hidden="true"></i>
-            </button>
 
         </div>
         <ul class="messages">
