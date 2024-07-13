@@ -167,10 +167,10 @@ class WorldNumberController extends Controller
 
             $data['count_id'] = $count_id;
             $data['serv'] = $request->service;
-            $countries = get_world_countries();
+            $wcountries = get_world_countries();
             $wservices = get_world_services();
             $data['wservices'] = $wservices;
-            $data['countries'] = $countries;
+            $data['wcountries'] = $wcountries;
             $data['rate'] = $rate;
             $data['price'] = $ngnprice;
             $data['product'] = 1;
