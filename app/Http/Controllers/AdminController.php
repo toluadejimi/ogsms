@@ -113,6 +113,8 @@ class AdminController extends Controller
         $data['usdtongn'] = Setting::where('id', 1)->first()->rate;
         $data['margin'] = Setting::where('id', 1)->first()->margin;
         $data['verification'] = Verification::latest()->paginate(10);
+        $data['total_verification'] = Verification::where('status', 2)->count();
+
 
 
 
