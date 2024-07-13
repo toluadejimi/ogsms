@@ -49,11 +49,7 @@ class HomeController extends Controller
         $data['margin'] = Setting::where('id', 1)->first()->margin;
         $data['verification'] = Verification::latest()->where('user_id', Auth::id())->paginate('10');
         $data['order'] = 0;
-        $countries = get_world_countries();
-        $wservices = get_world_services();
         $verification = Verification::latest()->where('user_id', Auth::id())->get();
-        $data['wservices'] = $wservices;
-        $data['countries'] = $countries;
         $data['pend'] = 0;
         $data['product'] = null;
         $data['orders'] = Verification::latest()->where('user_id', Auth::id())->get();
