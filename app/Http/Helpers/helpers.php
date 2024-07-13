@@ -392,8 +392,8 @@ function get_world_services(){
 
     $key = env('WKEY');
 
-    $services = Cache::remember('smspool_countries', 3600, function () use ($key) {
-        Log::info('Requesting countriees from SMS Pool API', ['key' => $key]);
+    $services = Cache::remember('smspool_services', 3600, function () use ($key) {
+        Log::info('Requesting services from SMS Pool API', ['key' => $key]);
 
         $response = Http::withHeaders([
             'Content-Type' => 'application/json',
@@ -412,6 +412,8 @@ function get_world_services(){
         Log::error('API call failed', ['response' => $response->body()]);
         return null;
     });
+
+
 
     return $services;
 
@@ -625,72 +627,161 @@ function check_world_sms($orderID){
 }
 
 
+//function ck_av($country, $service)
+//{
+//    $key = env('WKEY');
+//    $curl = curl_init();
+//
+//    $databody = array(
+//        "country" => $country,
+//        "service" => $service,
+//        'key' => $key,
+//    );
+//    curl_setopt_array($curl, array(
+//        CURLOPT_URL => 'https://api.smspool.net/sms/stock',
+//        CURLOPT_RETURNTRANSFER => true,
+//        CURLOPT_ENCODING => '',
+//        CURLOPT_MAXREDIRS => 10,
+//        CURLOPT_TIMEOUT => 0,
+//        CURLOPT_FOLLOWLOCATION => true,
+//        CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+//        CURLOPT_CUSTOMREQUEST => 'POST',
+//        CURLOPT_POSTFIELDS => $databody,
+//    ));
+//
+//    $var = curl_exec($curl);
+//
+//    curl_close($curl);
+//    $var = json_decode($var);
+//
+//    return $var->amount;
+//
+//}
+//
+//function world_price($country, $service)
+//{
+//
+//    $key = env('WKEY');
+//    $databody = array(
+//        "key" => $key,
+//        "country" => $country,
+//        "service" => $service,
+//        "pool" => '',
+//    );
+//
+//    $body = json_encode($databody);
+//
+//    $curl = curl_init();
+//    curl_setopt_array($curl, array(
+//        CURLOPT_URL => 'https://api.smspool.net/request/price',
+//        CURLOPT_RETURNTRANSFER => true,
+//        CURLOPT_ENCODING => '',
+//        CURLOPT_MAXREDIRS => 10,
+//        CURLOPT_TIMEOUT => 0,
+//        CURLOPT_FOLLOWLOCATION => true,
+//        CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+//        CURLOPT_CUSTOMREQUEST => 'POST',
+//        CURLOPT_POSTFIELDS => $databody,
+//        CURLOPT_HTTPHEADER => array(
+//            'Authorization: Bearer {{apikey}}'
+//        ),
+//    ));
+//
+//    $var = curl_exec($curl);
+//    curl_close($curl);
+//    $var = json_decode($var);
+//
+//    $get_s_price = $var->price ?? null;
+//    $high_price = $var->high_price ?? null;
+//
+//    if($high_price == null){
+//        $price = $get_s_price;
+//    }elseif($high_price > 4){
+//        $price = $high_price * 1.3;
+//    }else{
+//        $price = $high_price;
+//    }
+//
+//
+//    return $price;
+//
+//}
+
 function ck_av($country, $service)
 {
+
     $key = env('WKEY');
-    $curl = curl_init();
+    $country = $country;
+    $service = $service;
 
-    $databody = array(
-        "country" => $country,
-        "service" => $service,
-        'key' => $key,
-    );
-    curl_setopt_array($curl, array(
-        CURLOPT_URL => 'https://api.smspool.net/sms/stock',
-        CURLOPT_RETURNTRANSFER => true,
-        CURLOPT_ENCODING => '',
-        CURLOPT_MAXREDIRS => 10,
-        CURLOPT_TIMEOUT => 0,
-        CURLOPT_FOLLOWLOCATION => true,
-        CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
-        CURLOPT_CUSTOMREQUEST => 'POST',
-        CURLOPT_POSTFIELDS => $databody,
-    ));
+    $amount = Cache::remember('smspool_whatsapp_service_stock', 2880, function () use ($key, $country, $service) {
+        Log::info('Requesting service stock from SMS Pool API', ['key' => $key]);
 
-    $var = curl_exec($curl);
+        $response = Http::withHeaders([
+            'Accept' => 'application/json',
+        ])->timeout(50)
+            ->asForm() // Use asForm for multipart/form-data
+            ->post("https://api.smspool.net/sms/stock", [
+                'service' => $service,
+                'country' => $country,
+                'key' => $key,
+            ]);
 
-    curl_close($curl);
-    $var = json_decode($var);
+        Log::info('Response received from SMS Pool API', ['response' => $response->body()]);
 
-    return $var->amount;
+        if ($response->successful()) {
+            return $response->json() ?? null;
+        }
+
+        Log::error('API call failed', [
+            'response' => $response->body(),
+            'status' => $response->status(),
+            'reason' => $response->reason(),
+        ]);
+        return null;
+    });
+
+    return $amount['amount'];
 
 }
 
 function world_price($country, $service)
 {
 
+
     $key = env('WKEY');
-    $databody = array(
-        "key" => $key,
-        "country" => $country,
-        "service" => $service,
-        "pool" => '',
-    );
+    $country = $country;
+    $service = $service;
 
-    $body = json_encode($databody);
+    $var = Cache::remember('smspool_whatsapp_service_price', 2880, function () use ($key, $country, $service) {
+        Log::info('Requesting service price from SMS Pool API', ['key' => $key]);
 
-    $curl = curl_init();
-    curl_setopt_array($curl, array(
-        CURLOPT_URL => 'https://api.smspool.net/request/price',
-        CURLOPT_RETURNTRANSFER => true,
-        CURLOPT_ENCODING => '',
-        CURLOPT_MAXREDIRS => 10,
-        CURLOPT_TIMEOUT => 0,
-        CURLOPT_FOLLOWLOCATION => true,
-        CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
-        CURLOPT_CUSTOMREQUEST => 'POST',
-        CURLOPT_POSTFIELDS => $databody,
-        CURLOPT_HTTPHEADER => array(
-            'Authorization: Bearer {{apikey}}'
-        ),
-    ));
+        $response = Http::withHeaders([
+            'Accept' => 'application/json',
+        ])->timeout(50)
+            ->asForm() // Use asForm for multipart/form-data
+            ->post("https://api.smspool.net/request/price", [
+                'service' => $service,
+                'country' => $country,
+                'key' => $key,
+            ]);
 
-    $var = curl_exec($curl);
-    curl_close($curl);
-    $var = json_decode($var);
+        Log::info('Response received for price from SMS Pool API', ['response' => $response->body()]);
 
-    $get_s_price = $var->price ?? null;
-    $high_price = $var->high_price ?? null;
+        if ($response->successful()) {
+            return $response->json() ?? null;
+        }
+
+        Log::error('API call failed', [
+            'response' => $response->body(),
+            'status' => $response->status(),
+            'reason' => $response->reason(),
+        ]);
+        return null;
+    });
+
+    $get_s_price = $var['price'] ?? null;
+    $high_price = $var['high_price'] ?? null;
 
     if($high_price == null){
         $price = $get_s_price;
@@ -699,7 +790,6 @@ function world_price($country, $service)
     }else{
         $price = $high_price;
     }
-
 
     return $price;
 
