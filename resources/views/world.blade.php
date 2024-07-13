@@ -118,9 +118,8 @@
                                             <select style="border-color:rgb(0, 11, 136); padding: 10px" class="w-100"
                                                     id="dropdownMenu" class="dropdown-content" name="country">
                                                 <option style="background: black" value=""> Select Country</option>
-                                                @foreach ($countries as $data)
-                                                    <option value="{{ $data->ID }}">{{ $data->name }}
-                                                    </option>
+                                                @foreach ($wcountries as $data)
+                                                    <option value="{{ $data['ID'] }}">{{ $data['name'] }}</option>
                                                 @endforeach
                                             </select>
                                         </div>
@@ -133,8 +132,7 @@
 
                                                 <option value=""> Choose Service</option>
                                                 @foreach ($wservices as $data)
-                                                    <option value="{{ $data->ID }}">{{ $data->name }}
-                                                    </option>
+                                                    <option value="{{ $data['ID'] }}">{{ $data['name'] }}</option>
                                                 @endforeach
 
                                             </select>
@@ -172,8 +170,6 @@
                                     <h5 class="text-center my-2">Amount</h5>
                                     <h6 class="text-center text-muted my-2 mb-4">Price:
                                         NGN {{ number_format($price, 2) }}</h6>
-
-
 
 
                                     <h5 class="text-center my-2">Available Nuumbers</h5>

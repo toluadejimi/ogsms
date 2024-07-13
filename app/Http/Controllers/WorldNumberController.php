@@ -23,7 +23,7 @@ class WorldNumberController extends Controller
         $data['margin'] = Setting::where('id', 1)->first()->margin;
 
 
-        $countries = get_world_countries();
+        $wcountries = get_world_countries();
         $wservices = get_world_services();
 
         $verification = Verification::latest()->where('user_id', Auth::id())->get();
@@ -31,7 +31,7 @@ class WorldNumberController extends Controller
 
 
         $data['wservices'] = $wservices;
-        $data['countries'] = $countries;
+        $data['wcountries'] = $wcountries;
         $data['verification'] = $verification;
 
 
