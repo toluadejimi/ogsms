@@ -108,7 +108,7 @@
                                         <h4 class="text-2xl mt-8">Getting Wallet Balance</h4>
 
                                         <div class="mockup-code my-8">
-                                            <pre><code>GET "{{url('')}}/api/balance?api_key=$APIKEY&state=balance"</code></pre>
+                                            <pre><code>GET "{{url('')}}/api/balance?api_key={{$api_key}}&action=balance"</code></pre>
                                             <pre></pre>
                                             <pre><code>#Success Response = {'status' => true,'main_balance' => 200}</code></pre>
                                             <pre><code>#Failed Response: Wrong or Bad Api key</code></pre>
