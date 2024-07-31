@@ -21,6 +21,27 @@
     <link rel="stylesheet" href="{{url('')}}/public/assets/fonts/material.css"><!-- [Template CSS Files] -->
     <link rel="stylesheet" href="{{url('')}}/public/assets/css/style.css" id="main-style-link">
     <link rel="stylesheet" href="{{url('')}}/public/assets/css/style2.css">
+    <link rel="stylesheet" href="{{url('')}}/public/assets/css/style2.css">
+
+
+
+    <link rel="stylesheet" type="text/css" href="{{url('')}}/public/api/daisysms.css">
+
+    <script src="{{url('')}}/public/api/l.js" async=""></script>
+    <script src="{{url('')}}/public/api/client.js" type="text/javascript" async=""></script>
+    <link href="{{url('')}}/public/api/client_default.css" type="text/css" rel="stylesheet">
+
+
+
+
+
+
+
+
+
+
+
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
     <link rel="stylesheet" href="{{url('')}}/public/assets/css/style-preset.css">
