@@ -14,6 +14,14 @@ class ApiController extends Controller
         $bal = User::where('api_key', $request->api_key)->first()->wallet ?? null;
 
 
+        if($request->api_key == null){
+
+            return response()->json([
+                'status' => false,
+                'message' => "Api key is missing"
+            ], 422);
+
+        }
 
         if($request->action == null){
 
