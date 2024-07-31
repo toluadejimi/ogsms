@@ -77,6 +77,13 @@ Route::group(['middleware' => ['auth', 'user', 'session.timeout']], function () 
     Route::any('get-smscodeworld',  [WorldNumberController::class,'get_smscode']);
 
     Route::any('orders',  [HomeController::class,'orders']);
+    Route::any('api',  [HomeController::class,'api_index']);
+    Route::post('set-webhook',  [HomeController::class,'set_webhook']);
+    Route::any('generate-token',  [HomeController::class,'generate_token']);
+
+
+
+
 
 
 

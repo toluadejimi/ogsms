@@ -22,6 +22,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Redirect;
+use Illuminate\Support\Str;
 
 class HomeController extends Controller
 {
@@ -1595,4 +1596,40 @@ class HomeController extends Controller
 
 
     }
+
+    public function api_index(request $request)
+    {
+
+        $data['api_key'] = User::where('id', Auth::id())->first()->api_key ?? null;
+        $data['webhook_url'] = User::where('id', Auth::id())->first()->webhook_url ?? null;
+
+        return view('api', $data);
+
+
+
+    }
+
+
+    public function set_webhook(request $request)
+    {
+
+        User::where('id', Auth::id())->update(['webhook_url' => $request->webhook]);
+        return back()->with('message', 'Webhook Set successfully');
+
+
+    }
+
+
+    public function generate_token(request $request)
+    {
+
+        $token = Str::random(30);
+
+        User::where('id', Auth::id())->update(['api_key' => $token]);
+        return back()->with('message', 'Api Key Set successfully');
+
+    }
+
+
+
 }

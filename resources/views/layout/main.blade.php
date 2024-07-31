@@ -92,6 +92,12 @@
                     </li>
 
 
+                    <li class="nav-item px-1">
+                        <a class="nav-link"
+                           href="/api" >Api</a >
+                    </li>
+
+
 
 
 
