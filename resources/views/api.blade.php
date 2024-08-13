@@ -114,7 +114,15 @@
                                             <pre><code>#Failed Response: Wrong or Bad Api key</code></pre>
                                         </div>
 
-                                        <h4 class="text-2xl mt-8 mb-4">Renting a number</h4>
+                                        <h4 class="text-2xl mt-8 mb-4">Get all countries</h4>
+
+
+                                    <div class="mockup-code my-8">
+                                        <pre><code>GET "{{url('')}}/api/get-countries?api_key={{$api_key}}&action=get-country"</code></pre>
+                                        <pre></pre>
+                                        <pre><code>#Success Response = {'status' => true,'data' => 200}</code></pre>
+                                        <pre><code>#Failed Response: Wrong or Bad Api key</code></pre>
+                                    </div>
 
 {{--                                        <p class="py-2">--}}
 {{--                                            You'll need to have sufficient balance and know the shortcode of the service. You can get the shortcode from the <a href="https://daisysms.com/dashboard/services" class="link">Services page</a>.--}}

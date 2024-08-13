@@ -50,5 +50,17 @@ class ApiController extends Controller
 
     }
 
+    public function get_us_countries(request $request)
+    {
+        $data['services'] = get_services();
+
+        return response()->json([
+            'status' => true,
+            'services' => $data
+        ], 200);
+
+
+    }
+
 
 }

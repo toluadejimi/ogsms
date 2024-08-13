@@ -29,6 +29,8 @@ Route::any('verify',  [HomeController::class,'verify_username']);
 
 
 Route::any('balance',  [ApiController::class,'get_balance']);
+Route::any('get-countries',  [ApiController::class,'get_countries']);
+
 
 
 
