@@ -99,7 +99,7 @@
 
                     <li class="nav-item px-1">
                         <a class="nav-link"
-                           href="https://api.whatsapp.com/send?phone=2349047123389" >Support</a >
+                           href="https://api.whatsapp.com/send?phone=2349138248126" >Support</a >
                     </li>
 
                     <li class="nav-item px-1">
@@ -189,7 +189,7 @@
 
         </div>
         <ul class="messages">
-            <li style="color: white" class="other"><a style="color: white"  href="https://api.whatsapp.com/send?phone=2349047123389" target="_blank"><i class="bi bi-whatsapp"> </i> Chat on whatsapp </a></li>
+            <li style="color: white" class="other"><a style="color: white"  href="https://api.whatsapp.com/send?phone=2349138248126" target="_blank"><i class="bi bi-whatsapp"> </i> Chat on whatsapp </a></li>
             <li style="color: white" class="other"><a style="color: white"  href="https://t.me/ogsmspool" target="_blank"><i class="bi bi-telegram"> </i> Chat on Telegram</a></li>
         </ul>
     </div>
