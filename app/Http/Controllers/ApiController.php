@@ -181,7 +181,7 @@ class ApiController extends Controller
             } elseif ($high_price > 4) {
                 $price = $high_price * $get_key->api_percentage ?? 1.3;
             } else {
-                $price = $high_price;
+                $price = $high_price * $get_key->api_percentage;
             }
 
             $get_rate = Setting::where('id', 1)->first()->rate;
