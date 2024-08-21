@@ -207,6 +207,8 @@ class AdminController extends Controller
         $verification = verification::latest()->where('user_id', $request->id)->paginate();
 
 
+
+
         return view('view-user', compact('user', 'transaction','verification' ));
 
 
@@ -331,8 +333,6 @@ class AdminController extends Controller
     {
 
         $api = User::where('id', $request->id)->update(['api_percentage' => $request->amount]);
-
-        dd($api, $request->all());
         return back()->with('message', 'Api percentage updated successfully');
 
 
