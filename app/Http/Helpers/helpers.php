@@ -423,8 +423,7 @@ function get_world_services(){
 }
 
 
-function create_world_order($country, $service, $price){
-
+function create_world_order($country, $service, $price, $id){
 
 
     $key = env('WKEY');
@@ -452,8 +451,6 @@ function create_world_order($country, $service, $price){
     $var = curl_exec($curl);
     curl_close($curl);
     $var = json_decode($var);
-
-
     $success = $var->success ?? null;
 
     if($success == 0){
@@ -461,14 +458,12 @@ function create_world_order($country, $service, $price){
 
     }
 
-
-
     if($success == 1){
 
         Verification::where('phone', $var->cc.$var->phonenumber)->where('status', 2)->delete() ?? null;
 
         $ver = new Verification();
-        $ver->user_id = Auth::id();
+        $ver->user_id = Auth::id() ?? $id;
         $ver->phone = $var->cc.$var->phonenumber;
         $ver->order_id = $var->order_id;
         $ver->country = $var->country;

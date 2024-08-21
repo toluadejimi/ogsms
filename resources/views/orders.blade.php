@@ -15,6 +15,40 @@
         </div>
 
 
+        <div class="row d-flex justify-content-center p-5">
+
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="card-header d-flex justify-content-center mb-3">
+                            <h5 class="">Total Spent</h5>
+                            <br>
+                        </div>
+                        <h2 class="text-center">NGN {{number_format($spent, 2)}}</h2>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col">
+
+                <div class="card">
+                    <div class="card-body">
+                        <div class="card-header d-flex justify-content-center mb-3">
+                            <h5 class="">Total Verification</h5>
+                        </div>
+
+                        <h2 class="text-center"> {{number_format($verification, 2)}}</h2>
+
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
         <div class="container technology-block">
             <div class="col-lg-12 col-sm-12 d-flex justify-content-center">
                 <div class="card border-0 mb-5 rounded-20">
@@ -119,8 +153,6 @@
                         </div>
 
                     </div>
-
-
                 </div>
 
 

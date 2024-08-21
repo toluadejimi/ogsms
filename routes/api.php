@@ -29,7 +29,14 @@ Route::any('verify',  [HomeController::class,'verify_username']);
 
 
 Route::any('balance',  [ApiController::class,'get_balance']);
-Route::any('get-countries',  [ApiController::class,'get_countries']);
+Route::any('get-world-countries',  [ApiController::class,'get_world_countries']);
+Route::any('get-world-services',  [ApiController::class,'get_world_services']);
+Route::any('check-world-number-availability',  [ApiController::class,'check_availability']);
+Route::any('rent-world-number',  [ApiController::class,'rent_world_number']);
+Route::any('get-world-sms',  [ApiController::class,'get_world_sms']);
+
+
+
 
 
 

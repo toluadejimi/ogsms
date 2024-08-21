@@ -256,6 +256,7 @@ class WorldNumberController extends Controller
         $country = $request->country;
         $service = $request->service;
         $price = $request->price;
+        $id = Auth::id();
 
         if($price == null){
 
@@ -294,7 +295,8 @@ class WorldNumberController extends Controller
 
         User::where('id', Auth::id())->decrement('wallet', $request->price);
 
-        $order = create_world_order($country, $service, $price);
+
+        $order = create_world_order($country, $service, $price, $id);
 
         if ($order == 5) {
             User::where('id', Auth::id())->increment('wallet', $request->price);
