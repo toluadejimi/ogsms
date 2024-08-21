@@ -168,6 +168,8 @@ Route::any('verify-payment',  [AdminController::class,'approve_payment']);
 Route::any('update-acct-name',  [AdminController::class,'update_acct_name']);
 Route::any('delete-payment',  [AdminController::class,'delete_payment']);
 
+Route::any('update-api-per',  [AdminController::class,'update_api_per']);
+
 
 
 Route::any('fund-manual-now',  [HomeController::class,'fund_manual_now']);

@@ -371,7 +371,7 @@
 
                                                 <div class="card-body p-3">
                                                     <label>Enter Percentage Amount</label>
-                                                    <input type="number" value="{{Auth::user()->api_percentage}}" class="form-control2 text-dark" name="amount" required>
+                                                    <input type="text" value="{{Auth::user()->api_percentage}}" class="form-control2 text-dark" name="amount" required>
 
                                                     <input type="text" hidden value="{{ $user->id }}"
                                                            class="form-control2" name="id" required>
