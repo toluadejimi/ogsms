@@ -167,9 +167,9 @@ class ApiController extends Controller
                 ),
             ));
 
-            $var2 = curl_exec($curl);
+            $var3 = curl_exec($curl);
             curl_close($curl);
-            $var2 = json_decode($var2);
+            $var2 = json_decode($var3);
 
             $get_s_price = $var2->price ?? null;
             $high_price = $var2->high_price ?? null;
@@ -189,6 +189,7 @@ class ApiController extends Controller
             $ngnprice = ($price * $get_rate) + $margin;
 
 
+            dd($get_rate, $margin, $price, $ngnprice, $get_s_price,$high_price, $var3);
 
 
             return response()->json([
