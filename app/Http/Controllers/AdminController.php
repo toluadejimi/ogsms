@@ -331,7 +331,7 @@ class AdminController extends Controller
     {
 
         User::where('id', $request->id)->update(['api_percentage' => $request->amount]);
-        return back()->with('error', 'Api percentage updated successfully');
+        return back()->with('message', 'Api percentage updated successfully');
 
 
     }
