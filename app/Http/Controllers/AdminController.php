@@ -330,7 +330,6 @@ class AdminController extends Controller
     public function update_api_per(request $request)
     {
 
-        dd($request->all());
         User::where('id', $request->id)->update(['api_percentage' => $request->amount]);
         return back()->with('message', 'Api percentage updated successfully');
 
