@@ -189,6 +189,9 @@ class ApiController extends Controller
             $ngnprice = ($price * $get_rate) + $margin;
 
 
+            dd($get_rate, $margin, $price, $ngnprice);
+
+
             return response()->json([
                 'status' => true,
                 'cost' => $ngnprice,
