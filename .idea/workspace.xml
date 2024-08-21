@@ -6,8 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="3cdf45ff-cf72-4fd5-8d04-690270964b0e" name="Changes" comment="pushhhhhh">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ApiController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ApiController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/WorldNumberController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/WorldNumberController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Helpers/helpers.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Helpers/helpers.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/api.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/api.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/orders.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/orders.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -181,7 +186,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Applications/XAMPP/xamppfiles/htdocs/project/ogsms&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Applications/XAMPP/xamppfiles/htdocs/project/ogsms/resources/views&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -244,79 +249,19 @@
       <workItem from="1718591958978" duration="263000" />
       <workItem from="1718731620869" duration="56000" />
       <workItem from="1719779805877" duration="1019000" />
-      <workItem from="1720859681780" duration="6160000" />
-    </task>
-    <task id="LOCAL-00011" summary="pushhhhhh">
-      <option name="closed" value="true" />
-      <created>1716604452548</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1716604452548</updated>
-    </task>
-    <task id="LOCAL-00012" summary="pushhhhhh">
-      <option name="closed" value="true" />
-      <created>1716604723853</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1716604723853</updated>
-    </task>
-    <task id="LOCAL-00013" summary="pushhhhhh">
-      <option name="closed" value="true" />
-      <created>1716605301863</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1716605301863</updated>
-    </task>
-    <task id="LOCAL-00014" summary="pushhhhhh">
-      <option name="closed" value="true" />
-      <created>1716605559474</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1716605559474</updated>
-    </task>
-    <task id="LOCAL-00015" summary="pushhhhhh">
-      <option name="closed" value="true" />
-      <created>1716606023524</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1716606023524</updated>
-    </task>
-    <task id="LOCAL-00016" summary="pushhhhhh">
-      <option name="closed" value="true" />
-      <created>1716607697801</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1716607697801</updated>
-    </task>
-    <task id="LOCAL-00017" summary="pushhhhhh">
-      <option name="closed" value="true" />
-      <created>1716608889238</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1716608889238</updated>
-    </task>
-    <task id="LOCAL-00018" summary="pushhhhhh">
-      <option name="closed" value="true" />
-      <created>1716609410455</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1716609410455</updated>
-    </task>
-    <task id="LOCAL-00019" summary="pushhhhhh">
-      <option name="closed" value="true" />
-      <created>1716611309703</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1716611309703</updated>
+      <workItem from="1720859681780" duration="6999000" />
+      <workItem from="1720907307149" duration="23000" />
+      <workItem from="1722224093870" duration="855000" />
+      <workItem from="1722293423862" duration="598000" />
+      <workItem from="1722404431384" duration="445000" />
+      <workItem from="1722414306003" duration="5460000" />
+      <workItem from="1722627069578" duration="406000" />
+      <workItem from="1723358325821" duration="608000" />
+      <workItem from="1723364141639" duration="60000" />
+      <workItem from="1723450801344" duration="2033000" />
+      <workItem from="1723637887861" duration="234000" />
+      <workItem from="1723649475272" duration="55000" />
+      <workItem from="1723962144499" duration="8565000" />
     </task>
     <task id="LOCAL-00020" summary="pushhhhhh">
       <option name="closed" value="true" />
@@ -638,7 +583,79 @@
       <option name="project" value="LOCAL" />
       <updated>1720863000473</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="pushhhhhh">
+      <option name="closed" value="true" />
+      <created>1720866894261</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1720866894261</updated>
+    </task>
+    <task id="LOCAL-00061" summary="pushhhhhh">
+      <option name="closed" value="true" />
+      <created>1720866899961</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1720866899962</updated>
+    </task>
+    <task id="LOCAL-00062" summary="pushhhhhh">
+      <option name="closed" value="true" />
+      <created>1720867894365</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1720867894365</updated>
+    </task>
+    <task id="LOCAL-00063" summary="pushhhhhh">
+      <option name="closed" value="true" />
+      <created>1722417110969</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1722417110969</updated>
+    </task>
+    <task id="LOCAL-00064" summary="pushhhhhh">
+      <option name="closed" value="true" />
+      <created>1722418735540</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1722418735540</updated>
+    </task>
+    <task id="LOCAL-00065" summary="pushhhhhh">
+      <option name="closed" value="true" />
+      <created>1722419355745</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1722419355745</updated>
+    </task>
+    <task id="LOCAL-00066" summary="pushhhhhh">
+      <option name="closed" value="true" />
+      <created>1722419958139</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1722419958139</updated>
+    </task>
+    <task id="LOCAL-00067" summary="pushhhhhh">
+      <option name="closed" value="true" />
+      <created>1723591095636</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1723591095636</updated>
+    </task>
+    <task id="LOCAL-00068" summary="pushhhhhh">
+      <option name="closed" value="true" />
+      <created>1723962452155</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1723962452156</updated>
+    </task>
+    <option name="localTasksCounter" value="69" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -662,17 +679,22 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/resources/views/orders.blade.php</url>
-          <line>130</line>
+          <line>162</line>
           <option name="timeStamp" value="16" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/resources/views/layout/main.blade.php</url>
-          <line>26</line>
+          <line>47</line>
           <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/resources/views/orders.blade.php</url>
+          <line>35</line>
+          <option name="timeStamp" value="23" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php-line-method">
           <url>file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php</url>
-          <line>72</line>
+          <line>69</line>
           <properties>
             <option name="className" value="\App\Http\Controllers\HomeController" />
             <option name="methodName" value="order_now" />
@@ -681,7 +703,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php-line-method">
           <url>file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php</url>
-          <line>445</line>
+          <line>442</line>
           <properties>
             <option name="className" value="\App\Http\Controllers\HomeController" />
             <option name="methodName" value="fund_wallet" />
@@ -690,7 +712,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php-line-method">
           <url>file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php</url>
-          <line>956</line>
+          <line>953</line>
           <properties>
             <option name="className" value="\App\Http\Controllers\HomeController" />
             <option name="methodName" value="reset_password" />
@@ -699,7 +721,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php-line-method">
           <url>file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php</url>
-          <line>1259</line>
+          <line>1256</line>
           <properties>
             <option name="className" value="\App\Http\Controllers\HomeController" />
             <option name="methodName" value="webhook" />
@@ -735,7 +757,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php-line-method">
           <url>file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php</url>
-          <line>43</line>
+          <line>44</line>
           <properties>
             <option name="className" value="\App\Http\Controllers\HomeController" />
             <option name="methodName" value="home" />
@@ -744,12 +766,21 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php-line-method">
           <url>file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php</url>
-          <line>563</line>
+          <line>560</line>
           <properties>
             <option name="className" value="\App\Http\Controllers\HomeController" />
             <option name="methodName" value="fund_manual_now" />
           </properties>
           <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php-line-method">
+          <url>file://$PROJECT_DIR$/app/Http/Controllers/WorldNumberController.php</url>
+          <line>14</line>
+          <properties>
+            <option name="className" value="\App\Http\Controllers\WorldNumberController" />
+            <option name="methodName" value="home" />
+          </properties>
+          <option name="timeStamp" value="22" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

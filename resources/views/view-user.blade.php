@@ -311,7 +311,6 @@
 
                                     <h3 class="p-3">Fund User</h3>
 
-
                                     <form action="/update-user" method="POST">
                                         @csrf
 
@@ -351,13 +350,48 @@
                                                 </div>
 
                                             </div>
+                                        </div>
+                                    </form>
+
+
+                                </div>
+                            </div>
+
+                            <div class="col-xl-12 col-lg-12 col-md-6 col-sm-12 col-12">
+                                <div class="card">
+
+                                    <h3 class="p-3">Set Api Percentage</h3>
+
+                                    <form action="/update-api-per" method="POST">
+                                        @csrf
+
+                                        <div class="row">
+
+                                            <div class="col-xl-3 col-lg-4 col-md-4 col-sm-4 col-12">
+
+                                                <div class="card-body p-3">
+                                                    <label>Enter Percentage Amount</label>
+                                                    <input type="number" value="{{Auth::user()->api_percentage}}" class="form-control2 text-dark" name="amount" required>
+
+                                                    <input type="text" hidden value="{{ $user->id }}"
+                                                           class="form-control2" name="id" required>
+
+
+                                                </div>
+                                            </div>
 
 
 
+                                            <div class="col-xl-12 col-lg-4 col-md-4 col-sm-4 col-12">
 
+                                                <div class="card-body">
 
+                                                    <button type="submit"
+                                                            class="btn btn-primary btn-sm">Update</button>
+                                                </div>
 
-
+                                            </div>
+                                        </div>
                                     </form>
 
 
