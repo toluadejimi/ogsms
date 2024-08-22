@@ -278,7 +278,6 @@ class ApiController extends Controller
             $high_price = $var->high_price ?? null;
             $rate = $var->success_rate ?? null;
 
-
             if ($high_price == null) {
                 $price = $get_s_price * $get_key->api_percentage;
             } elseif ($high_price > 4) {

@@ -1322,7 +1322,7 @@ class HomeController extends Controller
     public function orders(request $request)
     {
         $orders = Verification::latest()->where('user_id', Auth::id())->get() ?? null;
-        $spent = Transaction::where('user_id', Auth::id())->where('status', 2)->sum('amount');
+        $spent = Verification::where('user_id', Auth::id())->where('status', 2)->sum('amount');
         $verification = Verification::where('user_id', Auth::id())->where('status', 2)->count();
 
         return view('orders', compact('orders', 'spent','verification'));
