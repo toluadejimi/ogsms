@@ -464,9 +464,6 @@ class HomeController extends Controller
         ]);
 
 
-
-
-
         Transaction::where('user_id', Auth::id())->where('status', 1)->delete() ?? null;
 
 
@@ -512,8 +509,8 @@ class HomeController extends Controller
 
         if ($request->type == 2) {
 
-            if ($request->amount < 100) {
-                return back()->with('error', 'You can not fund less than NGN 100');
+            if ($request->amount < 1000) {
+                return back()->with('error', 'You can not fund less than NGN 1000');
             }
 
 
