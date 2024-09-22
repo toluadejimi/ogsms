@@ -715,7 +715,8 @@ class HomeController extends Controller
     {
         $credentials = $request->only('email', 'password');
 
-        $st = User::where('email', $request->email)->first()->status;
+        $st = User::where('email', $request->email)->first()->status ?? null;
+
 
         if($st == 9){
             return view('ban');
