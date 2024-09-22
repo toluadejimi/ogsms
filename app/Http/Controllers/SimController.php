@@ -79,9 +79,9 @@ class SimController extends Controller
             $responseBody = json_decode($response->getBody(), true);
             $phone = str_replace("+", "", $responseBody['phone']);
 
-            User::where('id', Auth::id())->decrement('wallet', $cost);
 
-                Verification::where('phone', $phone)->where('status', 2)->delete() ?? null;
+
+            Verification::where('phone', $phone)->where('status', 2)->delete() ?? null;
             $ver = new Verification();
             $ver->user_id = Auth::id();
             $ver->phone = $phone;
@@ -93,6 +93,8 @@ class SimController extends Controller
             $ver->status = 1;
             $ver->type = 3;
             $ver->save();
+
+            User::where('id', Auth::id())->decrement('wallet', $cost);
 
 
             $data['id'] = $responseBody['id'];

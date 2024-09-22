@@ -80,7 +80,6 @@ class HomeController extends Controller
         }
 
 
-        User::where('id', Auth::id())->decrement('wallet', $request->price);
 
         $service = $request->service;
         $price = $request->price;

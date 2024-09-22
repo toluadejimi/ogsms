@@ -293,7 +293,6 @@ class WorldNumberController extends Controller
             return view('receivesmsworld', $data);
         }
 
-        User::where('id', Auth::id())->decrement('wallet', $request->price);
 
 
         $order = create_world_order($country, $service, $price, $id);

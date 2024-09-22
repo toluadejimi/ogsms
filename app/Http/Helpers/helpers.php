@@ -3,6 +3,7 @@
 use App\Constants\Status;
 use App\Models\Extension;
 use App\Models\Setting;
+use App\Models\User;
 use App\Models\Verification;
 use App\Lib\GoogleAuthenticator;
 use GuzzleHttp\Client;
@@ -224,6 +225,10 @@ function create_order($service, $price, $cost, $service_name){
         $ver->status = 1;
         $ver->type = 1;
         $ver->save();
+
+
+        User::where('id', Auth::id())->decrement('wallet', $price);
+
         return 1;
 
     }elseif($result == "MAX_PRICE_EXCEEDED" || $result == "NO_NUMBERS" || $result == "TOO_MANY_ACTIVE_RENTALS" || $result == "NO_MONEY") {
@@ -470,6 +475,10 @@ function create_world_order($country, $service, $price, $id){
         $ver->api_cost = $var->cost;
         $ver->status = 1;
         $ver->type = 2;
+
+
+        User::where('id', Auth::id())->decrement('wallet', $price);
+
 
         $ver->save();
 
