@@ -112,6 +112,8 @@ class AdminController extends Controller
         $data['user_wallet'] = User::where('role_id', 2)->sum('wallet');
         $data['usdtongn'] = Setting::where('id', 1)->first()->rate;
         $data['margin'] = Setting::where('id', 1)->first()->margin;
+        $data['simrate'] = Setting::where('id', 3)->first()->rate;
+        $data['simcost'] = Setting::where('id', 3)->first()->margin;
         $data['verification'] = Verification::latest()->paginate(10);
         $data['total_verification'] = Verification::where('status', 2)->count();
 
@@ -387,6 +389,24 @@ class AdminController extends Controller
 
 
 
+
+    }
+
+
+    public function update_sim_rate(request $request)
+    {
+        Setting::where('id', 3)->update(['rate' => $request->rate]);
+
+        return back()->with('message', "Rate Update Successfully");
+
+    }
+
+
+    public function update_sim_cost(request $request)
+    {
+        Setting::where('id', 3)->update(['margin' => $request->cost]);
+
+        return back()->with('message', "Cost Update Successfully");
 
     }
 

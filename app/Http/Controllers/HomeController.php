@@ -716,9 +716,13 @@ class HomeController extends Controller
     {
         $credentials = $request->only('email', 'password');
 
+        $st = User::where('email', $request->email)->first()->status;
+
+        if($st == 9){
+            return view('ban');
+        }
+
         if (Auth::attempt($credentials)) {
-
-
             $user = Auth::id() ?? null;
             return redirect('us');
         }
@@ -737,6 +741,26 @@ class HomeController extends Controller
     {
         return view('Auth.login');
     }
+
+    public function ban_view(Request $request)
+    {
+        return view('ban');
+    }
+
+
+    public function ban_user(Request $request)
+    {
+        User::where('id', $request->user_id)->update(['status' => 9]);
+        return back()->with('message', 'User ban successfully');
+    }
+
+    public function unban_user(Request $request)
+    {
+        User::where('id', $request->user_id)->update(['status' => 2]);
+        return back()->with('message', 'User unban successfully');
+    }
+
+
 
 
 
@@ -1092,12 +1116,6 @@ class HomeController extends Controller
             $message =  "$email | OGSMSPOOL  | is trying to fund and a successful order with orderid $request->trx_ref";
             send_notification($message);
 
-
-
-
-
-
-
             return back()->with('error', "This Transaction has been successful");
         }
 
@@ -1148,12 +1166,6 @@ class HomeController extends Controller
 
             $message =  "$email | OGSMSPOOL | is trying to fund and a successful order with orderid $request->trx_ref";
             send_notification($message);
-
-
-
-
-
-
 
             return back()->with('error', "This Transaction has been resolved");
         }
@@ -1321,7 +1333,6 @@ class HomeController extends Controller
         $orders = Verification::latest()->where('user_id', Auth::id())->get() ?? null;
         $spent = Verification::where('user_id', Auth::id())->where('status', 2)->sum('cost');
         $verification = Verification::where('user_id', Auth::id())->where('status', 2)->count();
-
         return view('orders', compact('orders', 'spent','verification'));
     }
 

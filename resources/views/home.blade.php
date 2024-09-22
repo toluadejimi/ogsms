@@ -20,10 +20,14 @@
                     </button>
 
 
-                    <a class="btn btn-dark" href="/world">
-                        🌎 VERIFY OTHER COUNTRIES NUMBER
+                    <a class="btn btn-dark my-3" href="/world">
+                        🌎 VERIFY ALL COUNTRIES (SERVER 1)
                     </a>
 
+
+                    <a class="btn btn-dark" href="/simworld">
+                        🌎 VERIFY ALL COUNTRIES (SERVER 2)
+                    </a>
 
 
 

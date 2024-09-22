@@ -300,6 +300,21 @@
                                             </div>
                                         </div>
 
+                                        <div class="col-xl-3 col-lg-4 col-md-4 col-sm-4 col-5">
+
+                                            <div class="card-body p-3">
+                                                <h5 class="">Ban User</h5>
+
+                                                @if($user->status == 9)
+                                                    <a href="unban-user?user_id={{$user->id}}" class="btn btn-success btn-sm">Unban User</a>
+                                                @else
+                                                    <a href="ban-user?user_id={{$user->id}}" class="btn btn-danger btn-sm">Ban User</a>
+                                                @endif
+
+
+                                            </div>
+                                        </div>
+
 
 
                                     </div>

@@ -3,7 +3,9 @@
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\SimController;
 use App\Http\Controllers\WorldNumberController;
+use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ItemController;
 
@@ -24,6 +26,17 @@ use App\Http\Controllers\ItemController;
 // });
 
 
+Route::get('/proxy/prices', function (Illuminate\Http\Request $request) {
+    // Get the 'country' query parameter
+    $country = $request->query('country');
+
+    // Make the request to the 5sim API from the Laravel server
+    $response = Http::get('https://5sim.net/v1/guest/prices', [
+        'country' => $country,
+    ]);
+
+    return $response->json();
+});
 
 
 
@@ -37,6 +50,12 @@ Route::post('login_now',  [HomeController::class,'login']);
 Route::get('login',  [HomeController::class,'login_index'])->name('login');
 Route::post('register_now',  [HomeController::class,'register']);
 Route::get('register',  [HomeController::class,'register_index']);
+
+Route::get('ban',  [HomeController::class,'ban_view']);
+Route::get('ban-user',  [HomeController::class,'ban_user']);
+Route::get('unban-user',  [HomeController::class,'unban_user']);
+
+
 
 
 
@@ -72,6 +91,7 @@ Route::group(['middleware' => ['auth', 'user', 'session.timeout']], function () 
 
     Route::any('home',  [WorldNumberController::class,'home']);
     Route::any('world',  [WorldNumberController::class,'home']);
+
     Route::any('check-av',  [WorldNumberController::class,'check_av']);
     Route::any('order_now',  [WorldNumberController::class,'order_now']);
     Route::any('get-smscodeworld',  [WorldNumberController::class,'get_smscode']);
@@ -82,6 +102,12 @@ Route::group(['middleware' => ['auth', 'user', 'session.timeout']], function () 
     Route::any('generate-token',  [HomeController::class,'generate_token']);
 
 
+
+    Route::any('simworld',  [SimController::class,'index']);
+    Route::post('buy-csms',  [SimController::class,'order_csms']);
+    Route::get('c-sms',  [SimController::class,'delete_sms']);
+    Route::get('admin-c-sms',  [SimController::class,'admin_delete_sms']);
+    Route::get('get-csms',  [SimController::class,'get_c_sms']);
 
 
 
@@ -162,6 +188,10 @@ Route::get('admin-dashboard',  [AdminController::class,'admin_dashboard']);
 
 Route::any('update-rate',  [AdminController::class,'update_rate']);
 Route::any('update-cost',  [AdminController::class,'update_cost']);
+
+Route::any('update-sim-rate',  [AdminController::class,'update_sim_rate']);
+Route::any('update-sim-cost',  [AdminController::class,'update_sim_cost']);
+
 
 Route::get('manual-payment',  [AdminController::class,'manual_payment_view']);
 Route::any('verify-payment',  [AdminController::class,'approve_payment']);
