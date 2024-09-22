@@ -1447,6 +1447,57 @@ class HomeController extends Controller
         }
 
 
+        if($order->status == 1 && $order->type == 3){
+
+
+            $token = env('SIMTOKEN');
+            $ch = curl_init();
+            $id = Verification::where('id', $request->id)->first()->order_id ?? null;
+            $cost = Verification::where('id', $request->id)->first()->cost ?? null;
+            $user_id = Verification::where('id', $request->id)->first()->user_id ?? null;
+
+            if($id == null){
+                return back()->with('error', "Verification has been deleted");
+            }
+
+            curl_setopt($ch, CURLOPT_URL, 'https://5sim.net/v1/user/cancel/' . $id);
+            curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+            curl_setopt($ch, CURLOPT_CUSTOMREQUEST, 'GET');
+
+
+            $headers = array();
+            $headers[] = 'Authorization: Bearer ' . $token;
+            $headers[] = 'Accept: application/json';
+            curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
+
+            $result = curl_exec($ch);
+            curl_close($ch);
+            $var = json_decode($result);
+            $status = $var->status ?? null;
+
+
+
+            if($status == "CANCELED"){
+
+                Verification::where('id', $request->id)->delete();
+                User::where('id', $user_id)->increment('wallet', $cost);
+                return back()->with('message', "Number Canceled, NGN $cost has been refunded");
+
+            }
+
+            $status = Verification::where('id', $request->id)->first()->status ?? null;
+
+            if($status != null && $status != 2){
+                Verification::where('id', $request->id)->delete();
+                User::where('id', $user_id)->increment('wallet', $cost);
+                return back()->with('message', "Number Canceled, NGN $cost has been refunded");
+            }
+
+
+
+
+        }
+
 
     }
 
