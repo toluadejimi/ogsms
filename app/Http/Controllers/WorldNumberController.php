@@ -298,12 +298,10 @@ class WorldNumberController extends Controller
         $order = create_world_order($country, $service, $price, $id);
 
         if ($order == 5) {
-            User::where('id', Auth::id())->increment('wallet', $request->price);
             return redirect('world')->with('error', 'Number Currently out of stock, Please check back later');
         }
 
         if ($order == 1) {
-            User::where('id', Auth::id())->increment('wallet', $request->price);
             $message = "OGSMSPOOL | Low balance";
             send_notification($message);
 
@@ -311,7 +309,6 @@ class WorldNumberController extends Controller
         }
 
         if ($order == 2) {
-            User::where('id', Auth::id())->increment('wallet', $request->price);
             $message = "OGSMSPOOL | Error";
             send_notification($message);
             send_notification3($message);

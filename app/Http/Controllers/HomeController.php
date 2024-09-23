@@ -106,12 +106,10 @@ class HomeController extends Controller
         }
 
         if ($order == 0) {
-            User::where('id', Auth::id())->increment('wallet', $request->price);
-            return redirect('home')->with('error', 'Number Currently out of stock, Please check back later');
+            return redirect('us')->with('error', 'Number Currently out of stock, Please check back later');
         }
 
         if ($order == 0) {
-            User::where('id', Auth::id())->increment('wallet', $request->price);
             $message = "OGSMSPOOL | Low balance";
             send_notification($message);
 
@@ -120,7 +118,6 @@ class HomeController extends Controller
         }
 
         if ($order == 0) {
-            User::where('id', Auth::id())->increment('wallet', $request->price);
             $message = "OGSMSPOOL | Error";
             send_notification($message);
 
