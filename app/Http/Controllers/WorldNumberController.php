@@ -250,7 +250,7 @@ class WorldNumberController extends Controller
     {
 
         $total_trx = Transaction::where(['user_id' => Auth::id(),'type' => 2, 'status' => 2  ])->sum('amount');
-        $total_ver = Transaction::where(['user_id' => Auth::id(), 'status' => 2  ])->sum('cost');
+        $total_ver = Verification::where(['user_id' => Auth::id(), 'status' => 2  ])->sum('cost');
 
         if($total_ver > $total_trx){
             User::where('id', Auth::id())->update(['status' => 9]);
