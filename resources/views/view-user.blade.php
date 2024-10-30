@@ -293,8 +293,12 @@
                                             <div class="card-body p-3">
                                                 <h5 class="">Status</h5>
 
+                                                @if($user->status == 9)
+                                                    <p class="text-warning">{{"In Active"}}</p>
+                                                @else
+                                                    <p class="text-success">{{"Active"}}</p>
+                                                @endif
 
-                                                {{"Active"}}
 
 
                                             </div>
