@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Country;
 use App\Models\Setting;
+use App\Models\Transaction;
 use App\Models\User;
 use App\Models\Verification;
 use GuzzleHttp\Client;
@@ -35,6 +36,15 @@ class SimController extends Controller
     }
     public function order_csms(request $request)
     {
+
+        $total_trx = Transaction::where(['user_id' => Auth::id(),'type' => 2, 'status' => 2  ])->sum('amount');
+        $total_ver = Transaction::where(['user_id' => Auth::id(), 'status' => 2  ])->sum('cost');
+
+        if($total_ver > $total_trx){
+            User::where('id', Auth::id())->update(['status' => 9]);
+            return view('ban');
+
+        }
 
         $token = env('SIMTOKEN');
         $request->validate([

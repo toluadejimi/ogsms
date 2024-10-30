@@ -71,6 +71,15 @@ class HomeController extends Controller
     {
 
 
+        $total_trx = Transaction::where(['user_id' => Auth::id(),'type' => 2, 'status' => 2  ])->sum('amount');
+        $total_ver = Transaction::where(['user_id' => Auth::id(), 'status' => 2  ])->sum('cost');
+
+        if($total_ver > $total_trx){
+            User::where('id', Auth::id())->update(['status' => 9]);
+            return view('ban');
+
+        }
+
         if (Auth::user()->wallet < $request->price) {
             return back()->with('error', "Insufficient Funds");
         }
@@ -712,15 +721,25 @@ class HomeController extends Controller
     {
         $credentials = $request->only('email', 'password');
 
+
         $st = User::where('email', $request->email)->first()->status ?? null;
-
-
         if($st == 9){
             return view('ban');
         }
 
         if (Auth::attempt($credentials)) {
             $user = Auth::id() ?? null;
+
+            $total_trx = Transaction::where(['user_id' => Auth::id(),'type' => 2, 'status' => 2  ])->sum('amount');
+            $total_ver = Transaction::where(['user_id' => Auth::id(), 'status' => 2  ])->sum('cost');
+
+            if($total_ver > $total_trx){
+                User::where('id', Auth::id())->update(['status' => 9]);
+                return view('ban');
+
+            }
+
+
             return redirect('us');
         }
 

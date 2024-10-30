@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Country;
 use App\Models\Setting;
+use App\Models\Transaction;
 use App\Models\User;
 use App\Models\Verification;
 use Illuminate\Http\Request;
@@ -247,6 +248,15 @@ class WorldNumberController extends Controller
 
     public function order_now(Request $request)
     {
+
+        $total_trx = Transaction::where(['user_id' => Auth::id(),'type' => 2, 'status' => 2  ])->sum('amount');
+        $total_ver = Transaction::where(['user_id' => Auth::id(), 'status' => 2  ])->sum('cost');
+
+        if($total_ver > $total_trx){
+            User::where('id', Auth::id())->update(['status' => 9]);
+            return view('ban');
+
+        }
 
         if (Auth::user()->wallet < $request->price) {
             return back()->with('error', "Insufficient Funds");
