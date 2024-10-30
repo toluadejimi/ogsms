@@ -294,9 +294,9 @@
                                                 <h5 class="">Status</h5>
 
                                                 @if($user->status == 9)
-                                                    <p class="text-warning">{{"In Active"}}</p>
+                                                    <span class="text-warning">{{"In Active"}}</span>
                                                 @else
-                                                    <p class="text-success">{{"Active"}}</p>
+                                                    <span class="text-success">{{"Active"}}</span>
                                                 @endif
 
 
