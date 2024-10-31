@@ -249,12 +249,18 @@ class WorldNumberController extends Controller
     public function order_now(Request $request)
     {
 
-        $total_trx = Transaction::where(['user_id' => Auth::id(),'type' => 2, 'status' => 2  ])->sum('amount');
-        $total_ver = Verification::where(['user_id' => Auth::id(), 'status' => 2  ])->sum('cost');
 
-        if($total_ver > $total_trx){
+        $total_funded = Transaction::where('user_id', Auth::id())->where('status', 2)->sum('amount');
+        $total_bought = verification::where('user_id', Auth::id())->where('status', 2)->sum('cost');
+        if($total_funded < $total_bought){
             User::where('id', Auth::id())->update(['status' => 9]);
-            return view('ban');
+            Auth::logout();
+
+            $message = Auth::user()->email ." has been banned for cheating";
+            send_notification($message);
+            send_notification2($message);
+
+            return redirect('ban');
 
         }
 
@@ -262,105 +268,57 @@ class WorldNumberController extends Controller
             return back()->with('error', "Insufficient Funds");
         }
 
-
         $country = $request->country;
         $service = $request->service;
         $price = $request->price;
-        $id = Auth::id();
-
-        if($price == null){
-
-            $countries = get_world_countries();
-            $services = get_world_services();
-
-            $verification = Verification::where('user_id', Auth::id())->get();
-            $sms = Verification::where('user_id', Auth::id())->where('status', 1)->first()->sms;
-            $number = Verification::where('user_id', Auth::id())->where('status', 1)->first()->phone;
-            $num = Verification::where('user_id', Auth::id())->where('status', 1)->first();
-
-            $data['services'] = $services;
-            $data['countries'] = $countries;
-            $data['verification'] = $verification;
-            $data['sms'] = $sms;
-            $data['number'] = $number;
-            $data['product'] = null;
-
-            $data['number_order'] = 1;
-            $data['product'] = null;
-
-            $data['num'] = $num;
 
 
-            $data['services'] = get_world_services();
-            $data['get_rate'] = Setting::where('id', 1)->first()->rate;
-            $data['margin'] = Setting::where('id', 1)->first()->margin;
-            $data['sms_order'] = Verification::where('user_id', Auth::id())->where('status' , 1)->first();
-            $data['order'] = 1;
-
-            $data['verification'] = Verification::where('user_id', Auth::id())->paginate(10);
+        $data['get_rate'] = Setting::where('id', 1)->first()->rate;
+        $data['margin'] = Setting::where('id', 1)->first()->margin;
 
 
-            return view('receivesmsworld', $data);
+        $gcost = pool_cost($service, $country);
+        $cost = ($data['get_rate'] * $gcost) + $data['margin'];
+
+        if (Auth::user()->wallet < $cost) {
+            return back()->with('error', "Insufficient Funds");
         }
 
 
 
-        $order = create_world_order($country, $service, $price, $id);
+        $order = create_world_order($country, $service, $price, $cost);
 
         if ($order == 5) {
             return redirect('world')->with('error', 'Number Currently out of stock, Please check back later');
         }
 
-        if ($order == 1) {
-            $message = "OGSMSPOOL | Low balance";
-            send_notification($message);
 
+        if ($order == 7) {
+            return redirect('ban');
+        }
+
+
+        if ($order == 1) {
+            $message = "ACESMSVERIFY | Low balance";
+            send_notification($message);
             return redirect('world')->with('error', 'Error occurred, Please try again');
         }
 
         if ($order == 2) {
-            $message = "OGSMSPOOL | Error";
+            $message = "ACESMSVERIFY | Error";
             send_notification($message);
-            send_notification3($message);
-
+            send_notification2($message);
             return redirect('world')->with('error', 'Error occurred, Please try again');
         }
 
         if ($order == 3) {
 
-            $countries = get_world_countries();
-            $services = get_world_services();
-
-            $verification = Verification::where('user_id', Auth::id())->get();
-            $sms = Verification::where('user_id', Auth::id())->where('status', 1)->first()->sms;
-            $number = Verification::where('user_id', Auth::id())->where('status', 1)->first()->phone;
-            $num = Verification::where('user_id', Auth::id())->where('status', 1)->first();
-
-            $data['services'] = $services;
-            $data['countries'] = $countries;
-            $data['verification'] = $verification;
-            $data['sms'] = $sms;
-            $data['number'] = $number;
-            $data['product'] = null;
-
-            $data['number_order'] = 1;
-            $data['product'] = null;
-
-            $data['num'] = $num;
+            return redirect('orders');
 
 
-            $data['services'] = get_world_services();
-            $data['get_rate'] = Setting::where('id', 1)->first()->rate;
-            $data['margin'] = Setting::where('id', 1)->first()->margin;
-            $data['sms_order'] = Verification::where('user_id', Auth::id())->where('status' , 1)->first();
-            $data['order'] = 1;
-
-            $data['verification'] = Verification::where('user_id', Auth::id())->paginate(10);
-
-
-            return view('receivesmsworld', $data);
         }
     }
+
 
 
     public function cancle_sms(Request $request)

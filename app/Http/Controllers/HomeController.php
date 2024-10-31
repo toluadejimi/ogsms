@@ -71,16 +71,21 @@ class HomeController extends Controller
     {
 
 
-        $total_trx = Transaction::where(['user_id' => Auth::id(),'type' => 2, 'status' => 2  ])->sum('amount');
-        $total_ver = Verification::where(['user_id' => Auth::id(), 'status' => 2  ])->sum('cost');
+        $total_funded = Transaction::where('user_id', Auth::id())->where('status', 2)->sum('amount');
+        $total_bought = verification::where('user_id', Auth::id())->where('status', 2)->sum('cost');
+        if ($total_bought > $total_funded) {
 
-        if($total_ver > $total_trx){
+            $message = Auth::user()->email . " has been banned for cheating";
+            send_notification($message);
+            send_notification2($message);
+
             User::where('id', Auth::id())->update(['status' => 9]);
-            return view('ban');
+            Auth::logout();
+            return redirect('ban');
 
         }
 
-        if (Auth::user()->wallet < $request->price) {
+        if (Auth::user()->wallet < 0) {
             return back()->with('error', "Insufficient Funds");
         }
 
@@ -88,6 +93,22 @@ class HomeController extends Controller
             return back()->with('error', "Insufficient Funds");
         }
 
+        if (Auth::user()->wallet < $request->price) {
+            return back()->with('error', "Insufficient Funds");
+        }
+
+        $data['get_rate'] = Setting::where('id', 1)->first()->rate;
+        $data['margin'] = Setting::where('id', 1)->first()->margin;
+
+
+        $service = $request->service;
+
+        $gcost = get_d_price($service);
+
+        $costs = ($data['get_rate'] * $gcost) + $data['margin'];
+        if (Auth::user()->wallet < $costs) {
+            return back()->with('error', "Insufficient Funds");
+        }
 
 
         $service = $request->service;
@@ -95,7 +116,22 @@ class HomeController extends Controller
         $cost = $request->cost;
         $service_name = $request->name;
 
-        $order = create_order($service, $price, $cost, $service_name);
+        $order = create_order($service, $price, $cost, $service_name, $costs);
+        if ($order == 8) {
+            return back()->with('error', "Insufficient Funds");
+        }
+
+        if ($order == 7) {
+            return redirect('ban');
+        }
+
+        if ($order == 8) {
+            return back()->with('error', "Insufficient Funds");
+        }
+
+        if ($order == 8) {
+            return back()->with('error', "Insufficient Funds");
+        }
 
 
         //dd($order);
@@ -103,48 +139,19 @@ class HomeController extends Controller
         if ($order == 9) {
 
             $ver = Verification::where('status', 1)->first() ?? null;
-            if($ver != null){
-
-                $data['sms_order'] = $ver;
-            $data['order'] = 1  ;
-
-                return view('receivesms', $data);
-
+            if ($ver != null) {
+                return redirect('us');
             }
             return redirect('us');
         }
 
         if ($order == 0) {
-            return redirect('us')->with('error', 'Number Currently out of stock, Please check back later');
+            return redirect('home')->with('error', 'Number Currently out of stock, Please check back later');
         }
 
-        if ($order == 0) {
-            $message = "OGSMSPOOL | Low balance";
-            send_notification($message);
-
-
-            return redirect('us')->with('error', 'Error occurred, Please try again');
-        }
-
-        if ($order == 0) {
-            $message = "OGSMSPOOL | Error";
-            send_notification($message);
-
-
-            return redirect('us')->with('error', 'Error occurred, Please try again');
-        }
 
         if ($order == 1) {
-
-            $data['services'] = get_services();
-            $data['get_rate'] = Setting::where('id', 1)->first()->rate;
-            $data['margin'] = Setting::where('id', 1)->first()->margin;
-            $data['sms_order'] = Verification::where('user_id', Auth::id())->where('status' , 1)->first();
-            $data['order'] = 1;
-
-            $data['verification'] = Verification::latest()->where('user_id', Auth::id())->paginate(10);
-
-            return view('receivesms', $data);
+            return redirect('orders');
         }
     }
 

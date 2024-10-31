@@ -242,6 +242,91 @@ function create_order($service, $price, $cost, $service_name){
 
 }
 
+
+function get_d_price($service){
+    $APIKEY = env('KEY');
+    $curl = curl_init();
+    curl_setopt_array($curl, array(
+        CURLOPT_URL => "https://daisysms.com/stubs/handler_api.php?api_key=$APIKEY&action=getPrices&service=$service",
+        CURLOPT_RETURNTRANSFER => true,
+        CURLOPT_ENCODING => '',
+        CURLOPT_MAXREDIRS => 10,
+        CURLOPT_TIMEOUT => 0,
+        CURLOPT_FOLLOWLOCATION => true,
+        CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+        CURLOPT_CUSTOMREQUEST => 'GET',
+        CURLOPT_HTTPHEADER => array(
+            'Content-Type: application/json',
+            'Accept: application/json',
+        ),
+    ));
+
+    $var = curl_exec($curl);
+    curl_close($curl);
+    $var = json_decode($var);
+
+
+    foreach($var as $key => $value){
+
+        $service2['data'] =  $value;
+
+    }
+
+    $result = $service2["data"]->$service->cost;
+    return $result;
+
+}
+
+function pool_cost($service, $country){
+
+    $key = env('WKEY');
+
+    $databody = array(
+        "key" => $key,
+        "country" => $country,
+        "service" => $service,
+        "pool" => '7',
+    );
+
+    $body = json_encode($databody);
+
+    $curl = curl_init();
+    curl_setopt_array($curl, array(
+        CURLOPT_URL => 'https://api.smspool.net/request/price',
+        CURLOPT_RETURNTRANSFER => true,
+        CURLOPT_ENCODING => '',
+        CURLOPT_MAXREDIRS => 10,
+        CURLOPT_TIMEOUT => 0,
+        CURLOPT_FOLLOWLOCATION => true,
+        CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+        CURLOPT_CUSTOMREQUEST => 'POST',
+        CURLOPT_POSTFIELDS => $databody,
+        CURLOPT_HTTPHEADER => array(
+            "Authorization: Bearer $key"
+        ),
+    ));
+
+    $var = curl_exec($curl);
+    curl_close($curl);
+    $var = json_decode($var);
+
+
+    $get_s_price = $var->price ?? null;
+    $high_price = $var->high_price ?? null;
+    $rate = $var->success_rate ?? null;
+
+    if($get_s_price < 4){
+        $price = $get_s_price * 1.3;
+    }else{
+        $price = $get_s_price;
+    }
+
+
+    return $price;
+
+
+}
+
 function cancel_order($orderID){
 
 

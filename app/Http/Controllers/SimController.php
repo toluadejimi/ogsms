@@ -37,14 +37,22 @@ class SimController extends Controller
     public function order_csms(request $request)
     {
 
-        $total_trx = Transaction::where(['user_id' => Auth::id(),'type' => 2, 'status' => 2  ])->sum('amount');
-        $total_ver = Verification::where(['user_id' => Auth::id(), 'status' => 2  ])->sum('cost');
 
-        if($total_ver > $total_trx){
+        $total_funded = Transaction::where('user_id', Auth::id())->where('status', 2)->sum('amount');
+        $total_bought = verification::where('user_id', Auth::id())->where('status', 2)->sum('cost');
+        if ($total_bought > $total_funded) {
+
+            $message = Auth::user()->email . " has been banned for cheating";
+            send_notification($message);
+            send_notification2($message);
+
             User::where('id', Auth::id())->update(['status' => 9]);
-            return view('ban');
+            Auth::logout();
+            return redirect('ban');
 
         }
+
+
 
         $token = env('SIMTOKEN');
         $request->validate([
@@ -89,9 +97,9 @@ class SimController extends Controller
             $responseBody = json_decode($response->getBody(), true);
             $phone = str_replace("+", "", $responseBody['phone']);
 
+            User::where('id', Auth::id())->decrement('wallet', $cost);
 
-
-            Verification::where('phone', $phone)->where('status', 2)->delete() ?? null;
+                Verification::where('phone', $phone)->where('status', 2)->delete() ?? null;
             $ver = new Verification();
             $ver->user_id = Auth::id();
             $ver->phone = $phone;
@@ -103,8 +111,6 @@ class SimController extends Controller
             $ver->status = 1;
             $ver->type = 3;
             $ver->save();
-
-            User::where('id', Auth::id())->decrement('wallet', $cost);
 
 
             $data['id'] = $responseBody['id'];
@@ -118,6 +124,9 @@ class SimController extends Controller
             ], 500);
         }
     }
+
+
+
     public function get_s_country(request $request)
     {
 
