@@ -58,8 +58,6 @@ class AdminController extends Controller
 
 
 
-
-
         }
 
         return back()->with('error', "Email or Password Incorrect");
@@ -69,6 +67,15 @@ class AdminController extends Controller
 
 
 	}
+
+
+
+    public function unban_user(request $request)
+    {
+        User::where('id', $request->id)->update(['status' => 2]);
+        return back()->with('message', 'Account unbann successfully');
+
+    }
 
 
 

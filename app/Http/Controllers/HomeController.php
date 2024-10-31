@@ -75,19 +75,24 @@ class HomeController extends Controller
             return back()->with('error', "something went wrong");
         }
 
-        $total_funded = Transaction::where('user_id', Auth::id())->where('status', 2)->sum('amount');
-        $total_bought = verification::where('user_id', Auth::id())->where('status', 2)->sum('cost');
-        if ($total_bought > $total_funded) {
-
-            $message = Auth::user()->email . " has been banned for cheating";
-            send_notification($message);
-            send_notification2($message);
-
-            User::where('id', Auth::id())->update(['status' => 9]);
-            Auth::logout();
-            return redirect('ban');
-
+        if($request->price < 1000 ){
+            return back()->with('error', "something went wrong");
         }
+
+
+//        $total_funded = Transaction::where('user_id', Auth::id())->where('status', 2)->sum('amount');
+//        $total_bought = verification::where('user_id', Auth::id())->where('status', 2)->sum('cost');
+//        if ($total_bought > $total_funded) {
+//
+//            $message = Auth::user()->email . " has been banned for cheating";
+//            send_notification($message);
+//            send_notification2($message);
+//
+//            User::where('id', Auth::id())->update(['status' => 9]);
+//            Auth::logout();
+//            return redirect('ban');
+//
+//        }
 
         if (Auth::user()->wallet < 0) {
             return back()->with('error', "Insufficient Funds");
@@ -741,14 +746,14 @@ class HomeController extends Controller
         if (Auth::attempt($credentials)) {
             $user = Auth::id() ?? null;
 
-            $total_trx = Transaction::where(['user_id' => Auth::id(),'type' => 2, 'status' => 2  ])->sum('amount');
-            $total_ver = Verification::where(['user_id' => Auth::id(), 'status' => 2  ])->sum('cost');
-
-            if($total_ver > $total_trx){
-                User::where('id', Auth::id())->update(['status' => 9]);
-                return view('ban');
-
-            }
+//            $total_trx = Transaction::where(['user_id' => Auth::id(),'type' => 2, 'status' => 2  ])->sum('amount');
+//            $total_ver = Verification::where(['user_id' => Auth::id(), 'status' => 2  ])->sum('cost');
+//
+//            if($total_ver > $total_trx){
+//                User::where('id', Auth::id())->update(['status' => 9]);
+//                return view('ban');
+//
+//            }
 
 
             return redirect('us');

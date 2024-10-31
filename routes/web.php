@@ -53,7 +53,6 @@ Route::get('register',  [HomeController::class,'register_index']);
 
 Route::get('ban',  [HomeController::class,'ban_view']);
 Route::get('ban-user',  [HomeController::class,'ban_user']);
-Route::get('unban-user',  [HomeController::class,'unban_user']);
 
 
 
@@ -229,6 +228,8 @@ Route::get('users',  [AdminController::class,'index_user']);
 Route::get('view-user',  [AdminController::class,'view_user']);
 Route::any('update-user',  [AdminController::class,'update_user']);
 Route::any('remove-user',  [AdminController::class,'remove_user']);
+Route::any('unban-user',  [AdminController::class,'unban_user']);
+
 
 
 

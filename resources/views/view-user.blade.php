@@ -310,7 +310,7 @@
                                                 <h5 class="">Ban User</h5>
 
                                                 @if($user->status == 9)
-                                                    <a href="unban-user?user_id={{$user->id}}" class="btn btn-success btn-sm">Unban User</a>
+                                                    <a href="unban-user?id={{$user->id}}" class="btn btn-success btn-sm">Unban User</a>
                                                 @else
                                                     <a href="ban-user?user_id={{$user->id}}" class="btn btn-danger btn-sm">Ban User</a>
                                                 @endif
