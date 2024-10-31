@@ -75,7 +75,7 @@ class HomeController extends Controller
             return back()->with('error', "something went wrong");
         }
 
-        if($request->price < 1000 ){
+        if($request->price < 500 ){
             return back()->with('error', "something went wrong");
         }
 
