@@ -163,7 +163,9 @@ class WorldNumberController extends Controller
             $data['margin'] = Setting::where('id', 1)->first()->margin;
 
             $data['q_orderuk'] = ck_av("1", "1012") ?? 0;
-            $data['ukamont'] = (world_price("1", "1012") ??  0 ) * $get_rate + $margin;
+
+            $gcost = pool_cost("1", "1012");
+            $data['ukamont'] = ($data['get_rate'] * $gcost) + $data['margin'];
 
 
             $data['count_id'] = $count_id;
@@ -288,7 +290,6 @@ class WorldNumberController extends Controller
         $gcost = pool_cost($service, $country);
         $cost = ($data['get_rate'] * $gcost) + $data['margin'];
 
-        dd(Auth::user()->wallet, $cost);
 
         if (Auth::user()->wallet < $cost) {
             return back()->with('error', "Insufficient Funds");
