@@ -37,8 +37,8 @@ class WorldNumberController extends Controller
 
 
         $data['q_orderuk'] = ck_av("2", "1012") ?? 0;
-        $data['ukamont'] = (world_price("2", "1012") ??  0 ) * $get_rate + $margin;
-
+        $gcost = pool_cost("1", "1012");
+        $data['ukamont'] = ($data['get_rate'] * $gcost) + $data['margin'];
 
 
 
