@@ -384,6 +384,8 @@ function check_sms($orderID){
     curl_close($curl);
     $result = $var ?? null;
 
+    dd($var);
+
 
     if(strstr($result, "NO_ACTIVATION") !== false){
         return 1;
