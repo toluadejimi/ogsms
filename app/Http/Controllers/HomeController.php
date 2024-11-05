@@ -1259,8 +1259,8 @@ class HomeController extends Controller
     {
 
 
-        $sms =  Verification::where('phone', $request->num)->first()->sms ?? null;
-        $order_id =  Verification::where('phone', $request->num)->first()->order_id ?? null;
+        $sms =  Verification::where('phone', $request->id)->first()->sms ?? null;
+        $order_id =  Verification::where('phone', $request->id)->first()->order_id ?? null;
         check_sms($order_id);
 
         $originalString = 'waiting for sms';
