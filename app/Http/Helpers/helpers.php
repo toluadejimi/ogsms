@@ -369,7 +369,6 @@ function check_sms($orderID){
 
    $APIKEY = env('KEY');
    $curl = curl_init();
-
    curl_setopt_array($curl, array(
        CURLOPT_URL => "https://daisysms.com/stubs/handler_api.php?api_key=$APIKEY&action=getStatus&id=$orderID",
        CURLOPT_RETURNTRANSFER => true,
@@ -385,10 +384,9 @@ function check_sms($orderID){
     curl_close($curl);
     $result = $var ?? null;
 
+
     if(strstr($result, "NO_ACTIVATION") !== false){
-
         return 1;
-
     }
 
     if(strstr($result, "NO_ACTIVATION") !== false){

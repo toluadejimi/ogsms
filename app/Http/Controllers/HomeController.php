@@ -80,20 +80,6 @@ class HomeController extends Controller
         }
 
 
-//        $total_funded = Transaction::where('user_id', Auth::id())->where('status', 2)->sum('amount');
-//        $total_bought = verification::where('user_id', Auth::id())->where('status', 2)->sum('cost');
-//        if ($total_bought > $total_funded) {
-//
-//            $message = Auth::user()->email . " has been banned for cheating";
-//            send_notification($message);
-//            send_notification2($message);
-//
-//            User::where('id', Auth::id())->update(['status' => 9]);
-//            Auth::logout();
-//            return redirect('ban');
-//
-//        }
-
         if (Auth::user()->wallet < 0) {
             return back()->with('error', "Insufficient Funds");
         }
@@ -428,8 +414,6 @@ class HomeController extends Controller
     {
 
         $order = Verification::where('id', $request->id)->first() ?? null;
-
-
         if($request->count == 1){
 
             $status = $order->status;
@@ -1279,7 +1263,6 @@ class HomeController extends Controller
         $order_id =  Verification::where('phone', $request->num)->first()->order_id ?? null;
         check_sms($order_id);
 
-
         $originalString = 'waiting for sms';
         $processedString = str_replace('"', '', $originalString);
 
@@ -1341,8 +1324,6 @@ class HomeController extends Controller
 
     public function diasy_webhook(request $request)
     {
-
-
 
         $activationId = $request->activationId;
         $messageId = $request->messageId;

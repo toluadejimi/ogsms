@@ -106,11 +106,11 @@
                                                 <tr>
                                                     <td style="font-size: 12px;">{{ $data->id }}</td>
                                                     <td style="font-size: 12px;">{{ $data->service }}</td>
-                                                    <td style="font-size: 12px; color: green">{{ $data->phone }}
+                                                    <td style="font-size: 12px; color: green">{{ $data->phone }}  </td>
 
 
-                                                        @if($data->type == 1 || $data->type == 2)
-                                                    </td>
+                                                    @if($data->type == 1 || $data->status == 1)
+
                                                     @if($data->sms != null)
                                                         <td style="font-size: 12px;">{{ $data->sms }}
                                                         </td>
