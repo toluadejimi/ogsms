@@ -173,6 +173,7 @@
                                                                 <div class="col mr-3">
                                                                     @auth
                                                                         <form action="order-usnumber-now" method="post">
+                                                                            @csrf
                                                                             <input hidden name="service" value="{{ $key }}">
                                                                             <input hidden name="price" value="{{ $cost }}">
                                                                             <input hidden name="cost" value="{{ $innerValue->cost }}">
