@@ -293,7 +293,6 @@ class AdminController extends Controller
 
 
        ManualPayment::where('id', $request->id)->update(['status' => 1]);
-
        User::where('id', $request->user_id)->increment('wallet', $request->amount);
 
        $email = User::where('id', $request->user_id)->first()->email;
@@ -301,16 +300,8 @@ class AdminController extends Controller
        $ref = "LOG-" . random_int(000, 999) . date('ymdhis');
 
 
-
-
-       $data                  = new Transaction();
-       $data->user_id         = $request->user_id;
-       $data->amount          = $request->amount;
-       $data->ref_id          = $ref;
-       $data->type            = 2;
-       $data->status          = 2;
-       $data->save();
-
+        $trx = ManualPayment::where('id', $request->id)->first()->order_id ?? null;
+        Transaction::where('ref_id', $trx)->update(['status' => 2]);
 
 
        $message = $email . "| Manual Payment  Approved |  NGN " . number_format($request->amount) . " | on LOG MARKETPLACE";

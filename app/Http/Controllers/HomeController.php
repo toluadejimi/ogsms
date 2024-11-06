@@ -535,7 +535,7 @@ class HomeController extends Controller
             $data->amount          = $request->amount;
             $data->ref_id          = $ref;
             $data->type            = 2; //manual funding
-            $data->status          = 1; //initiate
+            $data->status          = 0; //initiate
             $data->save();
 
 
@@ -550,6 +550,8 @@ class HomeController extends Controller
 
             $data['account_details'] = AccountDetail::where('id', 1)->first();
             $data['amount'] = $request->amount;
+            $data['ref'] = $ref;
+
 
             return view('manual-fund', $data);
         }
@@ -580,13 +582,11 @@ class HomeController extends Controller
         $pay->receipt = $receipt_fileName;
         $pay->user_id = Auth::id();
         $pay->amount = $request->amount;
+        $pay->order_id = $request->order_id;
         $pay->save();
-
 
         $message = Auth::user()->email . "| submitted payment receipt |  NGN " . number_format($request->amount) . " | on OGSMSPOOL";
         send_notification2($message);
-
-
 
         return view('confirm-pay');
     }
@@ -600,115 +600,115 @@ class HomeController extends Controller
 
 
 
-    public function verify_payment(request $request)
-    {
-
-        $trx_id = $request->trans_id;
-        $ip = $request->ip();
-        $status = $request->status;
-
-
-        if ($status == 'failed') {
-
-
-            $message = Auth::user()->email . "| Cancled |  NGN " . number_format($request->amount) . " | with ref | $trx_id |  on OGSMSPOOL";
-            send_notification2($message);
-
-
-            Transaction::where('ref_id', $trx_id)->where('status', 1)->update(['status' => 3]);
-            return redirect('fund-wallet')->with('error', 'Transaction Declined');
-        }
-
-
-
-
-        $trxstatus = Transaction::where('ref_id', $trx_id)->first()->status ?? null;
-
-        if ($trxstatus == 2) {
-
-            $message =  Auth::user()->email . "| is trying to fund  with | " . number_format($request->amount, 2) . "\n\n IP ====> " . $request->ip();
-            send_notification($message);
-
-            $message =  Auth::user()->email . "| on OGSMSPOOL | is trying to fund  with | " . number_format($request->amount, 2) . "\n\n IP ====> " . $request->ip();
-            send_notification2($message);
-
-            return redirect('fund-wallet')->with('error', 'Transaction already confirmed or not found');
-        }
-
-        $curl = curl_init();
-
-        curl_setopt_array($curl, array(
-            CURLOPT_URL => 'https://web.enkpay.com/api/verify',
-            CURLOPT_RETURNTRANSFER => true,
-            CURLOPT_ENCODING => '',
-            CURLOPT_MAXREDIRS => 10,
-            CURLOPT_TIMEOUT => 0,
-            CURLOPT_FOLLOWLOCATION => true,
-            CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
-            CURLOPT_CUSTOMREQUEST => 'POST',
-            CURLOPT_POSTFIELDS => array('trans_id' => "$trx_id"),
-        ));
-
-        $var = curl_exec($curl);
-        curl_close($curl);
-        $var = json_decode($var);
-
-        $status1 = $var->detail ?? null;
-        $amount = $var->price ?? null;
-
-
-
-
-        if ($status1 == 'success') {
-
-            $chk_trx = Transaction::where('ref_id', $trx_id)->first() ?? null;
-            if ($chk_trx == null) {
-                return back()->with('error', 'Transaction not processed, Contact Admin');
-            }
-
-            Transaction::where('ref_id', $trx_id)->update(['status' => 2]);
-            User::where('id', Auth::id())->increment('wallet', $amount);
-
-            $message =  Auth::user()->email . "| just funded NGN" . number_format($request->amount, 2) . " on Log market";
-            send_notification($message);
-
-
-
-
-
-            $order_id = $trx_id;
-            $databody = array('order_id' => "$order_id");
-
-            curl_setopt_array($curl, array(
-                CURLOPT_URL => 'https://web.enkpay.com/api/resolve-complete',
-                CURLOPT_RETURNTRANSFER => true,
-                CURLOPT_ENCODING => '',
-                CURLOPT_MAXREDIRS => 10,
-                CURLOPT_TIMEOUT => 0,
-                CURLOPT_FOLLOWLOCATION => true,
-                CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
-                CURLOPT_CUSTOMREQUEST => 'POST',
-                CURLOPT_POSTFIELDS => $databody,
-            ));
-
-            $var = curl_exec($curl);
-            curl_close($curl);
-            $var = json_decode($var);
-
-
-            $message = Auth::user()->email . "| Just funded |  NGN " . number_format($request->amount) . " | with ref | $order_id |  on OGSMSPOOL";
-            send_notification2($message);
-
-
-
-
-
-
-            return redirect('fund-wallet')->with('message', "Wallet has been funded with $amount");
-        }
-
-        return redirect('fund-wallet')->with('error', 'Transaction already confirmed or not found');
-    }
+//    public function verify_payment(request $request)
+//    {
+//
+//        $trx_id = $request->trans_id;
+//        $ip = $request->ip();
+//        $status = $request->status;
+//
+//
+//        if ($status == 'failed') {
+//
+//
+//            $message = Auth::user()->email . "| Cancled |  NGN " . number_format($request->amount) . " | with ref | $trx_id |  on OGSMSPOOL";
+//            send_notification2($message);
+//
+//
+//            Transaction::where('ref_id', $trx_id)->where('status', 1)->update(['status' => 3]);
+//            return redirect('fund-wallet')->with('error', 'Transaction Declined');
+//        }
+//
+//
+//
+//
+//        $trxstatus = Transaction::where('ref_id', $trx_id)->first()->status ?? null;
+//
+//        if ($trxstatus == 2) {
+//
+//            $message =  Auth::user()->email . "| is trying to fund  with | " . number_format($request->amount, 2) . "\n\n IP ====> " . $request->ip();
+//            send_notification($message);
+//
+//            $message =  Auth::user()->email . "| on OGSMSPOOL | is trying to fund  with | " . number_format($request->amount, 2) . "\n\n IP ====> " . $request->ip();
+//            send_notification2($message);
+//
+//            return redirect('fund-wallet')->with('error', 'Transaction already confirmed or not found');
+//        }
+//
+//        $curl = curl_init();
+//
+//        curl_setopt_array($curl, array(
+//            CURLOPT_URL => 'https://web.enkpay.com/api/verify',
+//            CURLOPT_RETURNTRANSFER => true,
+//            CURLOPT_ENCODING => '',
+//            CURLOPT_MAXREDIRS => 10,
+//            CURLOPT_TIMEOUT => 0,
+//            CURLOPT_FOLLOWLOCATION => true,
+//            CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+//            CURLOPT_CUSTOMREQUEST => 'POST',
+//            CURLOPT_POSTFIELDS => array('trans_id' => "$trx_id"),
+//        ));
+//
+//        $var = curl_exec($curl);
+//        curl_close($curl);
+//        $var = json_decode($var);
+//
+//        $status1 = $var->detail ?? null;
+//        $amount = $var->price ?? null;
+//
+//
+//
+//
+//        if ($status1 == 'success') {
+//
+//            $chk_trx = Transaction::where('ref_id', $trx_id)->first() ?? null;
+//            if ($chk_trx == null) {
+//                return back()->with('error', 'Transaction not processed, Contact Admin');
+//            }
+//
+//            Transaction::where('ref_id', $trx_id)->update(['status' => 2]);
+//            User::where('id', Auth::id())->increment('wallet', $amount);
+//
+//            $message =  Auth::user()->email . "| just funded NGN" . number_format($request->amount, 2) . " on Log market";
+//            send_notification($message);
+//
+//
+//
+//
+//
+//            $order_id = $trx_id;
+//            $databody = array('order_id' => "$order_id");
+//
+//            curl_setopt_array($curl, array(
+//                CURLOPT_URL => 'https://web.enkpay.com/api/resolve-complete',
+//                CURLOPT_RETURNTRANSFER => true,
+//                CURLOPT_ENCODING => '',
+//                CURLOPT_MAXREDIRS => 10,
+//                CURLOPT_TIMEOUT => 0,
+//                CURLOPT_FOLLOWLOCATION => true,
+//                CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+//                CURLOPT_CUSTOMREQUEST => 'POST',
+//                CURLOPT_POSTFIELDS => $databody,
+//            ));
+//
+//            $var = curl_exec($curl);
+//            curl_close($curl);
+//            $var = json_decode($var);
+//
+//
+//            $message = Auth::user()->email . "| Just funded |  NGN " . number_format($request->amount) . " | with ref | $order_id |  on OGSMSPOOL";
+//            send_notification2($message);
+//
+//
+//
+//
+//
+//
+//            return redirect('fund-wallet')->with('message', "Wallet has been funded with $amount");
+//        }
+//
+//        return redirect('fund-wallet')->with('error', 'Transaction already confirmed or not found');
+//    }
 
 
 
@@ -836,99 +836,6 @@ class HomeController extends Controller
 
         Auth::logout();
         return redirect('/');
-    }
-
-
-    public function session_resolve(request $request)
-    {
-
-
-        $session_id = $request->session_id;
-        $ref = $request->ref_id;
-
-
-        $resolve = session_resolve($session_id, $ref);
-
-        $status = $resolve[0]['status'];
-        $amount = $resolve[0]['amount'];
-        $message = $resolve[0]['message'];
-
-
-
-        $trx = Transaction::where('ref_id', $request->ref_id)->first()->status ?? null;
-        if ($trx == null) {
-
-            $message = Auth::user()->email . "is trying to resolve from deleted transaction on OGSMSPOOL";
-            send_notification($message);
-
-            $message = Auth::user()->email . "is trying to reslove from deleted transaction on OGSMSPOOL";
-            send_notification2($message);
-
-
-
-
-            return back()->with('error', "Transaction has been deleted");
-        }
-
-
-        $chk = Transaction::where('ref_id', $request->ref_id)->first()->status ?? null;
-
-        if ($chk == 2 || $chk == 4) {
-
-            $message = Auth::user()->email . "is trying to steal hits the endpoint twice on OGSMSPOOL";
-            send_notification($message);
-
-            $message = Auth::user()->email . "is trying to steal hits the endpoint twice on OGSMSPOOL";
-            send_notification2($message);
-
-
-
-
-
-
-
-            return back()->with('message', "Error Occured");
-        }
-
-
-        if ($status == 'true') {
-
-            User::where('id', Auth::id())->increment('wallet', $amount);
-            Transaction::where('ref_id', $request->ref_id)->update(['status' => 4]);
-
-
-
-            $ref = "LOG-" . random_int(000, 999) . date('ymdhis');
-
-
-            $data                  = new Transaction();
-            $data->user_id         = Auth::id();
-            $data->amount          = $amount;
-            $data->ref_id          = $ref;
-            $data->type            = 2;
-            $data->status          = 2;
-            $data->save();
-
-
-            $message = Auth::user()->email . "| just resolved with $request->session_id | NGN " . number_format($amount) . " on OGSMSPOOL";
-            send_notification($message);
-
-            $message = Auth::user()->email . "| just resolved with $request->session_id | NGN " . number_format($amount) . " on OGSMSPOOL";
-            send_notification2($message);
-
-
-
-
-
-
-
-
-            return back()->with('message', "Transaction successfully Resolved, NGN $amount added to ur wallet");
-        }
-
-        if ($status == false) {
-            return back()->with('error', "$message");
-        }
     }
 
 
@@ -1083,177 +990,177 @@ class HomeController extends Controller
 
 
 
-    public function resloveDeposit(Request $request)
-    {
-        $dep = Transaction::where('ref_id', $request->trx_ref)->first() ?? null;
-
-
-        if ($dep == null) {
-            return back()->with('error', "Transaction not Found");
-        }
-
-        if ($dep->status == 2) {
-            return back()->with('error', "This Transaction has been successful");
-        }
-
-
-        if ($dep->status == 4) {
-            return back()->with('error', "This Transaction has been resolved");
-        }
-
-
-        if ($dep == null) {
-            return back()->with('error', "Transaction has been deleted");
-        } else {
-
-            $ref = $request->trx_ref;
-            $user =  Auth::user() ?? null;
-            return view('resolve-page', compact('ref', 'user'));
-        }
-    }
-
-
-    public function  resolveNow(request $request)
-    {
-
-        if ($request->trx_ref == null || $request->session_id == null) {
-            return back()->with('error', "Session ID or Ref Can not be null");
-        }
-
-
-        $trx = Transaction::where('ref_id', $request->trx_ref)->first()->status ?? null;
-        $ck_trx = (int)$trx;
-        if ($ck_trx == 2) {
-
-            $email = Auth::user()->email;
-            $message =  "$email | OGSMSPOOL  | is trying to fund and a successful order with orderid $request->trx_ref";
-            send_notification2($message);
-
-            $message =  "$email | OGSMSPOOL  | is trying to fund and a successful order with orderid $request->trx_ref";
-            send_notification($message);
-
-            return back()->with('error', "This Transaction has been successful");
-        }
-
-
-
-        if ($ck_trx != 1) {
-
-            $email = Auth::user()->email;
-            $message =  "$email | OGSMSPOOL  | is trying to fund and a successful order with orderid $request->trx_ref";
-            send_notification2($message);
-
-
-
-            $message =  "$email | OGSMSPOOL | is trying to fund and a successful order with orderid $request->trx_ref";
-            send_notification($message);
-
-
-
-
-
-            return back()->with('error', "This Transaction has been successful");
-        }
-
-        if ($ck_trx == 2) {
-
-            $email = Auth::user()->email;
-            $message =  "$email |OGSMSPOOL | is trying to fund and a successful order with orderid $request->trx_ref";
-            send_notification2($message);
-
-            $message =  "$email | OGSMSPOOL | is trying to fund and a successful order with orderid $request->trx_ref";
-            send_notification($message);
-
-
-
-
-
-
-
-            return back()->with('error', "This Transaction has been successful");
-        }
-
-
-        if ($ck_trx == 4) {
-
-            $email = Auth::user()->email;
-            $message =  "$email |OGSMSPOOL | is trying to fund and a successful order with orderid $request->trx_ref";
-            send_notification2($message);
-
-            $message =  "$email | OGSMSPOOL | is trying to fund and a successful order with orderid $request->trx_ref";
-            send_notification($message);
-
-            return back()->with('error', "This Transaction has been resolved");
-        }
-
-
-
-
-
-
-        if ($ck_trx == 1) {
-            $session_id = $request->session_id;
-            if ($session_id == null) {
-                $notify[] = ['error', "session id or amount cant be empty"];
-                return back()->withNotify($notify);
-            }
-
-
-            $curl = curl_init();
-            $databody = array(
-                'session_id' => "$session_id",
-                'ref' => "$request->trx_ref"
-
-            );
-
-            curl_setopt_array($curl, array(
-                CURLOPT_URL => 'https://web.enkpay.com/api/resolve',
-                CURLOPT_RETURNTRANSFER => true,
-                CURLOPT_ENCODING => '',
-                CURLOPT_MAXREDIRS => 10,
-                CURLOPT_TIMEOUT => 0,
-                CURLOPT_FOLLOWLOCATION => true,
-                CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
-                CURLOPT_CUSTOMREQUEST => 'POST',
-                CURLOPT_POSTFIELDS => $databody,
-            ));
-
-            $var = curl_exec($curl);
-            curl_close($curl);
-            $var = json_decode($var);
-
-
-            $messager = $var->message ?? null;
-            $status = $var->status ?? null;
-            $trx = $var->trx ?? null;
-            $amount = $var->amount ?? null;
-
-            if ($status == true) {
-                User::where('id', Auth::id())->increment('wallet', $var->amount);
-                Transaction::where('ref_id', $request->trx_ref)->update(['status' => 2]);
-
-
-                $user_email = Auth::user()->email;
-                $message = "$user_email | $request->trx_ref | $session_id | $var->amount | just resolved deposit | OGSMSPOOL";
-                send_notification($message);
-                send_notification2($message);
-
-
-
-
-
-
-                return redirect('fund-wallet')->with('message', "Transaction successfully Resolved, NGN $amount added to ur wallet");
-            }
-
-            if ($status == false) {
-                return back()->with('error', "$messager");
-            }
-
-            return back()->with('error', "please try again later");
-        }
-    }
-
+//    public function resloveDeposit(Request $request)
+//    {
+//        $dep = Transaction::where('ref_id', $request->trx_ref)->first() ?? null;
+//
+//
+//        if ($dep == null) {
+//            return back()->with('error', "Transaction not Found");
+//        }
+//
+//        if ($dep->status == 2) {
+//            return back()->with('error', "This Transaction has been successful");
+//        }
+//
+//
+//        if ($dep->status == 4) {
+//            return back()->with('error', "This Transaction has been resolved");
+//        }
+//
+//
+//        if ($dep == null) {
+//            return back()->with('error', "Transaction has been deleted");
+//        } else {
+//
+//            $ref = $request->trx_ref;
+//            $user =  Auth::user() ?? null;
+//            return view('resolve-page', compact('ref', 'user'));
+//        }
+//    }
+
+
+//    public function  resolveNow(request $request)
+//    {
+//
+//        if ($request->trx_ref == null || $request->session_id == null) {
+//            return back()->with('error', "Session ID or Ref Can not be null");
+//        }
+//
+//
+//        $trx = Transaction::where('ref_id', $request->trx_ref)->first()->status ?? null;
+//        $ck_trx = (int)$trx;
+//        if ($ck_trx == 2) {
+//
+//            $email = Auth::user()->email;
+//            $message =  "$email | OGSMSPOOL  | is trying to fund and a successful order with orderid $request->trx_ref";
+//            send_notification2($message);
+//
+//            $message =  "$email | OGSMSPOOL  | is trying to fund and a successful order with orderid $request->trx_ref";
+//            send_notification($message);
+//
+//            return back()->with('error', "This Transaction has been successful");
+//        }
+//
+//
+//
+//        if ($ck_trx != 1) {
+//
+//            $email = Auth::user()->email;
+//            $message =  "$email | OGSMSPOOL  | is trying to fund and a successful order with orderid $request->trx_ref";
+//            send_notification2($message);
+//
+//
+//
+//            $message =  "$email | OGSMSPOOL | is trying to fund and a successful order with orderid $request->trx_ref";
+//            send_notification($message);
+//
+//
+//
+//
+//
+//            return back()->with('error', "This Transaction has been successful");
+//        }
+//
+//        if ($ck_trx == 2) {
+//
+//            $email = Auth::user()->email;
+//            $message =  "$email |OGSMSPOOL | is trying to fund and a successful order with orderid $request->trx_ref";
+//            send_notification2($message);
+//
+//            $message =  "$email | OGSMSPOOL | is trying to fund and a successful order with orderid $request->trx_ref";
+//            send_notification($message);
+//
+//
+//
+//
+//
+//
+//
+//            return back()->with('error', "This Transaction has been successful");
+//        }
+//
+//
+//        if ($ck_trx == 4) {
+//
+//            $email = Auth::user()->email;
+//            $message =  "$email |OGSMSPOOL | is trying to fund and a successful order with orderid $request->trx_ref";
+//            send_notification2($message);
+//
+//            $message =  "$email | OGSMSPOOL | is trying to fund and a successful order with orderid $request->trx_ref";
+//            send_notification($message);
+//
+//            return back()->with('error', "This Transaction has been resolved");
+//        }
+//
+//
+//
+//
+//
+//
+//        if ($ck_trx == 1) {
+//            $session_id = $request->session_id;
+//            if ($session_id == null) {
+//                $notify[] = ['error', "session id or amount cant be empty"];
+//                return back()->withNotify($notify);
+//            }
+//
+//
+//            $curl = curl_init();
+//            $databody = array(
+//                'session_id' => "$session_id",
+//                'ref' => "$request->trx_ref"
+//
+//            );
+//
+//            curl_setopt_array($curl, array(
+//                CURLOPT_URL => 'https://web.enkpay.com/api/resolve',
+//                CURLOPT_RETURNTRANSFER => true,
+//                CURLOPT_ENCODING => '',
+//                CURLOPT_MAXREDIRS => 10,
+//                CURLOPT_TIMEOUT => 0,
+//                CURLOPT_FOLLOWLOCATION => true,
+//                CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+//                CURLOPT_CUSTOMREQUEST => 'POST',
+//                CURLOPT_POSTFIELDS => $databody,
+//            ));
+//
+//            $var = curl_exec($curl);
+//            curl_close($curl);
+//            $var = json_decode($var);
+//
+//
+//            $messager = $var->message ?? null;
+//            $status = $var->status ?? null;
+//            $trx = $var->trx ?? null;
+//            $amount = $var->amount ?? null;
+//
+//            if ($status == true) {
+//                User::where('id', Auth::id())->increment('wallet', $var->amount);
+//                Transaction::where('ref_id', $request->trx_ref)->update(['status' => 2]);
+//
+//
+//                $user_email = Auth::user()->email;
+//                $message = "$user_email | $request->trx_ref | $session_id | $var->amount | just resolved deposit | OGSMSPOOL";
+//                send_notification($message);
+//                send_notification2($message);
+//
+//
+//
+//
+//
+//
+//                return redirect('fund-wallet')->with('message', "Transaction successfully Resolved, NGN $amount added to ur wallet");
+//            }
+//
+//            if ($status == false) {
+//                return back()->with('error', "$messager");
+//            }
+//
+//            return back()->with('error', "please try again later");
+//        }
+//    }
+//
 
     public function  get_smscode(request $request)
     {
@@ -1616,45 +1523,45 @@ class HomeController extends Controller
     }
 
 
-    public function e_fund(request $request)
-    {
-
-        $get_user =  User::where('email', $request->email)->first() ?? null;
-
-        if ($get_user == null) {
-
-            return response()->json([
-                'status' => false,
-                'message' => 'No user found, please check email and try again',
-            ]);
-        }
-
-            User::where('email', $request->email)->increment('wallet', $request->amount) ?? null;
-
-
-        $amount = number_format($request->amount, 2);
-
-        $get_depo = Transaction::where('ref_id', $request->order_id)->first() ?? null;
-        if ($get_depo == null){
-            $trx = new Transaction();
-            $trx->ref_id = $request->order_id;
-            $trx->user_id = $get_user->id;
-            $trx->status = 2;
-            $trx->amount = $request->amount;
-            $trx->type = 2;
-            $trx->save();
-        }else{
-            Transaction::where('ref_id', $request->order_id)->update(['status'=> 2]);
-        }
-
-        $message = $request->email."| just funded wallet on ace verify | NGN" .$amount;
-        send_notification2($message);
-
-        return response()->json([
-            'status' => true,
-            'message' => "NGN $amount has been successfully added to your wallet",
-        ]);
-    }
+//    public function e_fund(request $request)
+//    {
+//
+//        $get_user =  User::where('email', $request->email)->first() ?? null;
+//
+//        if ($get_user == null) {
+//
+//            return response()->json([
+//                'status' => false,
+//                'message' => 'No user found, please check email and try again',
+//            ]);
+//        }
+//
+//            User::where('email', $request->email)->increment('wallet', $request->amount) ?? null;
+//
+//
+//        $amount = number_format($request->amount, 2);
+//
+//        $get_depo = Transaction::where('ref_id', $request->order_id)->first() ?? null;
+//        if ($get_depo == null){
+//            $trx = new Transaction();
+//            $trx->ref_id = $request->order_id;
+//            $trx->user_id = $get_user->id;
+//            $trx->status = 2;
+//            $trx->amount = $request->amount;
+//            $trx->type = 2;
+//            $trx->save();
+//        }else{
+//            Transaction::where('ref_id', $request->order_id)->update(['status'=> 2]);
+//        }
+//
+//        $message = $request->email."| just funded wallet on ace verify | NGN" .$amount;
+//        send_notification2($message);
+//
+//        return response()->json([
+//            'status' => true,
+//            'message' => "NGN $amount has been successfully added to your wallet",
+//        ]);
+//    }
 
     public function verify_username(request $request)
     {

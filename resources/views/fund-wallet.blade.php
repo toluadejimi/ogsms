@@ -110,7 +110,7 @@
 
 
                                                     <td>
-                                                        @if ($data->status == 1)
+                                                        @if ($data->status == 0)
                                                             <span
                                                                 style="background: orange; border:0px; font-size: 10px"
                                                                 class="btn btn-warning btn-sm">Pending</span>

@@ -117,6 +117,9 @@
                                     </div>
 
                                     <input name="amount" hidden value="{{ $amount }}">
+                                    <input name="order_id" hidden value="{{ $ref }}">
+
+
 
                                     <button type="submit" class="text-white btn w-100 btn-primary my-4">
                                         Add Funds
