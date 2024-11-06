@@ -123,6 +123,7 @@ class AdminController extends Controller
         $data['simcost'] = Setting::where('id', 3)->first()->margin;
         $data['verification'] = Verification::latest()->paginate(10);
         $data['total_verification'] = Verification::where('status', 2)->count();
+        $data['wallet'] = User::where('status', 2)->sum('wallet');
 
 
 

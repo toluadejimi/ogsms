@@ -192,9 +192,9 @@
                         <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12">
                             <div class="card">
                                 <div class="card-body">
-                                    <h5 class="text-muted">Total Out</h5>
+                                    <h5 class="text-muted">Total Wallet</h5>
                                     <div class="metric-value d-inline-block">
-                                        NGN {{ number_format($total_out) }}
+                                        NGN {{ number_format($wallet) }}
                                     </div>
                                 </div>
                             </div>
