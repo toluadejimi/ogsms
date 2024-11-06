@@ -129,7 +129,7 @@ Route::group(['middleware' => ['auth', 'user', 'session.timeout']], function () 
 
 
 
-    Route::any('order-usano',  [HomeController::class,'order_now']);
+    Route::post('order-usnumber-now',  [HomeController::class,'order_now']);
 
     Route::any('cancle-sms',  [HomeController::class,'cancle_sms']);
     Route::any('check-sms',  [HomeController::class,'check_sms']);
