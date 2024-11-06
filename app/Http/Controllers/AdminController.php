@@ -322,9 +322,10 @@ class AdminController extends Controller
     public function delete_payment(request $request)
 	{
 
-
-       ManualPayment::where('id', $request->id)->delete();
-       return back()->with('error', 'Transaction deleted successfully');
+        $trx = ManualPayment::where('id', $request->id)->first()->order_id ?? null;
+        Transaction::where('ref_id', $trx)->delete();
+        ManualPayment::where('id', $request->id)->delete();
+        return back()->with('error', 'Transaction deleted successfully');
 
 
 
