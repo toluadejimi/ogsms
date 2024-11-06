@@ -38,7 +38,7 @@
 
             <img src="{{url('')}}/public/assets/success.gif" alt="image">
 
-           <p>Your payment has been submitted<br>Your funds will be added in less than 10 minutes.</p>
+           <p class="my-2">Your payment has been submitted<br>Your funds will be added in less than 10 minutes.</p>
 
 
         </div>
