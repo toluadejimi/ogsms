@@ -31,16 +31,15 @@
 
 
 
-        <div
-            class="text-blue-500 text-center  mt-5 text-sm justify-center items-stretch bg-blue-500 bg-opacity-20 self-stretch mt-2 px-6 py-3 rounded-xl">
-            Your payment has been submitted<br>Your funds will be added in less than 10 minutes
-        </div>
 
 
 
         <div class="text-center">
-           
+
             <img src="{{url('')}}/public/assets/success.gif" alt="image">
+
+           <p>Your payment has been submitted<br>Your funds will be added in less than 10 minutes.</p>
+
 
         </div>
 
