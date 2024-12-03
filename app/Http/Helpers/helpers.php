@@ -229,12 +229,16 @@ function create_order($service, $price, $cost, $service_name){
 
         User::where('id', Auth::id())->decrement('wallet', $price);
 
-        return 1;
+        $data['code'] = 1;
+        $data['id'] = $ver->id;
+        return $data;
 
     }elseif($result == "MAX_PRICE_EXCEEDED" || $result == "NO_NUMBERS" || $result == "TOO_MANY_ACTIVE_RENTALS" || $result == "NO_MONEY") {
-        return 0;
+        $data['code'] = 0;
+        return $data;
     }else{
-        return 0;
+        $data['code'] = 0;
+        return $data;
     }
 
 
@@ -364,8 +368,6 @@ function cancel_order($orderID){
 }
 
 function check_sms($orderID){
-
-
 
    $APIKEY = env('KEY');
    $curl = curl_init();

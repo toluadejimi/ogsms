@@ -71,6 +71,11 @@ class HomeController extends Controller
     {
 
 
+
+
+
+
+
         if($request->price < 0 || $request->price == 0){
             return back()->with('error', "something went wrong");
         }
@@ -112,15 +117,23 @@ class HomeController extends Controller
         $service_name = $request->name;
 
         $order = create_order($service, $price, $cost, $service_name, $costs);
-        if ($order == 8) {
+
+
+
+
+
+        if ($order['code'] == 8) {
             return back()->with('error', "Insufficient Funds");
         }
 
-        if ($order == 7) {
+
+
+
+        if ($order['code'] == 7) {
             return redirect('ban');
         }
 
-        if ($order == 8) {
+        if ($order['code'] == 8) {
             return back()->with('error', "Insufficient Funds");
         }
 
@@ -131,7 +144,7 @@ class HomeController extends Controller
 
         //dd($order);
 
-        if ($order == 9) {
+        if ($order['code'] == 9) {
 
             $ver = Verification::where('status', 1)->first() ?? null;
             if ($ver != null) {
@@ -140,13 +153,17 @@ class HomeController extends Controller
             return redirect('us');
         }
 
-        if ($order == 0) {
+        if ($order['code'] == 0) {
             return redirect('home')->with('error', 'Number Currently out of stock, Please check back later');
         }
 
 
-        if ($order == 1) {
-            return redirect('orders');
+        if ($order['code'] == 1) {
+
+            $data['sms_order'] = Verification::where('id', $order['id'])->first();
+            $data['order'] = 1;
+            return view('receivesms', $data);
+
         }
     }
 
