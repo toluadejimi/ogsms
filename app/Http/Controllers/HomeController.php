@@ -1197,10 +1197,14 @@ class HomeController extends Controller
             $messageId = $request->messageId;
             $service = $request->service;
             $text = $request->text;
-            $code = $request->sms;
+            $code = $request->code;
             $country = $request->country;
             $receivedAt = $request->receivedAt;
-            $orders = Verification::where('order_id', $activationId)->update(['sms' => $code, 'status' => 2]);
+            $orders = Verification::where('order_id', $activationId)->update([
+                'sms' => $code,
+                'full_sms' =>$text,
+                'status' => 2
+            ]);
 
             return response()->json([
                 'status' => "success",
