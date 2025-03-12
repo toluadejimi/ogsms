@@ -1,3 +1,4 @@
+@php use App\Models\Setting; @endphp
 @extends('layout.main')
 @section('content')
 
@@ -21,11 +22,14 @@
             <div class="">
                 <p>Quick Order</p>
 
-                    <form action="order_now" method="POST" >
+                    <form action="order_now_qk" method="POST" >
                         @csrf
 
                         <input type="text" name="country" hidden value="2">
-                        <input type="text" name="price" hidden value="{{ $ukamont ?? null }}">
+                        @php
+                        $amount = Setting::where('id', 1)->first()->uk_quick_order_amount;
+                        @endphp
+                        <input type="text" name="price" hidden value="{{ $amont ?? null }}">
                         <input type="text" name="service" hidden value="1012">
 
 
@@ -60,7 +64,7 @@
                                     </clipPath>
                                 </defs>
                             </svg>
-                            N{{number_format($ukamont, 2)}}
+                            N{{number_format($amount, 2)}}
                         </button>
 
 

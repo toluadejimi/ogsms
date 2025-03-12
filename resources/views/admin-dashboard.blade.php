@@ -316,6 +316,21 @@
 
                                     <div class="col-12 p-3">
 
+                                        <form method="post" action="update-quickorder">
+                                            @csrf
+                                            <label>QUICK ORDER</label>
+                                            <input class="form-control2 text-dark" name="qkorder" value="{{ $qkorder }}">
+
+                                            <button type="submit" class="btn btn-primary">Update Quick Order</button>
+
+                                        </form>
+
+                                    </div>
+
+
+
+                                    <div class="col-12 p-3">
+
                                         <form method="post" action="update-rate">
                                             @csrf
                                             <label>RATE</label>
@@ -393,7 +408,7 @@
 
                                                 <tr>
                                                     <td>{{ $data->ref_id }} </td>
-                                                    <td>{{ $data->user->username }} </td>
+                                                    <td>{{ $data->user->username ?? "name" }} </td>
                                                     @if($data->type == 2)
                                                         <td><span class="badge badge-success">Credit</span>
                                                         </td>

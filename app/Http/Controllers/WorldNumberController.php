@@ -333,6 +333,72 @@ class WorldNumberController extends Controller
 
 
 
+    public function order_now_qk(Request $request)
+    {
+
+
+        if($request->price < 0 || $request->price == 0){
+            return back()->with('error', "something went wrong");
+        }
+
+        if($request->price < 500 ){
+            return back()->with('error', "something went wrong");
+        }
+
+//        $total_funded = Transaction::where('user_id', Auth::id())->where('status', 2)->sum('amount');
+//        $total_bought = verification::where('user_id', Auth::id())->where('status', 2)->sum('cost');
+//        if($total_funded < $total_bought){
+//            User::where('id', Auth::id())->update(['status' => 9]);
+//            Auth::logout();
+//
+//            $message = Auth::user()->email ." has been banned for cheating";
+//            send_notification($message);
+//            send_notification2($message);
+//
+//            return redirect('ban');
+//
+//        }
+
+        if (Auth::user()->wallet < $request->price) {
+            return back()->with('error', "Insufficient Funds");
+        }
+
+        $country = $request->country;
+        $service = $request->service;
+        $price = $request->price;
+
+
+        $order = create_world_order($country, $service, $price, $request->price);
+
+        if ($order == 5) {
+            return redirect('world')->with('error', 'Number Currently out of stock, Please check back later');
+        }
+
+
+        if ($order == 7) {
+            return redirect('ban');
+        }
+
+
+        if ($order == 1) {
+
+            return redirect('world')->with('error', 'Error occurred, Please try again');
+        }
+
+        if ($order == 2) {
+
+            return redirect('world')->with('error', 'Error occurred, Please try again');
+        }
+
+        if ($order == 3) {
+
+            return redirect('orders');
+
+
+        }
+    }
+
+
     public function cancle_sms(Request $request)
     {
 

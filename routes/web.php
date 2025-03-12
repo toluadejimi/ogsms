@@ -77,13 +77,6 @@ Route::any('get-smscode',  [HomeController::class,'get_smscode']);
 
 
 
-
-
-
-
-
-
-
 Route::group(['middleware' => ['auth', 'user', 'session.timeout']], function () {
 
     Route::get('us',  [HomeController::class,'home']);
@@ -93,6 +86,7 @@ Route::group(['middleware' => ['auth', 'user', 'session.timeout']], function () 
 
     Route::any('check-av',  [WorldNumberController::class,'check_av']);
     Route::any('order_now',  [WorldNumberController::class,'order_now']);
+    Route::any('order_now_qk',  [WorldNumberController::class,'order_now_qk']);
     Route::any('get-smscodeworld',  [WorldNumberController::class,'get_smscode']);
 
     Route::any('orders',  [HomeController::class,'orders']);
@@ -190,6 +184,7 @@ Route::any('update-cost',  [AdminController::class,'update_cost']);
 
 Route::any('update-sim-rate',  [AdminController::class,'update_sim_rate']);
 Route::any('update-sim-cost',  [AdminController::class,'update_sim_cost']);
+Route::any('update-quickorder',  [AdminController::class,'update_quick_order']);
 
 
 Route::get('manual-payment',  [AdminController::class,'manual_payment_view']);

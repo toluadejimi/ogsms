@@ -124,6 +124,7 @@ class AdminController extends Controller
         $data['verification'] = Verification::latest()->paginate(10);
         $data['total_verification'] = Verification::where('status', 2)->count();
         $data['wallet'] = User::where('status', 2)->sum('wallet');
+        $data['qkorder'] =  Setting::where('id', 1)->first()->uk_quick_order_amount;
 
 
 
@@ -407,6 +408,14 @@ class AdminController extends Controller
         Setting::where('id', 3)->update(['margin' => $request->cost]);
 
         return back()->with('message', "Cost Update Successfully");
+
+    }
+
+    public function update_quick_order(request $request)
+    {
+        Setting::where('id', 1)->update(['uk_quick_order_amount' => $request->qkorder]);
+
+        return back()->with('message', "QK Order Update Successfully");
 
     }
 
