@@ -27,9 +27,9 @@
 
                         <input type="text" name="country" hidden value="2">
                         @php
-                        $amount = Setting::where('id', 1)->first()->uk_quick_order_amount;
+                        $quick_mount = Setting::where('id', 1)->first()->uk_quick_order_amount;
                         @endphp
-                        <input type="text" name="price" hidden value="{{ $amont ?? null }}">
+                        <input type="text" name="price" hidden value="{{ $quick_mount }}">
                         <input type="text" name="service" hidden value="1012">
 
 
@@ -64,7 +64,7 @@
                                     </clipPath>
                                 </defs>
                             </svg>
-                            N{{number_format($amount, 2)}}
+                            N{{number_format($quick_mount, 2)}}
                         </button>
 
 
