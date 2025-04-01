@@ -454,6 +454,15 @@ class AdminController extends Controller
 
     }
 
+    public function logout(request $request)
+     {
+
+       Auth::logout();
+       return redirect('login')->with('message', "Successfully Logged Out");
+
+
+     }
+
     public function set_password(request $request)
      {
 
