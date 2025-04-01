@@ -222,6 +222,8 @@ Route::any('policy',  [HomeController::class,'policy']);
 Route::get('users',  [AdminController::class,'index_user']);
 Route::get('view-user',  [AdminController::class,'view_user']);
 Route::any('update-user',  [AdminController::class,'update_user']);
+Route::any('account',  [AdminController::class,'admin_account']);
+Route::any('set-password',  [AdminController::class,'set_password']);
 Route::any('remove-user',  [AdminController::class,'remove_user']);
 Route::any('unban-user',  [AdminController::class,'unban_user']);
 

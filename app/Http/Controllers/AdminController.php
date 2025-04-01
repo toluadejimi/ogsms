@@ -17,6 +17,7 @@ use App\Models\ManualPayment;
 use Illuminate\Support\Carbon;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
 
 class AdminController extends Controller
 {
@@ -183,8 +184,23 @@ class AdminController extends Controller
 
 
         if($request->trade == 'credit'){
+
+            $user_pin = User::where('id', Auth::id())->first()->pin;
+            if (Hash::check($request->pin, $user_pin) == false) {
+                return back()->with('error', 'Pin Incorrect');
+            }
             User::where('id',$request->id)->increment('wallet', $request->amount);
+
+            return back()->with('message', 'Wallet Credited Successfully');
+
+
         }else{
+
+
+            $user_pin = User::where('id', Auth::id())->first()->pin;
+            if (Hash::check($request->pin, $user_pin) == false) {
+                return back()->with('error', 'Pin Incorrect');
+            }
 
             User::where('id',$request->id)->decrement('wallet', $request->amount);
 
@@ -193,7 +209,7 @@ class AdminController extends Controller
         }
 
 
-        return back()->with('message', 'Wallet Credited Successfully');
+        return back()->with('error', 'An error occured');
 
 
     }
@@ -426,6 +442,48 @@ class AdminController extends Controller
         Verification::where('user_id', $request->id)->delete();
 
         return redirect('users')->with('message', "User deleted Successfully");
+
+
+    }
+      public function admin_account(request $request)
+     {
+
+       $user = User::where('id', Auth::id())->first();
+       return view('admin-account', compact('user'));
+
+
+    }
+
+    public function set_password(request $request)
+     {
+
+
+         if($request->password != $request->password_confirm){
+             return back()->with('error', "Password Incorrect");
+         }
+
+         if($request->new_pin != $request->pin_confirm){
+             return back()->with('error', "Pin Incorrect");
+         }
+
+
+         $old_pass = User::where('id', Auth::id())->first()->password;
+         if (Hash::check($request->old_password, $old_pass) == false) {
+             return back()->with('error', "Password Invalid");
+
+         }
+
+
+         $old_pin = User::where('id', Auth::id())->first()->pin;
+         if (Hash::check($request->old_pin, $old_pin) == false) {
+             return back()->with('error', "Password Invalid");
+
+         }
+
+
+         User::where('id', Auth::id())->update(['pin' => Hash::make($request->new_pin), 'password' =>  Hash::make($request->password)]);
+
+         return back()->with('message', "Password and Pin Updated");
 
 
     }

@@ -137,133 +137,105 @@
                     <!-- ============================================================== -->
                     <div class="ecommerce-widget">
 
+
+                        @if ($errors->any())
+                            <div class="alert alert-danger">
+                                <ul>
+                                    @foreach ($errors->all() as $error)
+                                        <li>{{ $error }}</li>
+                                    @endforeach
+                                </ul>
+                            </div>
+                        @endif
+                        @if (session()->has('message'))
+                            <div class="alert alert-success">
+                                {{ session()->get('message') }}
+                            </div>
+                        @endif
+                        @if (session()->has('error'))
+                            <div class="alert alert-danger">
+                                {{ session()->get('error') }}
+                            </div>
+                        @endif
+
                         <div class="row">
-                            <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
+                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                                 <div class="card">
                                     <div class="card-body">
-                                        <h5 class="text-muted">All User</h5>
-                                        <div class="metric-value d-inline-block">
-                                            <h3 class="mb-1">{{ $user }}</h3>
+                                        <div class="row">
+
+                                            <div class="col">
+
+                                                <h5 class="text-muted">Email</h5>
+                                                <div class="metric-value d-inline-block">
+                                                    <h3 class="mb-1">{{ $user->email }}</h3>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="col">
+
+                                                <h5 class="text-muted">Username</h5>
+                                                <div class="metric-value d-inline-block">
+                                                    <h3 class="mb-1">{{ $user->username }}</h3>
+                                                </div>
+
+                                            </div>
+
+
                                         </div>
-                                        <div
-                                            class="metric-label d-inline-block float-right text-success font-weight-bold">
-                                        </div>
+
+
                                     </div>
                                 </div>
                             </div>
 
 
-
-                            <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
+                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                                 <div class="card">
                                     <div class="card-body">
-                                        <h5 class="text-muted">Search user</h5>
+                                        <div class="row">
 
-                                        <form action="search-user" method="GET">
-                                            @csrf
-                                            <label>Enter Email</label>
-                                            <input type="email" class="form-control2 text-dark" name="email" required autofocus>
+                                            <div class="col">
 
-                                            <button class="btn btn-sm btn-success my-3">Submit</button>
+                                                <h5 class="text-muted">Set Password & Pin</h5>
+                                                <div class="col-5">
+                                                    <form action="set-password" method="post">
+                                                        @csrf
+                                                        <label> Old Password </label>
+                                                        <input class="form-control2 my-2" type="text" name="old_password" required>
+                                                        <label> Enter Password </label>
+                                                        <input class="form-control2 my-2" type="text" name="password" required>
+                                                        <label>  Password Confirm </label>
+                                                        <input class="form-control2 my-2" type="text" name="password_confirm" required >
+                                                        <hr>
 
-                                        </form>
+                                                        <label> Old Pin</label>
+                                                        <input class="form-control2 my-2" type="number" name="old_pin" required >
+
+                                                        <label>  New Pin </label>
+                                                        <input class="form-control2 my-2" type="number" name="new_pin" required >
+
+                                                        <label>  Confirm Pin </label>
+                                                        <input class="form-control2 my-2" type="number" name="pin_confirm" required >
+
+                                                        <button type="submit" class="btn btn-primary">Submit</button>
+
+                                                    </form>
+                                                </div>
+
+                                            </div>
 
 
-
-                                        <div
-                                            class="metric-label d-inline-block float-right text-success font-weight-bold">
                                         </div>
+
+
                                     </div>
                                 </div>
                             </div>
-
-
-                            <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <h5 class="text-muted">Search user</h5>
-
-                                        <form action="search-username" method="GET">
-                                            @csrf
-                                            <label>Enter Username</label>
-                                            <input type="text" class="form-control2 text-dark" name="username" required autofocus>
-
-                                            <button class="btn btn-sm btn-success my-3">Submit</button>
-
-                                        </form>
-
-
-
-                                        <div
-                                            class="metric-label d-inline-block float-right text-success font-weight-bold">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
 
                         </div>
-                        <div class="row">
-                            <!-- ============================================================== -->
 
-                            <!-- ============================================================== -->
-
-                            <!-- recent orders  -->
-                            <!-- ============================================================== -->
-                            <div class="col-xl-12 col-lg-12 col-md-6 col-sm-12 col-12">
-                                <div class="card">
-                                    <h5 class="card-header">All Users</h5>
-                                    <div class="card-body p-0">
-                                        <div class="table-responsive">
-                                            <table class="table">
-                                                <thead class="bg-light">
-                                                    <tr class="border-0">
-                                                        <th class="border-0">Username</th>
-                                                        <th class="border-0">Email</th>
-                                                        <th class="border-0">Wallet(NGN)</th>
-                                                        <th class="border-0">Action</th>
-                                                        <th class="border-0">Action</th>
-
-
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    @forelse ($users as $data)
-
-                                                    <tr>
-                                                        <td><a href="view-user?id={{ $data->id }}">{{ $data->username }}</a> </td>
-                                                        <td><a href="view-user?id={{ $data->id }}">{{ $data->email }} </td></a>
-                                                        <td>{{ number_format($data->wallet, 2) }} </td>
-                                                        <td><a href="view-user?id={{ $data->id }}" class="btn btn-success btn-sm">View User</a> </td>
-                                                        <td><a href="remove-user?id={{ $data->id }}" class="btn btn-danger btn-sm">Delete User</a> </td>
-
-
-                                                    </tr>
-
-                                                    @empty
-
-                                                    <tr>
-                                                        <td> No Record Found</td>
-                                                    </tr>
-
-                                                    @endforelse
-                                                </tbody>
-
-
-
-                                            </table>
-
-                                            {{ $users->links() }}
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-
-
-
-                        </div>
                     </div>
                 </div>
             </div>

@@ -360,6 +360,15 @@
                                             </div>
 
 
+                                            <div class="col-xl-3 col-lg-4 col-md-4 col-sm-4 col-12">
+
+                                                <div class="card-body p-3">
+                                                    <label>Enter PIN</label>
+                                                    <input type="number" class="form-control2 text-dark" name="pin" required>
+
+                                                </div>
+                                            </div>
+
                                             <div class="col-xl-12 col-lg-4 col-md-4 col-sm-4 col-12">
 
                                                 <div class="card-body">
