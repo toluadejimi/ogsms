@@ -511,6 +511,41 @@ function get_world_services(){
 }
 
 
+function get_bus_world_countries(){
+
+
+    $key = env('WKEY');
+
+    $services = Cache::remember('smspool_services', 3600, function () use ($key) {
+        Log::info('Requesting services from SMS Pool API', ['key' => $key]);
+
+        $response = Http::withHeaders([
+            'Content-Type' => 'application/json',
+            'Accept' => 'application/json',
+        ])->timeout(50)
+            ->post("https://api.smspool.net/service/retrieve_all", [
+                'key' => $key,
+            ]);
+
+        Log::info('Response received from SMS Pool API', ['response' => $response->body()]);
+
+        if ($response->successful()) {
+            return $response->json() ?? null;
+        }
+
+        Log::error('API call failed', ['response' => $response->body()]);
+        return null;
+    });
+
+
+
+    return $services;
+
+
+}
+
+
+
 function create_world_order($country, $service, $price, $id){
 
 

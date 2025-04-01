@@ -1249,8 +1249,11 @@ class HomeController extends Controller
     public function delete_order_admin(request $request)
     {
 
-
+        $get_user_id = Verification::where('id', $request->id)->first()->user_id;
+        $cost = Verification::where('id', $request->id)->first()->cost;
+        User::where('id', $get_user_id)->increment('wallet', $cost);
         Verification::where('id', $request->id)->delete();
+        
 
         return back()->with('message', "Order has been successfully deleted");
 
