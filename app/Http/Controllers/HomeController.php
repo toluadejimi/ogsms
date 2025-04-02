@@ -66,6 +66,17 @@ class HomeController extends Controller
     {
 
 
+        $total_funded = Transaction::where('user_id', Auth::id())->where('status', 2)->sum('amount');
+        $total_bought = verification::where('user_id', Auth::id())->where('status', 2)->sum('cost');
+        if($total_funded < $total_bought){
+            User::where('id', Auth::id())->update(['status' => 9]);
+            Auth::logout();
+
+
+            return redirect('ban');
+
+        }
+
         if ($request->price < 0 || $request->price == 0) {
             return back()->with('error', "something went wrong");
         }
@@ -1253,7 +1264,7 @@ class HomeController extends Controller
         $cost = Verification::where('id', $request->id)->first()->cost;
         User::where('id', $get_user_id)->increment('wallet', $cost);
         Verification::where('id', $request->id)->delete();
-        
+
 
         return back()->with('message', "Order has been successfully deleted");
 
