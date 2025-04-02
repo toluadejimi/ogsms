@@ -71,9 +71,9 @@ class AdminController extends Controller
 
 
 
-    public function ban_user(request $request)
+    public function ban_admin_user(request $request)
     {
-        User::where('id', $request->user_id)->update(['status' => 9]);
+        User::where('id', $request->id)->update(['status' => 9]);
         return back()->with('message', 'Account ban successfully');
 
     }
