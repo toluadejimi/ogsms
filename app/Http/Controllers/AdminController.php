@@ -169,7 +169,8 @@ class AdminController extends Controller
 
 
         $user = User::all()->count();
-        $users = User::latest()->paginate(10);
+        $users = User::orderBy('wallet', 'desc')->paginate(10);
+
 
 
         return view('user', compact('user', 'users'));
@@ -229,14 +230,17 @@ class AdminController extends Controller
         }
 
 
-        $user = User::where('id', $request->id)->first();
-        $transaction= Transaction::latest()->where('user_id', $request->id)->paginate();
-        $verification = verification::latest()->where('user_id', $request->id)->paginate();
+        $data['user'] = User::where('id', $request->id)->first();
+        $data['transaction']= Transaction::latest()->where('user_id', $request->id)->paginate(50);
+        $data['verification'] = verification::latest()->where('user_id', $request->id)->paginate(50);
+
+        $data['total_funded'] = Transaction::where('user_id', $request->id)->where('status', 2)->sum('amount');
+        $data['total_bought'] = verification::where('user_id', $request->id)->where('status', 2)->sum('cost');
+        $data['total_balance'] = $data['total_funded'] -  $data['total_bought'];
 
 
 
-
-        return view('view-user', compact('user', 'transaction','verification' ));
+        return view('view-user', $data);
 
 
     }
