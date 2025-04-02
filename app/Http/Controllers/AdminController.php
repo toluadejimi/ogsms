@@ -73,6 +73,21 @@ class AdminController extends Controller
 
     public function unban_user(request $request)
     {
+
+
+        Verification::where('user_id', $request->id)->delete();
+        Transaction::where('user_id', $request->id)->where('status', 2)->delete();
+
+        $get_wallet = User::where('id', $request->id)->first()->wallet;
+
+        $trx = new Transaction();
+        $trx->user_id = $request->id;
+        $trx->ref_id = random_int(000000, 999999);
+        $trx->amount = $get_wallet;
+        $trx->type = 2;
+        $trx->status = 2;
+        $trx->save();
+
         User::where('id', $request->id)->update(['status' => 2]);
         return back()->with('message', 'Account unbann successfully');
 
