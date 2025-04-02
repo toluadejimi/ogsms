@@ -261,7 +261,7 @@
                                                         @endif
                                                         <td><a href="view-user?id={{ $data->id }}" class="btn btn-success btn-sm">View User</a> </td>
                                                         @if($data->status == 9)
-                                                            <td><a href="unban-users?id={{ $data->id }}" class="btn btn-success btn-sm">Unban User</a> </td>
+                                                            <td><a href="unban-user?id={{ $data->id }}" class="btn btn-success btn-sm">Unban User</a> </td>
                                                         @else
                                                             <td><a href="ban-user?id={{ $data->id }}" class="btn btn-warning btn-sm">Ban User</a> </td>
                                                         @endif
