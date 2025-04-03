@@ -316,7 +316,7 @@
                                                 @foreach ($payment as $data)
 
                                                 <td>
-                                                    {{$data->user->email}}
+                                                    {{$data->user->email ?? "Email"}}
                                                 </td>
 
 
