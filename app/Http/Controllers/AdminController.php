@@ -206,7 +206,7 @@ class AdminController extends Controller
 	{
 
 
-        if(Auth::user()->role == 5) {
+        if(Auth::user()->role_id == 5) {
 
 
             if ($request->trade == 'credit') {
