@@ -218,7 +218,7 @@ class AdminController extends Controller
 
                 $trx = new Transaction();
                 $trx->user_id = $request->id;
-                $trx->ref_id = "Admin Funding" . random_int(000000, 999999);
+                $trx->ref_id = Auth::user()->username."Add Fund" . random_int(000, 999);
                 $trx->amount = $request->amount;
                 $trx->type = 2;
                 $trx->status = 2;
@@ -239,7 +239,7 @@ class AdminController extends Controller
 
                 $trx = new Transaction();
                 $trx->user_id = $request->id;
-                $trx->ref_id = "Admin Remove Funding" . random_int(000, 999);
+                $trx->ref_id = Auth::user()->username."Remove Fund" . random_int(000, 999);
                 $trx->amount = $request->amount;
                 $trx->type = 1;
                 $trx->status = 2;
