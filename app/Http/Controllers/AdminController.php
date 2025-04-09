@@ -212,6 +212,15 @@ class AdminController extends Controller
             if (Hash::check($request->pin, $user_pin) == false) {
                 return back()->with('error', 'Pin Incorrect');
             }
+
+            $trx = new Transaction();
+            $trx->user_id = $request->id;
+            $trx->ref_id = "Admin Funding".random_int(000000, 999999);
+            $trx->amount = $request->amount;
+            $trx->type = 2;
+            $trx->status = 2;
+            $trx->save();
+
             User::where('id',$request->id)->increment('wallet', $request->amount);
 
             return back()->with('message', 'Wallet Credited Successfully');
@@ -225,6 +234,14 @@ class AdminController extends Controller
                 return back()->with('error', 'Pin Incorrect');
             }
 
+            $trx = new Transaction();
+            $trx->user_id = $request->id;
+            $trx->ref_id = "Admin Remove Funding".random_int(000, 999);
+            $trx->amount = $request->amount;
+            $trx->type = 1;
+            $trx->status = 2;
+            $trx->save();
+
             User::where('id',$request->id)->decrement('wallet', $request->amount);
 
             return back()->with('error', 'Wallet Debited Successfully');
@@ -232,7 +249,6 @@ class AdminController extends Controller
         }
 
 
-        return back()->with('error', 'An error occured');
 
 
     }

@@ -22,10 +22,10 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 Route::any('w-webhook',  [HomeController::class,'world_webhook']);
 Route::any('d-webhook',  [HomeController::class,'diasy_webhook']);
 
-Route::any('e_fund',  [HomeController::class,'e_fund']);
-Route::any('e_check',  [HomeController::class,'e_check']);
-
-Route::any('verify',  [HomeController::class,'verify_username']);
+//Route::any('e_fund',  [HomeController::class,'e_fund']);
+//Route::any('e_check',  [HomeController::class,'e_check']);
+//
+//Route::any('verify',  [HomeController::class,'verify_username']);
 
 
 Route::any('balance',  [ApiController::class,'get_balance']);

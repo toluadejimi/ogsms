@@ -226,6 +226,7 @@ Route::any('account',  [AdminController::class,'admin_account']);
 Route::any('set-password',  [AdminController::class,'set_password']);
 Route::any('remove-user',  [AdminController::class,'remove_user']);
 Route::any('unban-user',  [AdminController::class,'unban_user']);
+Route::any('ban-user',  [AdminController::class,'ban_admin_user']);
 Route::any('logout',  [AdminController::class,'logout']);
 
 
