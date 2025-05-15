@@ -57,7 +57,7 @@
         <div class="card ">
             <div class="card-header text-center"><a href="#"><img class="logo-img" src="#" alt="ADMIN"></a><span class="splash-description">Please enter your user information.</span></div>
             <div class="card-body">
-                <form action="/admin-entry" method="POST">
+                <form action="/admin-login" method="POST">
                     @csrf
                     <div class="form-group">
                         <input class="form-control form-control-lg" name="username" type="text" placeholder="Username" autocomplete="off">
