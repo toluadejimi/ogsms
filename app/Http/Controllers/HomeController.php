@@ -529,7 +529,7 @@ class HomeController extends Controller
                 $var = json_decode($var);
                 $status = $var->status ?? null;
 
-               // dd($var, "APIKEY=".$key);
+               dd($var, "APIKEY=".$key);
 
 
 
