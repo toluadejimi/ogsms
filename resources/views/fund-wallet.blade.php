@@ -52,9 +52,12 @@
 
 
                                 <label class="my-2 mt-4">Select Payment mode</label>
+
+
                                 <select name="type" class="form-control">
-{{--                                  <option value="1">Instant</option>--}}
-                                    <option value="2">Manual</option>
+                                    @foreach($pay as $data)
+                                        <option value="{{$data->id}}">{{$data->title}}</option>
+                                    @endforeach
                                 </select>
 
 

@@ -457,7 +457,7 @@ class HomeController extends Controller
     public function fund_wallet(Request $request)
     {
         $user = Auth::id() ?? null;
-        $pay = PaymentMethod::all();
+        $pay = PaymentMethod::where('status', 1)->get();
         $transaction = Transaction::query()
             ->orderByRaw('updated_at DESC')
             ->where('user_id', Auth::id())
@@ -481,7 +481,7 @@ class HomeController extends Controller
         if ($request->type == 1) {
 
             if ($request->amount < 1000) {
-                return back()->with('error', 'You can not fund less than NGN 1,000');
+                return back()->with('error', 'You can not fund less than NGN 1000');
             }
 
 
@@ -489,28 +489,62 @@ class HomeController extends Controller
                 return back()->with('error', 'You can not fund more than NGN 100,000');
             }
 
+            $phone_no = "+234" . str_pad(random_int(0, 9999999999), 10, '0', STR_PAD_LEFT);
+            $phone = preg_replace('/^\+234/', '0', $phone_no);
 
-            $key = env('WEBKEY');
-            $ref = "VERF" . random_int(000, 999) . date('ymdhis');
             $email = Auth::user()->email;
+            $name = Auth::user()->username;
 
-            $url = "https://web.enkpay.com/pay?amount=$request->amount&key=$key&ref=$ref&email=$email";
+                $key = env('PAYPOINTKEY');
+                $databody = array(
+                    "email" => $email,
+                    "name" => $name,
+                    "phoneNumber" => $phone,
+                    "bankCode" => [20946],
+                    "businessId" => "325a25c99df02668a41c6afaac5d07218058224a"
+                );
+
+                $post_data = json_encode($databody);
+                $curl = curl_init();
+
+                curl_setopt_array($curl, array(
+                    CURLOPT_URL => 'https://api.paymentpoint.co/api/v1/createVirtualAccount',
+                    CURLOPT_RETURNTRANSFER => true,
+                    CURLOPT_ENCODING => '',
+                    CURLOPT_MAXREDIRS => 10,
+                    CURLOPT_TIMEOUT => 20,
+                    CURLOPT_FOLLOWLOCATION => true,
+                    CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+                    CURLOPT_CUSTOMREQUEST => 'POST',
+                    CURLOPT_POSTFIELDS => $post_data,
+                    CURLOPT_HTTPHEADER => array(
+                        'api-key: 3723173a79798d330619cf66e8004b7a514e76fb',
+                        'Content-Type: application/json',
+                        "Authorization: Bearer $key"
+                    ),
+                ));
+
+                $var = curl_exec($curl);
+                curl_close($curl);
+                $var = json_decode($var);
+                $status = $var->status ?? null;
+
+               // dd($var, "APIKEY=".$key);
 
 
-            $data = new Transaction();
-            $data->user_id = Auth::id();
-            $data->amount = $request->amount;
-            $data->ref_id = $ref;
-            $data->type = 2;
-            $data->status = 1; //initiate
-            $data->save();
+
+                if ($status != "fail") {
+                    $data['account_no'] = $var->bankAccounts[0]->accountNumber;
+                    $data['bank_name'] = $var->bankAccounts[0]->bankName;
+                    $data['account_name'] = $var->bankAccounts[0]->accountName;
+
+                    dd($data);
+                    return $data;
+                }
 
 
-            $message = Auth::user()->email . "| wants to fund |  NGN " . number_format($request->amount) . " | with ref | $ref |  on OGSMSPOOL";
-            send_notification2($message);
 
 
-            return Redirect::to($url);
         }
 
 
@@ -1582,6 +1616,14 @@ class HomeController extends Controller
 
         User::where('id', Auth::id())->update(['api_key' => $token]);
         return back()->with('message', 'Api Key Set successfully');
+
+    }
+
+
+    public function paypoint_webhoook(request $request)
+    {
+
+
 
     }
 

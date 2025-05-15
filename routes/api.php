@@ -21,6 +21,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 Route::any('w-webhook',  [HomeController::class,'world_webhook']);
 Route::any('d-webhook',  [HomeController::class,'diasy_webhook']);
+Route::any('paywebhook',  [HomeController::class,'paypoint_webhoook']);
 
 //Route::any('e_fund',  [HomeController::class,'e_fund']);
 //Route::any('e_check',  [HomeController::class,'e_check']);

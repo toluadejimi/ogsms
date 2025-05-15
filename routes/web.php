@@ -241,6 +241,7 @@ Route::post('edit-front-pr',  [AdminController::class,'edit_front_product']);
 
 
 Route::post('admin-login',  [AdminController::class,'admin_login']);
+Route::post('admin-entry',  [AdminController::class,'admin_entry']);
 
 
 

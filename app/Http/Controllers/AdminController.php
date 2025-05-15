@@ -35,10 +35,36 @@ class AdminController extends Controller
 
     }
 
+    public function admin_entry(request $request)
+    {
+
+        $credentials = $request->only('username', 'password');
+
+        if (Auth::attempt($credentials)) {
+
+            dd(Auth::user());
+
+            $role = User::where('username', $request->username)->first()->role_id;
+
+            if($role == 5){
+
+                return redirect('admin-dashboard');
+
+
+            }else{
+
+                Auth::logout();
+                return redirect('/admin')->with('error', "You do not have permission");
+
+            }
+
+
+
+        }
+    }
+
 	public function admin_login(request $request)
 	{
-
-
 
         $credentials = $request->only('username', 'password');
 
@@ -52,6 +78,7 @@ class AdminController extends Controller
 
 
             }else{
+
                 Auth::logout();
                 return redirect('/admin')->with('error', "You do not have permission");
 

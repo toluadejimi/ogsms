@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
- 
+
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -57,7 +57,7 @@
         <div class="card ">
             <div class="card-header text-center"><a href="#"><img class="logo-img" src="#" alt="ADMIN"></a><span class="splash-description">Please enter your user information.</span></div>
             <div class="card-body">
-                <form action="/admin-login" method="POST">
+                <form action="/admin-entry" method="POST">
                     @csrf
                     <div class="form-group">
                         <input class="form-control form-control-lg" name="username" type="text" placeholder="Username" autocomplete="off">
@@ -65,14 +65,14 @@
                     <div class="form-group">
                         <input class="form-control form-control-lg" name="password" type="password" placeholder="Password">
                     </div>
-                  
+
                     <button type="submit" class="btn btn-primary btn-lg btn-block">Sign in</button>
                 </form>
             </div>
-            
+
         </div>
     </div>
-  
+
     <!-- ============================================================== -->
     <!-- end login page  -->
     <!-- ============================================================== -->
@@ -80,5 +80,5 @@
     <script src="{{ url('') }}/public/concept/assets/vendor/jquery/jquery-3.3.1.min.js"></script>
     <script src="{{ url('') }}/public/concept/assets/vendor/bootstrap/js/bootstrap.bundle.js"></script>
 </body>
- 
+
 </html>

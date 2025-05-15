@@ -234,7 +234,7 @@ class Company extends \Faker\Provider\Company
         'Commandant marine',
         'Commis de coupe',
         'Comptable unique',
-        'Log Marketplaceion et études',
+        'Conception et études',
         'Conducteur de jumbo',
         'Conseiller culinaire',
         'Conseiller funéraire',
